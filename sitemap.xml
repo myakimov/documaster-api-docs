@@ -2,122 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/</loc>
     <lastmod>2020-06-01T13:31:12+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/basics/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/basics/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/cont/pages/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/pages/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/cont/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/</loc>
     <lastmod>2020-06-01T13:31:12+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/cont/archetypes/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/archetypes/</loc>
   </url><url>
-    <loc>http://example.org/cont/archetypes.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/archetypes.fr/</loc>
   </url><url>
-    <loc>http://example.org/basics/requirements/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/basics/requirements/</loc>
   </url><url>
-    <loc>http://example.org/cont/markdown/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/markdown/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/shortcodes/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/cont/markdown.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/markdown.fr/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/basics/installation/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/basics/installation/</loc>
   </url><url>
-    <loc>http://example.org/cont/syntaxhighlight/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/syntaxhighlight/</loc>
     <lastmod>2020-06-01T13:31:12+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/basics/configuration/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/basics/configuration/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/cont/menushortcuts/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/menushortcuts/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/cont/menushortcuts.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/menushortcuts.fr/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/basics/style-customization/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/basics/style-customization/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/cont/icons/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/icons/</loc>
   </url><url>
-    <loc>http://example.org/cont/i18n/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/i18n/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/cont/tags/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/tags/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/cont/tags.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/cont/tags.fr/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/documentation/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/tags/documentation/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/tags/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/tutorial/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/tags/tutorial/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/shortcodes/attachments/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/attachments/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/attachments.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/attachments.fr/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/button/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/button/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/button.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/button.fr/</loc>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/categories/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/expand/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/expand/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/expand.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/expand.fr/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/mermaid/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/mermaid/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/mermaid.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/mermaid.fr/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/notice/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/notice/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/notice.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/notice.fr/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/children-1/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/children-1/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/children-1/children-1-1/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/children-1/children-1-1/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/children-2/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/children-2/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/children-3/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/children-3/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/children-4/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/children-4/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/test/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/test/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/test.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/test.fr/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/children-2/test3/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/children-2/test3/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/children/children-2/test3.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/children/children-2/test3.fr/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/siteparam/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/siteparam/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/siteparam.fr/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/siteparam.fr/</loc>
   </url><url>
-    <loc>http://example.org/shortcodes/tabs/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/shortcodes/tabs/</loc>
   </url>
 </urlset>
