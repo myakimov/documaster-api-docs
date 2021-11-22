@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.89.4" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/documaster-api-docs/images/favicon.png" type="image/png">
+
+    <title>Basisregistrering / Basic Record :: My New Hugo Site</title>
+
+    
+    <link href="/documaster-api-docs/css/nucleus.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1637592549" rel="stylesheet">
+    
+    <link href="/documaster-api-docs/css/theme-mine.css?1637592549" rel="stylesheet">
+    
+    <link href="/documaster-api-docs/css/syntax.css?1637592549" rel="stylesheet">
+
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1637592549"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/documaster-api-docs/model/entities/abstractrecord/basicrecord/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/documaster-api-docs/'>
+
+<img src="/documaster-api-docs/images/Logo_Lockup.svg" style="width:200px;border-width:0px;border:0px;" alt="Logo" width="200">
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1637592549"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1637592549"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
+    
+</script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1637592549"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/documaster-api-docs'><i style='color:#dcdffe' class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/" title="General" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/">
+          <b>1. </b>General
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/overview/" title="Overview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/overview/">
+          Overview
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/authentication/" title="Authentication" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/authentication/">
+          Authentication
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/" title="Data Model" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/">
+          <b>2. </b>Data Model
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/tags/" title="Overview" class="dd-item ">
+        <a href="/documaster-api-docs/model/tags/">
+        Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/" title="Entities" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/">
+          Entities
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/" title="Folders" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/">
+          Folders
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/folder/" title="Mappe / Basic Folder" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/folder/">
+          Mappe / Basic Folder
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/" title="Moetemappe / Meeting Folder" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/">
+          Moetemappe / Meeting Folder
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/casefile/" title="Saksmappe / Case File" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/casefile/">
+          Saksmappe / Case File
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/" title="Records" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/">
+          Records
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/basicrecord/" title="Basisregistrering / Basic Record" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/basicrecord/">
+          Basisregistrering / Basic Record
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/registryentry/" title="Journalpost / Registry Entry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/registryentry/">
+          Journalpost / Registry Entry
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/meetingrecord/" title="Moeteregistrering / Meeting Record" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/meetingrecord/">
+          Moeteregistrering / Meeting Record
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/operations/" title="Operations" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/operations/">
+          <b>2. </b>Operations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/operations/transaction/" title="Transaction" class="dd-item ">
+        <a href="/documaster-api-docs/operations/transaction/">
+        Transaction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/operations/query/" title="Query" class="dd-item ">
+        <a href="/documaster-api-docs/operations/query/">
+        Query
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/documaster-api-docs/'>Documaster Noark5 API</a> > <a href='/documaster-api-docs/model/'>Data Model</a> > <a href='/documaster-api-docs/model/entities/'>Entities</a> > <a href='/documaster-api-docs/model/entities/abstractrecord/'>Records</a> > Basisregistrering / Basic Record
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#entity-fields">Entity Fields</a></li>
+    <li><a href="#reference-fields">Reference Fields</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Basisregistrering / Basic Record
+            </h1>
+          
+
+        
+
+
+
+	 
+
+
+    <h2 id="abstractregistrierung--abstractrecord-fields">AbstractRegistrierung / AbstractRecord Fields</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field no.</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Field</th>
+<th style="text-align:center">Not null</th>
+<th style="text-align:center">Has default</th>
+<th style="text-align:center">Code list</th>
+<th style="text-align:left"></th>
+<th style="text-align:center">Save</th>
+<th style="text-align:center">View</th>
+<th style="text-align:center">Query</th>
+<th style="text-align:center">Sort</th>
+<th style="text-align:left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">id</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">sm</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">version</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">sm</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M001</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">
+<style>
+    .definition {
+        visibility: hidden;
+        width: 220px;
+        background-color: #555;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .term {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .term:hover .definition {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+<span class="term">
+
+     uuid 
+<span class="definition"> unique identifer of entity in Documaster system </span> 
+
+</span></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M600</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">
+<style>
+    .definition {
+        visibility: hidden;
+        width: 220px;
+        background-color: #555;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .term {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .term:hover .definition {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+<span class="term">
+
+     opprettetDato 
+<span class="definition"> createdDate (en) <br/> date at which the entity was created </span> 
+
+</span></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M601</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">opprettetAv</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M601</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">opprettetAvBrukerIdent</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M602</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">avsluttetDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M603</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">avsluttetAv</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M603</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">avsluttetAvBrukerIdent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">prefiks</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• optional identifier of the system this <strong>Journalpost</strong> originated from<!-- raw HTML omitted --><!-- raw HTML omitted -->• it is strongly advised to populate this field when the target system contains or will contain data from multiple source case management systems<!-- raw HTML omitted --><!-- raw HTML omitted -->• once set, this value cannot be modified<!-- raw HTML omitted --></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="entity-fields">Entity Fields</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field no.</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Field</th>
+<th style="text-align:center">Not null</th>
+<th style="text-align:center">Has default</th>
+<th style="text-align:center">Code list</th>
+<th style="text-align:left"></th>
+<th style="text-align:center">Save</th>
+<th style="text-align:center">View</th>
+<th style="text-align:center">Query</th>
+<th style="text-align:center">Sort</th>
+<th style="text-align:left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">id</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">sm</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">version</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">sm</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M001</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">
+<style>
+    .definition {
+        visibility: hidden;
+        width: 220px;
+        background-color: #555;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .term {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .term:hover .definition {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+<span class="term">
+
+     uuid 
+<span class="definition"> unique identifer of entity in Documaster system </span> 
+
+</span></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M600</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">
+<style>
+    .definition {
+        visibility: hidden;
+        width: 220px;
+        background-color: #555;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .term {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .term:hover .definition {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+<span class="term">
+
+     opprettetDato 
+<span class="definition"> createdDate (en) <br/> date at which the entity was created </span> 
+
+</span></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M601</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">opprettetAv</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M601</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">opprettetAvBrukerIdent</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M602</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">avsluttetDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M603</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">avsluttetAv</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M603</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">avsluttetAvBrukerIdent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">prefiks</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• optional identifier of the system this <strong>Journalpost</strong> originated from<!-- raw HTML omitted --><!-- raw HTML omitted -->• it is strongly advised to populate this field when the target system contains or will contain data from multiple source case management systems<!-- raw HTML omitted --><!-- raw HTML omitted -->• once set, this value cannot be modified<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">M004</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">registreringsIdent</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M020</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">tittel</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M025</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">offentligTittel</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M021</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">beskrivelse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M024</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">forfatter</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M300</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">dokumentmedium</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">dokumentmedium</td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M013</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">journalaar</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M014</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">journalsekvensnummer</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M015</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">journalpostnummer</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">journalansvarlig</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• The name of the person responsible for this Journalpost (similar to M306 Saksmappe#saksansvarlig)<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">journalansvarligBrukerIdent</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• The user ID of the person responsible for this Journalpost as stored in journalansvarlig (similar to M306 Saksmappe#saksansvarligBrukerIdent)<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">M082</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">journalposttype</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">journalposttype</td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M053</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">journalstatus</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">journalstatus</td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M101</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">registreringsDato</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M103</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">dokumentetsDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M109</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">forfallsdato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M104</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">mottattDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M105</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">sendtDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M110</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">offentlighetsvurdertDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">skjermKorrespondanseParterEInnsyn</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left">When <strong>true</strong>, it indicates that <strong>Korrespondansepart</strong> objects of this <strong>Journalpost</strong> referenced by <strong>refKorrespondansepart</strong> will be screened in eInnsyn, even if the <strong>Journalpost</strong> is not effectively screened. When <strong>false</strong> or <strong>null</strong>, it indicates that <strong>Korrespondansepart</strong> objects will not be screened in eInnsyn, even if the <strong>Journalpost</strong> is effectively screened. Defaults to <strong>false</strong>.</td>
+</tr>
+<tr>
+<td style="text-align:left">M500</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">skjerming</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">skjerming</td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M711</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">virksomhetsspesifikkeMetadata</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="reference-fields">Reference Fields</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:center">Not null</th>
+<th style="text-align:center">View</th>
+<th style="text-align:center">Query</th>
+<th style="text-align:center">Link</th>
+<th style="text-align:center">Unlink</th>
+<th style="text-align:left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">refMappe</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• references <strong>Saksmappe</strong><!-- raw HTML omitted --><!-- raw HTML omitted -->• exactly one of <strong>refMappe</strong> and <strong>refArkivdel</strong> is required<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">refArkivdel</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• references <strong>Arkivdel</strong><!-- raw HTML omitted --><!-- raw HTML omitted -->• exactly one of <strong>refMappe</strong> and <strong>refArkivdel</strong> is required<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">refKorrespondansepart</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refDokument</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refPrimaerKlasse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• references a <strong>Klasse</strong> from the primary <strong>Klassifikasjonssystem</strong> of the <strong>Arkivdel</strong><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">refSekundaerKlasse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• references a <strong>Klasse</strong> from any <strong>Klassifikasjonssystem</strong><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">refEksternId</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refDokumentflyt</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refNoekkelord</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refAvskrivning</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refTilknyttetAvskrivning</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refMerknad</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refNasjonalIdentifikator</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refKryssreferanseTilMappe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left">refers to <strong>AbstraktMappe</strong> that the current <strong>AbstraktRegistrering</strong> cross references</td>
+</tr>
+<tr>
+<td style="text-align:left">refKryssreferanseFraMappe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left">refers to <strong>AbstraktMappe</strong> that cross reference the current <strong>AbstraktRegistrering</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">refKryssreferanseTilRegistrering</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left">refers to <strong>AbstraktRegistrering</strong> that the current <strong>AbstraktRegistrering</strong> cross references</td>
+</tr>
+<tr>
+<td style="text-align:left">refKryssreferanseFraRegistrering</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left">refers to <strong>AbstraktRegistrering</strong> that cross reference the current <strong>AbstraktRegistrering</strong></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/documaster-api-docs/model/entities/abstractrecord/" title="Records"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/documaster-api-docs/model/entities/abstractrecord/registryentry/" title="Journalpost / Registry Entry" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1637592549"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/learn.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1637592549"></script>
+    
+        
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1637592549"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>

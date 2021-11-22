@@ -1,4 +1,5 @@
 
+
 :root{
     
     --MAIN-TEXT-color:#2b061f; /* Color of text by default */
@@ -108,6 +109,30 @@ a:hover {
     border-bottom-color: #dcdffe;
 }
 
+pre {
+    background-color: #dcdffe !important;
+    border-width: 3px !important;
+    border-color: #2b061f !important;
+}
+
+.tab-content {
+    background-color: #2b061f;
+    padding: 3px !important;
+}
+
+#body .tab-nav-button {
+    background-color: #ffffff !important;
+    border-top-width: 3px !important;
+    border-top-color: #2b061f !important;
+}
+
+#body .tab-nav-button.active {
+    background-color: #2b061f !important;
+    color: #ffffff !important;
+    border-bottom-color: #2b061f !important;
+    
+}
+
 a.btn.btn-default {
     background-color:var(--MENU-SEARCH-BOX-ICONS-color) !important;
     color: var(--MENU-SECTIONS-LINK-color) !important;
@@ -120,3 +145,17 @@ a.btn.btn-default {
     text-transform:none !important;
     
 }
+
+/* Mermaid JS Theming for Documaster */
+
+g.classGroup rect {
+    stroke: none;
+    stroke-width: 1;
+    fill:var(--MENU-SEARCH-BOX-ICONS-color) !important;
+}
+
+g.classGroup text {
+    font-size: large !important;
+    fill:#33a1ff !important;
+}
+

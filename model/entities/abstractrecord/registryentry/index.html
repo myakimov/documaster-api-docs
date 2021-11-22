@@ -1,0 +1,3782 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.89.4" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/documaster-api-docs/images/favicon.png" type="image/png">
+
+    <title>Journalpost / Registry Entry :: My New Hugo Site</title>
+
+    
+    <link href="/documaster-api-docs/css/nucleus.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1637592549" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1637592549" rel="stylesheet">
+    
+    <link href="/documaster-api-docs/css/theme-mine.css?1637592549" rel="stylesheet">
+    
+    <link href="/documaster-api-docs/css/syntax.css?1637592549" rel="stylesheet">
+
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1637592549"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/documaster-api-docs/model/entities/abstractrecord/registryentry/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/documaster-api-docs/'>
+
+<img src="/documaster-api-docs/images/Logo_Lockup.svg" style="width:200px;border-width:0px;border:0px;" alt="Logo" width="200">
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1637592549"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1637592549"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
+    
+</script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1637592549"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/documaster-api-docs'><i style='color:#dcdffe' class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/" title="General" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/">
+          <b>1. </b>General
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/overview/" title="Overview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/overview/">
+          Overview
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/authentication/" title="Authentication" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/authentication/">
+          Authentication
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/" title="Data Model" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/">
+          <b>2. </b>Data Model
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/tags/" title="Overview" class="dd-item ">
+        <a href="/documaster-api-docs/model/tags/">
+        Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/" title="Entities" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/">
+          Entities
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/" title="Folders" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/">
+          Folders
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/folder/" title="Mappe / Basic Folder" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/folder/">
+          Mappe / Basic Folder
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/" title="Moetemappe / Meeting Folder" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/">
+          Moetemappe / Meeting Folder
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/casefile/" title="Saksmappe / Case File" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/casefile/">
+          Saksmappe / Case File
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/" title="Records" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/">
+          Records
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/basicrecord/" title="Basisregistrering / Basic Record" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/basicrecord/">
+          Basisregistrering / Basic Record
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/registryentry/" title="Journalpost / Registry Entry" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/registryentry/">
+          Journalpost / Registry Entry
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/meetingrecord/" title="Moeteregistrering / Meeting Record" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/meetingrecord/">
+          Moeteregistrering / Meeting Record
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/operations/" title="Operations" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/operations/">
+          <b>2. </b>Operations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/operations/transaction/" title="Transaction" class="dd-item ">
+        <a href="/documaster-api-docs/operations/transaction/">
+        Transaction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/operations/query/" title="Query" class="dd-item ">
+        <a href="/documaster-api-docs/operations/query/">
+        Query
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/documaster-api-docs/'>Documaster Noark5 API</a> > <a href='/documaster-api-docs/model/'>Data Model</a> > <a href='/documaster-api-docs/model/entities/'>Entities</a> > <a href='/documaster-api-docs/model/entities/abstractrecord/'>Records</a> > Journalpost / Registry Entry
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#entity-fields">Entity Fields</a></li>
+    <li><a href="#reference-fields">Reference Fields</a></li>
+    <li><a href="#basic-usage-of-the-registry-entry">Basic Usage of the Registry Entry</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Journalpost / Registry Entry
+            </h1>
+          
+
+        
+
+
+
+	
+<div class="mermaid" align="center">
+flowchart LR
+    A:::someclass --> B
+    classDef someclass fill:#f96;
+    
+
+</div>
+
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="registryEntry"
+          class="tab-nav-button btn active"
+          onclick="switchTab('registryEntry','HTTP')"
+         >HTTP</button>
+    
+        <button
+          data-tab-item="Java"
+          data-tab-group="registryEntry"
+          class="tab-nav-button btn "
+          onclick="switchTab('registryEntry','Java')"
+         >Java</button>
+    
+        <button
+          data-tab-item="C#"
+          data-tab-group="registryEntry"
+          class="tab-nav-button btn "
+          onclick="switchTab('registryEntry','C#')"
+         >C#</button>
+    
+        <button
+          data-tab-item="JSON"
+          data-tab-group="registryEntry"
+          class="tab-nav-button btn "
+          onclick="switchTab('registryEntry','JSON')"
+         >JSON</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="registryEntry" class="tab-item active">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">POST</span> https://v2-34-0.local.documaster.tech:8083/rms/api/public/noark5/v1/transaction <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">example.com</span>
+Authorization<span style="color:#f92672">:</span> <span style="color:#ae81ff">Bearer {{accessTokenAdmin}}</span>
+Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+X-Documaster-Error-Response-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+
+{
+    <span style="color:#f92672">&#34;actions&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;save&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;saksmappe-temp-id-1&#34;</span>,
+            <span style="color:#f92672">&#34;fields&#34;</span>: {
+                <span style="color:#f92672">&#34;tittel&#34;</span>: <span style="color:#e6db74">&#34;API:CaseFile3&#34;</span>,
+                <span style="color:#f92672">&#34;beskrivelse&#34;</span>: <span style="color:#e6db74">&#34;Second API CaseFile&#34;</span>,
+                <span style="color:#f92672">&#34;mappeIdent&#34;</span>: <span style="color:#e6db74">&#34;2021/45&#34;</span>,
+                <span style="color:#f92672">&#34;administrativEnhet&#34;</span>: <span style="color:#e6db74">&#34;AD1&#34;</span>
+            }
+        },
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;link&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;saksmappe-temp-id-1&#34;</span>,
+            <span style="color:#f92672">&#34;ref&#34;</span>: <span style="color:#e6db74">&#34;refArkivdel&#34;</span>,
+            <span style="color:#f92672">&#34;linkToId&#34;</span>: <span style="color:#e6db74">&#34;688&#34;</span>
+        },
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;link&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;saksmappe-temp-id-1&#34;</span>,
+            <span style="color:#f92672">&#34;ref&#34;</span>: <span style="color:#e6db74">&#34;refPrimaerKlasse&#34;</span>,
+            <span style="color:#f92672">&#34;linkToId&#34;</span>: <span style="color:#e6db74">&#34;681&#34;</span>
+        }
+    ]
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Java" data-tab-group="registryEntry" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> com.documaster.rms.noark5.pub.v1.api<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.List<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.Map<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> com.documaster.rms.noark5.pub.common.util.LRUObjectCache<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.documaster.rms.noark5.pub.v1.meta.EntityInfo<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.documaster.rms.noark5.pub.v1.meta.Metamodel<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.documaster.rms.noark5.pub.v1.model.BasePublicObject<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.documaster.rms.noark5.pub.v1.n5ql.QueryTranslator<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> no.dots.core.DotsAPI<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> no.dots.core.DotsObject<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> no.dots.core.DotsSession<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> no.dots.noark5.model.Klass<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> no.dots.noark5.model.KlassificationSystem<span style="color:#f92672">;</span>
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e"> * A {@link Noark5PublicAPI} implementation that:
+</span><span style="color:#75715e"> * &lt;ol&gt;
+</span><span style="color:#75715e"> * &lt;li&gt;Specifically handles linking and unlinking
+</span><span style="color:#75715e"> * {@link com.documaster.rms.noark5.pub.v1.model.Klasse Klasse} to and from its parents (either another
+</span><span style="color:#75715e"> * {@link com.documaster.rms.noark5.pub.v1.model.Klasse Klasse} or a
+</span><span style="color:#75715e"> * {@link com.documaster.rms.noark5.pub.v1.model.Klassifikasjonssystem Klassifikasjonssystem}.
+</span><span style="color:#75715e"> * &lt;p&gt;
+</span><span style="color:#75715e"> * We need this because the internal model is aware of &lt;b&gt;4&lt;/b&gt; reference fields between {@link Klass} and
+</span><span style="color:#75715e"> * {@link KlassificationSystem}:
+</span><span style="color:#75715e"> * &lt;ul&gt;
+</span><span style="color:#75715e"> * &lt;li&gt;{@link Klass#refKlassificationSystemOfKlass};&lt;/li&gt;
+</span><span style="color:#75715e"> * &lt;li&gt;{@link Klass#refKlassificationSystemParent};&lt;/li&gt;
+</span><span style="color:#75715e"> * &lt;li&gt;{@link Klass#refParent};&lt;/li&gt;
+</span><span style="color:#75715e"> * &lt;li&gt;{@link Klass#refChildren};&lt;/li&gt;
+</span><span style="color:#75715e"> * &lt;/ul&gt;
+</span><span style="color:#75715e"> * whereas the public model is aware of &lt;b&gt;3&lt;/b&gt; reference fields between
+</span><span style="color:#75715e"> * {@link com.documaster.rms.noark5.pub.v1.model.Klasse Klasse} and
+</span><span style="color:#75715e"> * {@link com.documaster.rms.noark5.pub.v1.model.Klassifikasjonssystem Klassifikasjonssystem}:
+</span><span style="color:#75715e"> * &lt;ul&gt;
+</span><span style="color:#75715e"> * &lt;li&gt;{@link com.documaster.rms.noark5.pub.v1.model.Klasse#refKlassifikasjonssystem
+</span><span style="color:#75715e"> * Klasse#refKlassifikasjonssystem};&lt;/li&gt;
+</span><span style="color:#75715e"> * &lt;li&gt;{@link com.documaster.rms.noark5.pub.v1.model.Klasse#refBarnKlasse Klasse#refBarnKlasse};&lt;/li&gt;
+</span><span style="color:#75715e"> * &lt;li&gt;{@link com.documaster.rms.noark5.pub.v1.model.Klasse#refForelderKlasse Klasse#refForelderKlasse}.&lt;/li&gt;
+</span><span style="color:#75715e"> * &lt;/ul&gt;
+</span><span style="color:#75715e"> * Since {@link Klass#refKlassificationSystemParent} is not exposed in the public model in any way, we need to set/unset
+</span><span style="color:#75715e"> * the values of this reference field as part of this API.
+</span><span style="color:#75715e"> * &lt;/p&gt;
+</span><span style="color:#75715e"> * &lt;/li&gt;
+</span><span style="color:#75715e"> * &lt;li&gt;Adds support for managing BSM values via {@link BsmAPI}.&lt;/li&gt;
+</span><span style="color:#75715e"> * &lt;/ol&gt;
+</span><span style="color:#75715e"> */</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">KlasseAPI</span> <span style="color:#66d9ef">extends</span> BaseAPI <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">private</span> BsmAPI bsmAPI<span style="color:#f92672">;</span>
+
+	KlasseAPI<span style="color:#f92672">(</span>
+			DotsSession session<span style="color:#f92672">,</span> Metamodel metamodel<span style="color:#f92672">,</span> ObjectCache orphanCache<span style="color:#f92672">,</span> LRUObjectCache objectCache<span style="color:#f92672">,</span>
+			QueryTranslator queryTranslator<span style="color:#f92672">,</span>
+			BsmAPI bsmAPI<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+		<span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>session<span style="color:#f92672">,</span> metamodel<span style="color:#f92672">,</span> orphanCache<span style="color:#f92672">,</span> objectCache<span style="color:#f92672">,</span> queryTranslator<span style="color:#f92672">);</span>
+
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">bsmAPI</span> <span style="color:#f92672">=</span> bsmAPI<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> Long <span style="color:#a6e22e">save</span><span style="color:#f92672">(</span>String type<span style="color:#f92672">,</span> Long id<span style="color:#f92672">,</span> Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Object<span style="color:#f92672">&gt;</span> fields<span style="color:#f92672">,</span> Integer controlVersion<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+
+		<span style="color:#66d9ef">return</span> bsmAPI<span style="color:#f92672">.</span><span style="color:#a6e22e">save</span><span style="color:#f92672">(</span>type<span style="color:#f92672">,</span> id<span style="color:#f92672">,</span> fields<span style="color:#f92672">,</span> controlVersion<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">protected</span> BasePublicObject <span style="color:#a6e22e">convert</span><span style="color:#f92672">(</span>EntityInfo entityInfo<span style="color:#f92672">,</span> DotsObject dotsObject<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+
+		<span style="color:#66d9ef">return</span> bsmAPI<span style="color:#f92672">.</span><span style="color:#a6e22e">convert</span><span style="color:#f92672">(</span>entityInfo<span style="color:#f92672">,</span> dotsObject<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">link</span><span style="color:#f92672">(</span>String type<span style="color:#f92672">,</span> Long id<span style="color:#f92672">,</span> String refFieldName<span style="color:#f92672">,</span> List<span style="color:#f92672">&lt;</span>Long<span style="color:#f92672">&gt;</span> linkToIds<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+		Klass klass <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>Klass<span style="color:#f92672">)</span> getUnderlyingObject<span style="color:#f92672">(</span>type<span style="color:#f92672">,</span> id<span style="color:#f92672">,</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+
+		<span style="color:#75715e">// Remove the KS parent link if a parent Klass will be added.
+</span><span style="color:#75715e"></span>		<span style="color:#75715e">// This needs to happen before linking the parent Klass, because the system
+</span><span style="color:#75715e"></span>		<span style="color:#75715e">// does not allow an object to have more than one parent simultaneously.
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;refForelderKlasse&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>refFieldName<span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> unlinkParentKS<span style="color:#f92672">(</span>api<span style="color:#f92672">,</span> klass<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+
+			orphanCache<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>klass<span style="color:#f92672">);</span>
+		<span style="color:#f92672">}</span>
+
+		<span style="color:#75715e">// Remove the KS parent link from child classes if a parent Klass will be added for them.
+</span><span style="color:#75715e"></span>		<span style="color:#75715e">// This needs to happen before linking the parent Klass, because the system
+</span><span style="color:#75715e"></span>		<span style="color:#75715e">// does not allow an object to have more than one parent simultaneously.
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;refBarnKlasse&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>refFieldName<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+
+			<span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Long childKlassId <span style="color:#f92672">:</span> linkToIds<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+				Klass childKlass <span style="color:#f92672">=</span> Klass<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">cast</span><span style="color:#f92672">(</span>getUnderlyingObject<span style="color:#f92672">(</span>type<span style="color:#f92672">,</span> childKlassId<span style="color:#f92672">,</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">));</span>
+
+				<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>unlinkParentKS<span style="color:#f92672">(</span>api<span style="color:#f92672">,</span> childKlass<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+
+					orphanCache<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>childKlass<span style="color:#f92672">);</span>
+				<span style="color:#f92672">}</span>
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span>
+
+		<span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">link</span><span style="color:#f92672">(</span>type<span style="color:#f92672">,</span> id<span style="color:#f92672">,</span> refFieldName<span style="color:#f92672">,</span> linkToIds<span style="color:#f92672">);</span>
+
+		<span style="color:#75715e">// If no Klass parent exists, specify the linked KS as parent.
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;refKlassifikasjonssystem&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>refFieldName<span style="color:#f92672">)</span>
+				<span style="color:#f92672">&amp;&amp;</span> api<span style="color:#f92672">.</span><span style="color:#a6e22e">countLinks</span><span style="color:#f92672">(</span>klass<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;refParent&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">==</span> 0
+				<span style="color:#f92672">&amp;&amp;</span> specifyLinkedKSAsParentKS<span style="color:#f92672">(</span>api<span style="color:#f92672">,</span> klass<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+
+			orphanCache<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>Klass<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> klass<span style="color:#f92672">.</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">());</span>
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">unlink</span><span style="color:#f92672">(</span>String type<span style="color:#f92672">,</span> Long id<span style="color:#f92672">,</span> String refFieldName<span style="color:#f92672">,</span> List<span style="color:#f92672">&lt;</span>Long<span style="color:#f92672">&gt;</span> unlinkFromIds<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+		<span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">unlink</span><span style="color:#f92672">(</span>type<span style="color:#f92672">,</span> id<span style="color:#f92672">,</span> refFieldName<span style="color:#f92672">,</span> unlinkFromIds<span style="color:#f92672">);</span>
+
+		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span><span style="color:#e6db74">&#34;refKlassifikasjonssystem&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>refFieldName<span style="color:#f92672">)</span>
+				<span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span><span style="color:#e6db74">&#34;refForelderKlasse&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>refFieldName<span style="color:#f92672">)</span>
+				<span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span><span style="color:#e6db74">&#34;refBarnKlasse&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>refFieldName<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+
+			<span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+		<span style="color:#f92672">}</span>
+
+		Klass klass <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>Klass<span style="color:#f92672">)</span> getUnderlyingObject<span style="color:#f92672">(</span>type<span style="color:#f92672">,</span> id<span style="color:#f92672">,</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+
+		<span style="color:#75715e">// The user has unlinked the Klass from the KS, so we need to unlink the parent KS too
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;refKlassifikasjonssystem&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>refFieldName<span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> unlinkParentKS<span style="color:#f92672">(</span>api<span style="color:#f92672">,</span> klass<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+
+			orphanCache<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>klass<span style="color:#f92672">);</span>
+		<span style="color:#f92672">}</span>
+
+		<span style="color:#75715e">// Specify the linked KS as parent KS in case the parent Klass is dropped
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;refForelderKlasse&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>refFieldName<span style="color:#f92672">)</span> <span style="color:#f92672">&amp;&amp;</span> specifyLinkedKSAsParentKS<span style="color:#f92672">(</span>api<span style="color:#f92672">,</span> klass<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+
+			orphanCache<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>Klass<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> klass<span style="color:#f92672">.</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">());</span>
+		<span style="color:#f92672">}</span>
+
+		<span style="color:#75715e">// Specify the linked KS as parent KS for child classes which have been unlinked
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;refBarnKlasse&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>refFieldName<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+
+			<span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Long childKlassId <span style="color:#f92672">:</span> unlinkFromIds<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+				Klass childKlass <span style="color:#f92672">=</span> Klass<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">cast</span><span style="color:#f92672">(</span>getUnderlyingObject<span style="color:#f92672">(</span>type<span style="color:#f92672">,</span> childKlassId<span style="color:#f92672">,</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">));</span>
+
+				<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>specifyLinkedKSAsParentKS<span style="color:#f92672">(</span>api<span style="color:#f92672">,</span> childKlass<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+
+					orphanCache<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>Klass<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> childKlassId<span style="color:#f92672">);</span>
+				<span style="color:#f92672">}</span>
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#75715e">/**
+</span><span style="color:#75715e">	 * Unlink a parent {@link KlassificationSystem} ({@link Klass#refKlassificationSystemParent)} from the specified
+</span><span style="color:#75715e">	 * {@link Klass}, if any.
+</span><span style="color:#75715e">	 *
+</span><span style="color:#75715e">	 * @param api
+</span><span style="color:#75715e">	 * 		A {@link DotsAPI}
+</span><span style="color:#75715e">	 * @param klass
+</span><span style="color:#75715e">	 * 		The {@link Klass} to be unlinked from its parent {@link KlassificationSystem}
+</span><span style="color:#75715e">	 * @return &lt;b&gt;true&lt;/b&gt; if there was a parent to unlink from; &lt;b&gt;false&lt;/b&gt; otherwise
+</span><span style="color:#75715e">	 */</span>
+	<span style="color:#66d9ef">static</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">unlinkParentKS</span><span style="color:#f92672">(</span>DotsAPI api<span style="color:#f92672">,</span> Klass klass<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+		KlassificationSystem parentKs <span style="color:#f92672">=</span>
+				api<span style="color:#f92672">.</span><span style="color:#a6e22e">getOne</span><span style="color:#f92672">(</span>klass<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;refKlassificationSystemParent&#34;</span><span style="color:#f92672">,</span> KlassificationSystem<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+
+		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>parentKs <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+			parentKs <span style="color:#f92672">=</span> api<span style="color:#f92672">.</span><span style="color:#a6e22e">getLocked</span><span style="color:#f92672">(</span>KlassificationSystem<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> parentKs<span style="color:#f92672">.</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">());</span>
+			api<span style="color:#f92672">.</span><span style="color:#a6e22e">unlink</span><span style="color:#f92672">(</span>klass<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;refKlassificationSystemParent&#34;</span><span style="color:#f92672">,</span> parentKs<span style="color:#f92672">);</span>
+
+			<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+		<span style="color:#f92672">}</span>
+
+		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#75715e">/**
+</span><span style="color:#75715e">	 * Link the {@link Klass}&#39; associated {@link KlassificationSystem} ({@link Klass#refKlassificationSystemOfKlass}) as
+</span><span style="color:#75715e">	 * its parent {@link Klass#refKlassificationSystemParent}, if any.
+</span><span style="color:#75715e">	 *
+</span><span style="color:#75715e">	 * @param api
+</span><span style="color:#75715e">	 * 		A {@link DotsAPI}
+</span><span style="color:#75715e">	 * @param klass
+</span><span style="color:#75715e">	 * 		The {@link Klass} to be linked to a parent {@link KlassificationSystem}
+</span><span style="color:#75715e">	 * @return &lt;b&gt;true&lt;/b&gt; if there was an associated {@link KlassificationSystem} to link to; &lt;b&gt;false&lt;/b&gt; otherwise
+</span><span style="color:#75715e">	 */</span>
+	<span style="color:#66d9ef">static</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">specifyLinkedKSAsParentKS</span><span style="color:#f92672">(</span>DotsAPI api<span style="color:#f92672">,</span> Klass klass<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+		KlassificationSystem linkedKS <span style="color:#f92672">=</span>
+				api<span style="color:#f92672">.</span><span style="color:#a6e22e">getOne</span><span style="color:#f92672">(</span>klass<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;refKlassificationSystemOfKlass&#34;</span><span style="color:#f92672">,</span> KlassificationSystem<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+		KlassificationSystem parentKS <span style="color:#f92672">=</span>
+				api<span style="color:#f92672">.</span><span style="color:#a6e22e">getOne</span><span style="color:#f92672">(</span>klass<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;refKlassificationSystemParent&#34;</span><span style="color:#f92672">,</span> KlassificationSystem<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+
+		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>linkedKS <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+			linkedKS <span style="color:#f92672">=</span> api<span style="color:#f92672">.</span><span style="color:#a6e22e">getLocked</span><span style="color:#f92672">(</span>KlassificationSystem<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> linkedKS<span style="color:#f92672">.</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">());</span>
+
+			<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>parentKS <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+				<span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span>parentKS<span style="color:#f92672">.</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">().</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>linkedKS<span style="color:#f92672">.</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">()))</span> <span style="color:#f92672">{</span>
+
+					parentKS <span style="color:#f92672">=</span> api<span style="color:#f92672">.</span><span style="color:#a6e22e">getLocked</span><span style="color:#f92672">(</span>KlassificationSystem<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> parentKS<span style="color:#f92672">.</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">());</span>
+
+					api<span style="color:#f92672">.</span><span style="color:#a6e22e">unlink</span><span style="color:#f92672">(</span>klass<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;refKlassificationSystemParent&#34;</span><span style="color:#f92672">,</span> parentKS<span style="color:#f92672">);</span>
+					api<span style="color:#f92672">.</span><span style="color:#a6e22e">link</span><span style="color:#f92672">(</span>klass<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;refKlassificationSystemParent&#34;</span><span style="color:#f92672">,</span> linkedKS<span style="color:#f92672">);</span>
+				<span style="color:#f92672">}</span>
+
+			<span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+
+				api<span style="color:#f92672">.</span><span style="color:#a6e22e">link</span><span style="color:#f92672">(</span>klass<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;refKlassificationSystemParent&#34;</span><span style="color:#f92672">,</span> linkedKS<span style="color:#f92672">);</span>
+			<span style="color:#f92672">}</span>
+
+			<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+		<span style="color:#f92672">}</span>
+
+		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="C#" data-tab-group="registryEntry" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">using</span> System;
+<span style="color:#66d9ef">using</span> System.Collections.Generic;
+<span style="color:#66d9ef">using</span> System.IO;
+<span style="color:#66d9ef">using</span> System.Linq;
+<span style="color:#66d9ef">using</span> CommandLine;
+<span style="color:#66d9ef">using</span> Documaster.WebApi.Client.Noark5;
+<span style="color:#66d9ef">using</span> Documaster.WebApi.Client.Noark5.Client;
+<span style="color:#66d9ef">using</span> Documaster.WebApi.Client.Noark5.NoarkEntities;
+<span style="color:#66d9ef">using</span> Documaster.WebApi.Client.IDP;
+<span style="color:#66d9ef">using</span> Documaster.WebApi.Client.IDP.Oauth2;
+
+<span style="color:#66d9ef">namespace</span> NoarkWsClientSample
+{
+    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>
+    {
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> NoarkClient client;
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> Oauth2HttpClient idpClient;
+        <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">string</span> testDoc;
+
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> Main(<span style="color:#66d9ef">string</span>[] args)
+        {
+            <span style="color:#66d9ef">var</span> options = ParserCommandLineArguments(args);
+            InitializeSample(options);
+
+            JournalingSample();
+            ArchiveSample();
+            MeetingAndBoardHandlingDataSample();
+            BusinessSpecificMetadataSample();
+            CodeListsSample();
+        }
+
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> Options ParserCommandLineArguments(<span style="color:#66d9ef">string</span>[] args)
+        {
+            Options opts = <span style="color:#66d9ef">null</span>;
+
+            <span style="color:#66d9ef">var</span> parseResult = Parser.Default
+                .ParseArguments&lt;Options&gt;(args)
+                .WithParsed(options =&gt; opts = options);
+
+            <span style="color:#66d9ef">if</span> (parseResult.Tag == ParserResultType.NotParsed)
+            {
+                <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Exception(<span style="color:#e6db74">&#34;Failed to parse command line arguments!&#34;</span>);
+            }
+
+            <span style="color:#66d9ef">return</span> opts;
+        }
+
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> InitializeSample(Options opts)
+        {
+            <span style="color:#75715e">/*
+</span><span style="color:#75715e">             * Using the Noark 5 web services requires providing a valid access token.
+</span><span style="color:#75715e">             * The way this token is obtained depends on the system implementing the services.
+</span><span style="color:#75715e">             * This sample code obtains the token from the Documaster&#39;s identity provider service
+</span><span style="color:#75715e">             * with the help of a designated Documaster IDP client.
+</span><span style="color:#75715e">             * If the Noark client is used in the context of an application that has access to a web browser,
+</span><span style="color:#75715e">             * we strongly recommend choosing the Oauth2 Authorization Code Grant Flow supported for obtaining
+</span><span style="color:#75715e">             * access tokens.
+</span><span style="color:#75715e">             */</span>
+
+            <span style="color:#75715e">//Initialize an IDP client and request an authorization token
+</span><span style="color:#75715e"></span>            InitIdpClient(opts);
+            PasswordGrantTypeParams passwordGrantTypeParams = <span style="color:#66d9ef">new</span> PasswordGrantTypeParams(
+                opts.ClientId, opts.ClientSecret, opts.Username, opts.Password, OpenIDConnectScope.OPENID);
+            <span style="color:#66d9ef">var</span> accessToken = idpClient.GetTokenWithPasswordGrantType(passwordGrantTypeParams).AccessToken;
+
+            <span style="color:#75715e">//Initialize a Noark client
+</span><span style="color:#75715e"></span>            InitClient(opts);
+            client.AuthToken = accessToken;
+
+            <span style="color:#75715e">//Notice that it is also possible to initialize а ssl-based Noark client without providing
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//client certificate:
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//InitClientWithoutClientCertificate(opts);
+</span><span style="color:#75715e"></span>
+            testDoc = opts.TestDoc;
+        }
+
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> InitIdpClient(Options options)
+        {
+            idpClient = <span style="color:#66d9ef">new</span> Oauth2HttpClient(options.IdpServerAddress, <span style="color:#66d9ef">true</span>);
+        }
+
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> InitClient(Options options)
+        {
+            client = <span style="color:#66d9ef">new</span> NoarkClient(options.ServerAddress, options.CertificatePath, options.CertificatePass, <span style="color:#66d9ef">true</span>);
+        }
+
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> InitClientWithoutClientCertificate(Options options)
+        {
+            client = <span style="color:#66d9ef">new</span> NoarkClient(options.ServerAddress, <span style="color:#66d9ef">true</span>);
+        }
+
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> JournalingSample()
+        {
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Journaling example {Environment.NewLine}&#34;</span>);
+
+            <span style="color:#75715e">//Create a new Arkiv with an Arkivskaper
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//When new objects are initialized, a temporary Id is assigned to them.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> newArkivskaper = <span style="color:#66d9ef">new</span> Arkivskaper(<span style="color:#e6db74">&#34;B7-23-W5&#34;</span>, <span style="color:#e6db74">&#34;John Smith&#34;</span>);
+            <span style="color:#66d9ef">var</span> newArkiv = <span style="color:#66d9ef">new</span> Arkiv(<span style="color:#e6db74">&#34;Arkiv&#34;</span>);
+
+            <span style="color:#66d9ef">var</span> transactionResponse = client.Transaction()
+                .Save(newArkiv)
+                .Save(newArkivskaper)
+                .Link(newArkiv.LinkArkivskaper(newArkivskaper))
+                .Commit();
+
+            <span style="color:#75715e">//When the transaction is committed, the transaction response contains a map with saved objects.
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//One can access the saved Arkiv by providing its temporary Id as a key to the map.
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Notice that arkiv.Id is the permanent Id of the Arkiv.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> arkiv = transactionResponse.Saved[newArkiv.Id] <span style="color:#66d9ef">as</span> Arkiv;
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created Arkiv: Id={arkiv.Id}, Tittel={arkiv.Tittel}, OpprettetDato={arkiv.OpprettetDato}&#34;</span>);
+
+            <span style="color:#75715e">//Update the description of the Arkiv and create a new Arkivdel in it
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Create a new Klassifikasjonssystem with one Klasse
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Set the new Klassifikasjonssystem as the primary Klassifikasjonssystem for the Arkivdel
+</span><span style="color:#75715e"></span>            arkiv.Beskrivelse = <span style="color:#e6db74">&#34;Barnehage Arkiv&#34;</span>;
+            <span style="color:#66d9ef">var</span> newArkivdel = <span style="color:#66d9ef">new</span> Arkivdel(<span style="color:#e6db74">&#34;2007/8&#34;</span>);
+            <span style="color:#66d9ef">var</span> newKlassifikasjonssystem = <span style="color:#66d9ef">new</span> Klassifikasjonssystem(<span style="color:#e6db74">&#34;Barnehage&#34;</span>);
+            <span style="color:#66d9ef">var</span> newKlasse = <span style="color:#66d9ef">new</span> Klasse(<span style="color:#e6db74">&#34;01&#34;</span>, <span style="color:#e6db74">&#34;Tilbud&#34;</span>);
+
+            transactionResponse = client.Transaction()
+                .Save(arkiv)
+                .Save(newArkivdel)
+                .Link(newArkivdel.LinkArkiv(arkiv))
+                .Save(newKlassifikasjonssystem)
+                .Link(newArkivdel.LinkPrimaerKlassifikasjonssystem(newKlassifikasjonssystem))
+                .Save(newKlasse)
+                .Link(newKlasse.LinkKlassifikasjonssystem(newKlassifikasjonssystem))
+                .Commit();
+
+            arkiv = transactionResponse.Saved[arkiv.Id] <span style="color:#66d9ef">as</span> Arkiv;
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Updated Arkiv: Id={arkiv.Id}, Beskrivelse={arkiv.Beskrivelse}&#34;</span>);
+
+            <span style="color:#66d9ef">var</span> arkivdel = transactionResponse.Saved[newArkivdel.Id] <span style="color:#66d9ef">as</span> Arkivdel;
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Created Arkivdel: Id={arkivdel.Id}, Tittel={arkivdel.Tittel}&#34;</span>);
+
+            <span style="color:#66d9ef">var</span> klassifikasjonssystemId = transactionResponse.Saved[newKlassifikasjonssystem.Id].Id;
+            <span style="color:#66d9ef">var</span> klasseId = transactionResponse.Saved[newKlasse.Id].Id;
+
+            <span style="color:#75715e">//Create a screening code
+</span><span style="color:#75715e"></span>            Skjerming newSkjerming = <span style="color:#66d9ef">new</span> Skjerming(Guid.NewGuid().ToString(), Guid.NewGuid().ToString(), <span style="color:#e6db74">&#34;Description&#34;</span>,
+                <span style="color:#e6db74">&#34;Authority&#34;</span>);
+            Skjerming skjerming = client.PutCodeListValue(newSkjerming);
+
+            <span style="color:#75715e">//Screen the Arkivdel
+</span><span style="color:#75715e"></span>            arkivdel.Skjerming = skjerming;
+            transactionResponse = client.Transaction()
+                .Save(arkivdel)
+                .Commit();
+
+            <span style="color:#75715e">//Find the Arkivdel by id
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//By default the service will return null values for all screened fields of screened objects
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//To see the values of screened fields call SetPublicUse(false)
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> queryResults = client.Query&lt;Arkivdel&gt;(<span style="color:#e6db74">&#34;id=@arkivdelId&#34;</span>, <span style="color:#ae81ff">10</span>)
+                .AddQueryParam(<span style="color:#e6db74">&#34;@arkivdelId&#34;</span>, arkivdel.Id)
+                .Execute();
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Found {queryResults.Results.Count()} Arkivdel object(s) with Id {arkivdel.Id}&#34;</span>);
+
+            <span style="color:#75715e">//Print a screened field:
+</span><span style="color:#75715e"></span>            arkivdel = queryResults.Results.First();
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Tittel of Arkivdel is masked: {arkivdel.Tittel}&#34;</span>);
+
+            <span style="color:#75715e">//For convenience, objects in query and transaction responses contain the id&#39;s of many-to-one reference fields
+</span><span style="color:#75715e"></span>            Console.WriteLine(<span style="color:#e6db74">$&#34;Arkivdel.RefArkiv: {arkivdel.RefArkiv}&#34;</span>);
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Arkivdel.RefPrimaerKlassifikasjonssystem: {arkivdel.RefPrimaerKlassifikasjonssystem}&#34;</span>);
+
+            <span style="color:#75715e">//Create two other Klassifikasjonssystem objects and link them to the Arkivdel as secondary Klassifikasjonssystem
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> sekundaerKlassifikasjonssystemSkole = <span style="color:#66d9ef">new</span> Klassifikasjonssystem(<span style="color:#e6db74">&#34;Skole&#34;</span>);
+            <span style="color:#66d9ef">var</span> klasseInSekundaerKlassifikasjonssystemSkole = <span style="color:#66d9ef">new</span> Klasse(<span style="color:#e6db74">&#34;07&#34;</span>, <span style="color:#e6db74">&#34;Report&#34;</span>);
+            <span style="color:#66d9ef">var</span> sekundaerKlassifikasjonssystem2 = <span style="color:#66d9ef">new</span> Klassifikasjonssystem(<span style="color:#e6db74">&#34;EOP&#34;</span>);
+
+            transactionResponse = client.Transaction()
+                .Save(sekundaerKlassifikasjonssystemSkole)
+                .Save(klasseInSekundaerKlassifikasjonssystemSkole)
+                .Link(sekundaerKlassifikasjonssystemSkole.LinkKlasse(klasseInSekundaerKlassifikasjonssystemSkole))
+                .Save(sekundaerKlassifikasjonssystem2)
+                .Link(arkivdel.LinkSekundaerKlassifikasjonssystem(sekundaerKlassifikasjonssystemSkole,
+                    sekundaerKlassifikasjonssystem2))
+                .Commit();
+
+            <span style="color:#75715e">//We need the id of the saved Klasse for the next transactions
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> sekundaerKlasseId =
+                transactionResponse.Saved[klasseInSekundaerKlassifikasjonssystemSkole.Id].Id;
+
+            <span style="color:#75715e">//Create a new administrativEnhet value
+</span><span style="color:#75715e"></span>            AdministrativEnhet newAdministrativEnhet =
+                <span style="color:#66d9ef">new</span> AdministrativEnhet(Guid.NewGuid().ToString(), Guid.NewGuid().ToString());
+            AdministrativEnhet administrativEnhet = client.PutCodeListValue(newAdministrativEnhet);
+
+            <span style="color:#75715e">//Create a new Saksmappe in the Arkivdel
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//The new Saksmappe needs to have a Klasse in the primary Klassifikasjonssystem of the Arkivdel
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Also link the Saksmappe to a secondary Klasse
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> newSaksmappe = <span style="color:#66d9ef">new</span> Saksmappe(<span style="color:#e6db74">&#34;Tilbud (Smith, John)&#34;</span>, administrativEnhet);
+            <span style="color:#66d9ef">var</span> newSakspart = <span style="color:#66d9ef">new</span> Sakspart(<span style="color:#e6db74">&#34;Alice&#34;</span>, <span style="color:#e6db74">&#34;internal&#34;</span>);
+
+            <span style="color:#66d9ef">var</span> savedObjects = client.Transaction()
+                .Save(newSaksmappe)
+                .Link(newSaksmappe.LinkArkivdel(arkivdel))
+                .Link(newSaksmappe.LinkPrimaerKlasse(klasseId))
+                .Link(newSaksmappe.LinkSekundaerKlasse(sekundaerKlasseId))
+                .Save(newSakspart)
+                .Link(newSaksmappe.LinkSakspart(newSakspart))
+                .Commit()
+                .Saved;
+
+            <span style="color:#66d9ef">var</span> saksmappe = savedObjects[newSaksmappe.Id] <span style="color:#66d9ef">as</span> Saksmappe;
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Created Saksmappe: Id={saksmappe.Id}, Saksdato: {saksmappe.Saksdato}&#34;</span>);
+
+            <span style="color:#75715e">//Create another Klasse
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Unlink the Saksmappe from its Klasse and link it to the new Klasse
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> anotherKlasse = <span style="color:#66d9ef">new</span> Klasse(<span style="color:#e6db74">&#34;02&#34;</span>, <span style="color:#e6db74">&#34;Klage&#34;</span>);
+
+            client.Transaction()
+                .Save(anotherKlasse)
+                .Link(anotherKlasse.LinkKlassifikasjonssystem(klassifikasjonssystemId))
+                .Unlink(saksmappe.UnlinkPrimaerKlasse(klasseId))
+                .Link(saksmappe.LinkPrimaerKlasse(anotherKlasse))
+                .Commit();
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Unlinked Saksmappe wiht Id {saksmappe.Id} from Klasse &#39;{newKlasse.Tittel}&#39; and linked it to Klasse &#39;{anotherKlasse.Tittel}&#39;&#34;</span>);
+
+            <span style="color:#75715e">//Find all available codes for journalstatus in Journalpost
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> journalstatusCodeList = client.CodeLists(type: <span style="color:#e6db74">&#34;Journalpost&#34;</span>, field: <span style="color:#e6db74">&#34;journalstatus&#34;</span>).First();
+            Console.WriteLine(<span style="color:#e6db74">$&#34;CodeList list for {journalstatusCodeList.Type}.{journalstatusCodeList.Field}:&#34;</span>);
+            <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> code <span style="color:#66d9ef">in</span> journalstatusCodeList.Values)
+            {
+                Console.WriteLine(<span style="color:#e6db74">$&#34;    Code={code.Code}, Name={code.Name}&#34;</span>);
+            }
+
+            <span style="color:#75715e">//Create a new Journalpost in the Saksmappe
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Create an EksternId object and link it to the Journalpost
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Create a new Korrespondansepart and link it to the Journalpost
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Create a Noekkelord (keyword) object and link it to the Journalpost
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> newJournalpost = <span style="color:#66d9ef">new</span> Journalpost(<span style="color:#e6db74">&#34;Tilbud (Smith, John, Godkjent)&#34;</span>, Journalposttype.UTGAAENDE_DOKUMENT)
+            {
+                Journalaar = <span style="color:#ae81ff">2007</span>,
+                Journalsekvensnummer = <span style="color:#ae81ff">46</span>
+            };
+
+            <span style="color:#66d9ef">var</span> newEksternId = <span style="color:#66d9ef">new</span> EksternId(<span style="color:#e6db74">&#34;External System&#34;</span>, Guid.NewGuid().ToString());
+            <span style="color:#66d9ef">var</span> newKorrespondansepart = <span style="color:#66d9ef">new</span> Korrespondansepart(Korrespondanseparttype.INTERN_MOTTAKER, <span style="color:#e6db74">&#34;John Smith&#34;</span>);
+            <span style="color:#66d9ef">var</span> newNoekkelord = <span style="color:#66d9ef">new</span> Noekkelord(<span style="color:#e6db74">&#34;keyword&#34;</span>);
+
+            savedObjects = client.Transaction()
+                .Save(newJournalpost)
+                .Link(newJournalpost.LinkMappe(saksmappe))
+                .Save(newEksternId)
+                .Link(newJournalpost.LinkEksternId(newEksternId))
+                .Save(newKorrespondansepart)
+                .Link(newJournalpost.LinkKorrespondansepart(newKorrespondansepart))
+                .Save(newNoekkelord)
+                .Link(newNoekkelord.LinkRegistrering(newJournalpost))
+                .Commit()
+                .Saved;
+
+            <span style="color:#66d9ef">var</span> journalPost = savedObjects[newJournalpost.Id] <span style="color:#66d9ef">as</span> Journalpost;
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created Journalpost: Id={journalPost.Id}, Tittel={journalPost.Tittel}, Journalstatus={journalPost.Journalstatus.Code}&#34;</span>);
+
+            <span style="color:#75715e">//Find the Journalpost by the eksternID value
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> journalpstQueryResults = client.Query&lt;Journalpost&gt;(<span style="color:#e6db74">&#34;refEksternId.eksternID=@eksternId&#34;</span>, <span style="color:#ae81ff">10</span>)
+                .AddQueryParam(<span style="color:#e6db74">&#34;@eksternId&#34;</span>, newEksternId.EksternID)
+                .Execute();
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Found {journalpstQueryResults.Results.Count()} Journalpost objects with eksternID {newEksternId.EksternID}&#34;</span>);
+
+            <span style="color:#75715e">//Upload a file
+</span><span style="color:#75715e"></span>            Dokumentfil dokumentfil;
+            <span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> inputStream = File.OpenRead(testDoc))
+            {
+                dokumentfil = client.Upload(inputStream, <span style="color:#e6db74">&#34;godkjenning.pdf&#34;</span>);
+            }
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Uploaded file {testDoc}&#34;</span>);
+
+            <span style="color:#75715e">//Create a new value for Dokumenttype
+</span><span style="color:#75715e"></span>            Dokumenttype newDokumenttype = <span style="color:#66d9ef">new</span> Dokumenttype(Guid.NewGuid().ToString(), Guid.NewGuid().ToString());
+            Dokumenttype dokumenttype = client.PutCodeListValue(newDokumenttype);
+
+            <span style="color:#75715e">//Create a new Dokument and Dokumentversjon using the uploaded file
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> newDokument = <span style="color:#66d9ef">new</span> Dokument(dokumenttype, <span style="color:#e6db74">&#34;Tilbud (Smith, John, Godkjent)&#34;</span>,
+                TilknyttetRegistreringSom.HOVEDDOKUMENT);
+            <span style="color:#66d9ef">var</span> newDokumentversjon = <span style="color:#66d9ef">new</span> Dokumentversjon(Variantformat.PRODUKSJONSFORMAT, <span style="color:#e6db74">&#34;.pdf&#34;</span>, dokumentfil);
+
+            savedObjects = client.Transaction()
+                .Save(newDokument)
+                .Link(newDokument.LinkRegistrering(journalPost))
+                .Save(newDokumentversjon)
+                .Link(newDokumentversjon.LinkDokument(newDokument))
+                .Commit()
+                .Saved;
+
+            <span style="color:#66d9ef">var</span> dokumentversjon = savedObjects[newDokumentversjon.Id] <span style="color:#66d9ef">as</span> Dokumentversjon;
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created Dokumentversjon: Id={dokumentversjon.Id}, Versjonsnummer: {dokumentversjon.Versjonsnummer}, Filstoerrelse: {dokumentversjon.Filstoerrelse}&#34;</span>);
+
+            <span style="color:#75715e">//Download the Dokumentversjon file
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> downloadPath = Path.GetTempFileName();
+            <span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> outputStream = File.Create(downloadPath))
+            {
+                client.Download(dokumentversjon.Dokumentfil, outputStream);
+            }
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Downloaded file {downloadPath}&#34;</span>);
+
+            <span style="color:#75715e">//Find all dokument objects in a Saksmappe called &#34;Tilbud (Smith, John)&#34;
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Results should be ordered by creation date in descending order
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> queryResponse = client.Query&lt;Dokument&gt;(<span style="color:#e6db74">&#34;refRegistrering.refMappe.tittel=@saksmappeTittel&#34;</span>, <span style="color:#ae81ff">50</span>)
+                .AddQueryParam(<span style="color:#e6db74">&#34;@saksmappeTittel&#34;</span>, <span style="color:#e6db74">&#34;Tilbud (Smith, John)&#34;</span>)
+                .AddSortOrder(<span style="color:#e6db74">&#34;opprettetDato&#34;</span>, Order.Descending)
+                .Execute();
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Query returned {queryResponse.Results.Count()} Dokument objects in Saksmappe objects called &#39;Tilbud (Smith, John)&#39;&#34;</span>);
+            Console.WriteLine(<span style="color:#e6db74">$&#34;More results available: {queryResponse.HasMore}&#34;</span>);
+
+            <span style="color:#75715e">//Delete the DokumentVersjon by id
+</span><span style="color:#75715e"></span>            client.Transaction().Delete&lt;Dokumentversjon&gt;(dokumentversjon.Id).Commit();
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Deleted Dokumentversjon with Id {dokumentversjon.Id}&#34;</span>);
+            Console.WriteLine();
+        }
+
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> ArchiveSample()
+        {
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Archive example {Environment.NewLine}&#34;</span>);
+
+            <span style="color:#75715e">//Create a new Arkiv with an Arkivskaper
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Create a new Arkivdel in the Arkiv
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> newArkivskaper = <span style="color:#66d9ef">new</span> Arkivskaper(<span style="color:#e6db74">&#34;B7-23-W5&#34;</span>, <span style="color:#e6db74">&#34;John Smith&#34;</span>);
+            <span style="color:#66d9ef">var</span> newArkiv = <span style="color:#66d9ef">new</span> Arkiv(<span style="color:#e6db74">&#34;Arkiv&#34;</span>);
+            <span style="color:#66d9ef">var</span> newArkivdel = <span style="color:#66d9ef">new</span> Arkivdel(<span style="color:#e6db74">&#34;2007/8&#34;</span>);
+
+            <span style="color:#66d9ef">var</span> transactionResponse = client.Transaction()
+                .Save(newArkiv)
+                .Save(newArkivskaper)
+                .Save(newArkivdel)
+                .Link(newArkiv.LinkArkivskaper(newArkivskaper))
+                .Link(newArkivdel.LinkArkiv(newArkiv))
+                .Commit();
+
+            <span style="color:#66d9ef">var</span> arkiv = transactionResponse.Saved[newArkiv.Id] <span style="color:#66d9ef">as</span> Arkiv;
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created Arkiv: Id={arkiv.Id}, Arkivstatus={arkiv.Arkivstatus.Code}, OpprettetDato={arkiv.OpprettetDato}&#34;</span>);
+
+            <span style="color:#66d9ef">var</span> arkivdel = transactionResponse.Saved[newArkivdel.Id] <span style="color:#66d9ef">as</span> Arkivdel;
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Created Arkivdel: Id={arkivdel.Id}, Arkivdelstatus={arkivdel.Arkivdelstatus.Code}&#34;</span>);
+
+            <span style="color:#75715e">//Get all available values for the Mappetype code list
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> mappetypeList = client.CodeLists(<span style="color:#e6db74">&#34;Mappe&#34;</span>, <span style="color:#e6db74">&#34;mappetype&#34;</span>).First();
+            <span style="color:#66d9ef">if</span> (mappetypeList.Values.Count == <span style="color:#ae81ff">0</span>)
+            {
+                Console.WriteLine(
+                    <span style="color:#e6db74">&#34;Can not create an instance of Mappe because there are not available values in the Mappetype code list!&#34;</span>);
+                <span style="color:#66d9ef">return</span>;
+            }
+            <span style="color:#66d9ef">var</span> mappetypeCode = mappetypeList.Values.First().Code;
+
+            <span style="color:#75715e">//Create a new Mappe
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> newMappe = <span style="color:#66d9ef">new</span> Mappe(<span style="color:#e6db74">&#34;Barnehage Tilbud&#34;</span>)
+            {
+                Beskrivelse = <span style="color:#e6db74">&#34;Mappe Beskrivelse&#34;</span>,
+                Mappetype = <span style="color:#66d9ef">new</span> Mappetype(mappetypeCode)
+            };
+
+            transactionResponse = client.Transaction()
+                .Save(newMappe)
+                .Link(newMappe.LinkArkivdel(arkivdel))
+                .Commit();
+
+            <span style="color:#66d9ef">var</span> mappe = transactionResponse.Saved[newMappe.Id] <span style="color:#66d9ef">as</span> Mappe;
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Created Mappe: Id={mappe.Id}, Tittel: {mappe.Tittel}&#34;</span>);
+
+            <span style="color:#75715e">//Create a child Mappe in the Mappe
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> newBarnMappe = <span style="color:#66d9ef">new</span> Mappe(<span style="color:#e6db74">&#34;Tilbud (Smith, John)&#34;</span>);
+
+            <span style="color:#66d9ef">var</span> savedObjects = client.Transaction()
+                .Save(newBarnMappe)
+                .Link(newBarnMappe.LinkForelderMappe(mappe))
+                .Commit()
+                .Saved;
+
+            <span style="color:#66d9ef">var</span> barnMappe = savedObjects[newBarnMappe.Id] <span style="color:#66d9ef">as</span> Mappe;
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created a new Mappe (Id={barnMappe.Id}, Tittel={barnMappe.Tittel}) in Mappe with Id {mappe.Id}&#34;</span>);
+
+            <span style="color:#75715e">//Find all children of the Mappe
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> queryResults = client.Query&lt;Mappe&gt;(<span style="color:#e6db74">&#34;refForelderMappe.id=@forelderMappeId&#34;</span>, <span style="color:#ae81ff">10</span>)
+                .AddQueryParam(<span style="color:#e6db74">&#34;@forelderMappeId&#34;</span>, mappe.Id)
+                .Execute();
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Found {queryResults.Results.Count()} Mappe objects in Mappe with Id {mappe.Id}&#34;</span>);
+
+            <span style="color:#75715e">//Create a new Basisregistrering in the child Mappe
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Link one Korrespondansepart to the Basisregistrering
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> newBasisregistrering = <span style="color:#66d9ef">new</span> Basisregistrering(<span style="color:#e6db74">&#34;Tilbud (Smith, John, Godkjent)&#34;</span>);
+            <span style="color:#66d9ef">var</span> newKorrespondansepart = <span style="color:#66d9ef">new</span> Korrespondansepart(Korrespondanseparttype.MOTTAKER, <span style="color:#e6db74">&#34;John Smith&#34;</span>);
+
+            savedObjects = client.Transaction()
+                .Save(newBasisregistrering)
+                .Save(newKorrespondansepart)
+                .Link(newBasisregistrering.LinkMappe(barnMappe))
+                .Link(newBasisregistrering.LinkKorrespondansepart(newKorrespondansepart))
+                .Commit()
+                .Saved;
+
+            <span style="color:#66d9ef">var</span> basisregistrering = savedObjects[newBasisregistrering.Id] <span style="color:#66d9ef">as</span> Basisregistrering;
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created Basisregistrering: Id={basisregistrering.Id}, Tittel={basisregistrering.Tittel}&#34;</span>);
+
+            <span style="color:#75715e">//Upload a file
+</span><span style="color:#75715e"></span>            Dokumentfil dokumentfil;
+            <span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> inputStream = File.OpenRead(testDoc))
+            {
+                dokumentfil = client.Upload(inputStream, <span style="color:#e6db74">&#34;godkjenning.pdf&#34;</span>);
+            }
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Uploaded file {testDoc}&#34;</span>);
+
+            <span style="color:#75715e">//Get available values for the Dokumenttype code list
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> dokumenttypeList = client.CodeLists(<span style="color:#e6db74">&#34;Dokument&#34;</span>, <span style="color:#e6db74">&#34;dokumenttype&#34;</span>).First();
+            <span style="color:#66d9ef">if</span> (dokumenttypeList.Values.Count == <span style="color:#ae81ff">0</span>)
+            {
+                Console.WriteLine(
+                    <span style="color:#e6db74">&#34;Can not create an instance of Dokument because there are not available values in the Dokumenttype code list!&#34;</span>);
+                <span style="color:#66d9ef">return</span>;
+            }
+            <span style="color:#66d9ef">var</span> dokumenttypeCode = dokumenttypeList.Values.First().Code;
+
+            <span style="color:#75715e">//Create a new Dokument and Dokumentversjon using the uploaded file
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Link the Dokument to the Basisregistrering
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> newDokument = <span style="color:#66d9ef">new</span> Dokument(<span style="color:#66d9ef">new</span> Dokumenttype(dokumenttypeCode), <span style="color:#e6db74">&#34;Tilbud (Smith, John, Godkjent)&#34;</span>,
+                TilknyttetRegistreringSom.HOVEDDOKUMENT);
+            <span style="color:#66d9ef">var</span> newDokumentversjon = <span style="color:#66d9ef">new</span> Dokumentversjon(Variantformat.PRODUKSJONSFORMAT, <span style="color:#e6db74">&#34;.pdf&#34;</span>, dokumentfil);
+
+            savedObjects = client.Transaction()
+                .Save(newDokument)
+                .Link(newDokument.LinkRegistrering(basisregistrering))
+                .Save(newDokumentversjon)
+                .Link(newDokumentversjon.LinkDokument(newDokument))
+                .Commit()
+                .Saved;
+
+            <span style="color:#66d9ef">var</span> dokumentversjon = savedObjects[newDokumentversjon.Id] <span style="color:#66d9ef">as</span> Dokumentversjon;
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created Dokumentversjon: Id={dokumentversjon.Id}, Versjonsnummer: {dokumentversjon.Versjonsnummer}, Filstoerrelse: {dokumentversjon.Filstoerrelse}&#34;</span>);
+        }
+
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> MeetingAndBoardHandlingDataSample()
+        {
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Meeting and board handling data example {Environment.NewLine}&#34;</span>);
+
+            <span style="color:#75715e">//Create a new Arkiv with an Arkivskaper
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Create a new Arkivdel in the Arkiv
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> newArkivskaper = <span style="color:#66d9ef">new</span> Arkivskaper(<span style="color:#e6db74">&#34;B7-23-W5&#34;</span>, <span style="color:#e6db74">&#34;John Smith&#34;</span>);
+            <span style="color:#66d9ef">var</span> newArkiv = <span style="color:#66d9ef">new</span> Arkiv(<span style="color:#e6db74">&#34;Arkiv&#34;</span>);
+            <span style="color:#66d9ef">var</span> newArkivdel = <span style="color:#66d9ef">new</span> Arkivdel(<span style="color:#e6db74">&#34;2007/8&#34;</span>);
+
+            <span style="color:#66d9ef">var</span> transactionResponse = client.Transaction()
+                .Save(newArkiv)
+                .Save(newArkivskaper)
+                .Save(newArkivdel)
+                .Link(newArkiv.LinkArkivskaper(newArkivskaper))
+                .Link(newArkivdel.LinkArkiv(newArkiv))
+                .Commit();
+
+            <span style="color:#66d9ef">var</span> arkiv = transactionResponse.Saved[newArkiv.Id] <span style="color:#66d9ef">as</span> Arkiv;
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created Arkiv: Id={arkiv.Id}, Arkivstatus={arkiv.Arkivstatus.Code}, OpprettetDato={arkiv.OpprettetDato}&#34;</span>);
+
+            <span style="color:#66d9ef">var</span> arkivdel = transactionResponse.Saved[newArkivdel.Id] <span style="color:#66d9ef">as</span> Arkivdel;
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Created Arkivdel: Id={arkivdel.Id}, Arkivdelstatus={arkivdel.Arkivdelstatus.Code}&#34;</span>);
+
+            <span style="color:#75715e">//Create a new Moetemappe and Moetedeltaker
+</span><span style="color:#75715e"></span>            Moetemappe newMappe = <span style="color:#66d9ef">new</span> Moetemappe(<span style="color:#e6db74">&#34;Moetemappe Tittel&#34;</span>, <span style="color:#e6db74">&#34;Moetenummer&#34;</span>, <span style="color:#e6db74">&#34;Utvalg&#34;</span>);
+            Moetedeltaker moetedeltaker = <span style="color:#66d9ef">new</span> Moetedeltaker(<span style="color:#e6db74">&#34;Moetedeltaker Navn&#34;</span>);
+
+            transactionResponse = client.Transaction()
+                .Save(newMappe)
+                .Link(newMappe.LinkArkivdel(arkivdel))
+                .Save(moetedeltaker)
+                .Link(moetedeltaker.LinkMappe(newMappe))
+                .Commit();
+
+            <span style="color:#66d9ef">var</span> mappe = transactionResponse.Saved[newMappe.Id] <span style="color:#66d9ef">as</span> Moetemappe;
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Created Mappe: Id={mappe.Id}, Tittel={mappe.Tittel}&#34;</span>);
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Created Moetedeltaker: Navn={moetedeltaker.Navn}&#34;</span>);
+
+            <span style="color:#75715e">//Create a new AdministrativEnhett code list value
+</span><span style="color:#75715e"></span>            AdministrativEnhet newAdministrativEnhet =
+                <span style="color:#66d9ef">new</span> AdministrativEnhet(Guid.NewGuid().ToString(), Guid.NewGuid().ToString());
+            AdministrativEnhet administrativEnhet = client.PutCodeListValue(newAdministrativEnhet);
+
+            <span style="color:#75715e">//Create a new Moeteregistrering
+</span><span style="color:#75715e"></span>            Moeteregistrering newMoeteregistrering = <span style="color:#66d9ef">new</span> Moeteregistrering(<span style="color:#e6db74">&#34;Tittel&#34;</span>, <span style="color:#e6db74">&#34;Saksbehandler&#34;</span>,
+                administrativEnhet, Moeteregistreringstype.MOETEINNKALLING);
+            transactionResponse = client.Transaction()
+                .Save(newMoeteregistrering)
+                .Link(newMoeteregistrering.LinkMappe(mappe))
+                .Commit();
+
+            <span style="color:#66d9ef">var</span> moeteregistrering = transactionResponse.Saved[newMoeteregistrering.Id] <span style="color:#66d9ef">as</span> Moeteregistrering;
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created Moeteregistrering: Id={moeteregistrering.Id}, Tittel={moeteregistrering.Tittel}&#34;</span>);
+            ;
+
+            <span style="color:#75715e">//Upload a file
+</span><span style="color:#75715e"></span>            Dokumentfil dokumentfil;
+            <span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> inputStream = File.OpenRead(testDoc))
+            {
+                dokumentfil = client.Upload(inputStream, <span style="color:#e6db74">&#34;godkjenning.pdf&#34;</span>);
+            }
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Uploaded file {testDoc}&#34;</span>);
+
+            <span style="color:#75715e">//Create a new Dokumenttype code list value
+</span><span style="color:#75715e"></span>            Dokumenttype newDokumenttype = <span style="color:#66d9ef">new</span> Dokumenttype(Guid.NewGuid().ToString(), Guid.NewGuid().ToString());
+            Dokumenttype dokumenttype = client.PutCodeListValue(newDokumenttype);
+
+            <span style="color:#75715e">//Link the Dokument to the Moeteregistrering
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> newDokument = <span style="color:#66d9ef">new</span> Dokument(dokumenttype, <span style="color:#e6db74">&#34;Tilbud (Smith, John, Godkjent)&#34;</span>,
+                TilknyttetRegistreringSom.HOVEDDOKUMENT);
+            <span style="color:#66d9ef">var</span> newDokumentversjon = <span style="color:#66d9ef">new</span> Dokumentversjon(Variantformat.PRODUKSJONSFORMAT, <span style="color:#e6db74">&#34;.pdf&#34;</span>, dokumentfil);
+
+            transactionResponse = client.Transaction()
+                .Save(newDokument)
+                .Link(newDokument.LinkRegistrering(moeteregistrering))
+                .Save(newDokumentversjon)
+                .Link(newDokumentversjon.LinkDokument(newDokument))
+                .Commit();
+
+            <span style="color:#66d9ef">var</span> dokumentversjon = transactionResponse.Saved[newDokumentversjon.Id] <span style="color:#66d9ef">as</span> Dokumentversjon;
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created Dokumentversjon: Id={dokumentversjon.Id}, Versjonsnummer: {dokumentversjon.Versjonsnummer}, Filstoerrelse: {dokumentversjon.Filstoerrelse}&#34;</span>);
+            Console.WriteLine();
+        }
+
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> BusinessSpecificMetadataSample()
+        {
+            <span style="color:#66d9ef">string</span> GROUP_ID = <span style="color:#e6db74">$&#34;gr-{Guid.NewGuid().ToString()}&#34;</span>;
+            <span style="color:#66d9ef">string</span> STRING_FIELD_ID = <span style="color:#e6db74">$&#34;f-{Guid.NewGuid().ToString()}&#34;</span>;
+            <span style="color:#66d9ef">string</span> DOUBLE_FIELD_ID = <span style="color:#e6db74">$&#34;f-{Guid.NewGuid().ToString()}&#34;</span>;
+            <span style="color:#66d9ef">string</span> LONG_FIELD_ID = <span style="color:#e6db74">$&#34;f-{Guid.NewGuid().ToString()}&#34;</span>;
+
+            <span style="color:#75715e">//Create a business-specific metadata group
+</span><span style="color:#75715e"></span>            MetadataGroupInfo newGroup = <span style="color:#66d9ef">new</span> MetadataGroupInfo(GROUP_ID, <span style="color:#e6db74">&#34;BSM Group Name&#34;</span>, <span style="color:#e6db74">&#34;BSM Group Description&#34;</span>);
+            MetadataGroupInfo savedGroup = client.PutBsmGroup(newGroup);
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created new group: GroupId={savedGroup.GroupId}, GroupDescription={savedGroup.GroupDescription}, GroupName={savedGroup.GroupName}&#34;</span>);
+            Console.WriteLine();
+
+            <span style="color:#75715e">//Create a new string field with predefined values &#34;value 1&#34;, &#34;value 2&#34; and &#34;value 3&#34;
+</span><span style="color:#75715e"></span>            MetadataFieldInfo newFieldStr = <span style="color:#66d9ef">new</span> MetadataFieldInfo(STRING_FIELD_ID, <span style="color:#e6db74">&#34;BSM Field String&#34;</span>,
+                <span style="color:#e6db74">&#34;BSM Field Description&#34;</span>, FieldType.String, <span style="color:#66d9ef">new</span> List&lt;<span style="color:#66d9ef">object</span>&gt;() {<span style="color:#e6db74">&#34;value 1&#34;</span>, <span style="color:#e6db74">&#34;value 2&#34;</span>, <span style="color:#e6db74">&#34;value 3&#34;</span>});
+            MetadataFieldInfo savedFieldStr = client.PutBsmField(GROUP_ID, newFieldStr);
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created new field: FieldId={savedFieldStr.FieldId}, FieldType={savedFieldStr.FieldType}, FieldName={savedFieldStr.FieldName}, FieldValues={string.Join(&#34;</span>,<span style="color:#e6db74">&#34;, savedFieldStr.FieldValues)}&#34;</span>);
+            Console.WriteLine();
+
+            <span style="color:#75715e">//Create a new long field with predefined values 1 and 2
+</span><span style="color:#75715e"></span>            MetadataFieldInfo newFieldLong = <span style="color:#66d9ef">new</span> MetadataFieldInfo(LONG_FIELD_ID, <span style="color:#e6db74">&#34;BSM Field Long&#34;</span>,
+                <span style="color:#e6db74">&#34;BSM Field Description&#34;</span>, FieldType.Long, <span style="color:#66d9ef">new</span> List&lt;<span style="color:#66d9ef">object</span>&gt;() {<span style="color:#ae81ff">1L</span>, <span style="color:#ae81ff">2L</span>});
+            MetadataFieldInfo savedFieldLong = client.PutBsmField(GROUP_ID, newFieldLong);
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created new field: FieldId={savedFieldLong.FieldId}, FieldType={savedFieldLong.FieldType}, FieldName={savedFieldLong.FieldName}, FieldValues={string.Join(&#34;</span>,<span style="color:#e6db74">&#34;, savedFieldLong.FieldValues)}&#34;</span>);
+
+            <span style="color:#75715e">//Create a new double field with no predefined values
+</span><span style="color:#75715e"></span>            MetadataFieldInfo newFieldDouble = <span style="color:#66d9ef">new</span> MetadataFieldInfo(DOUBLE_FIELD_ID, <span style="color:#e6db74">&#34;BSM Field Double&#34;</span>,
+                <span style="color:#e6db74">&#34;BSM Field Description&#34;</span>, FieldType.Double);
+            MetadataFieldInfo savedFielDouble = client.PutBsmField(GROUP_ID, newFieldDouble);
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created new field: FieldId={newFieldDouble.FieldId}, FieldType={newFieldDouble.FieldType}, FieldName={newFieldDouble.FieldName}&#34;</span>);
+            Console.WriteLine();
+
+            <span style="color:#75715e">//Update string field - add new field value, remove an old one
+</span><span style="color:#75715e"></span>            savedFieldStr.FieldValues.Add(<span style="color:#e6db74">&#34;value 4&#34;</span>);
+            savedFieldStr.FieldValues.Remove(<span style="color:#e6db74">&#34;value 3&#34;</span>);
+            MetadataFieldInfo updatedField = client.PutBsmField(GROUP_ID, savedFieldStr);
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Updated field: FieldId={updatedField.FieldId}, FieldType={updatedField.FieldType}, FieldName={updatedField.FieldName}, FieldValues={string.Join(&#34;</span>,<span style="color:#e6db74">&#34;, updatedField.FieldValues)}&#34;</span>);
+            Console.WriteLine();
+
+            <span style="color:#75715e">//Get the business-specific metadata registry for a specific group
+</span><span style="color:#75715e"></span>            BusinessSpecificMetadataInfo metadataInfo = client.BsmRegistry(GROUP_ID);
+
+            Console.WriteLine(<span style="color:#e6db74">&#34;BusinessSpecificMetadataInfo:&#34;</span>);
+            <span style="color:#75715e">//Print the registry for this group
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">foreach</span> (MetadataGroupInfo groupInfo <span style="color:#66d9ef">in</span> metadataInfo.Groups)
+            {
+                Console.WriteLine(
+                    <span style="color:#e6db74">$&#34;GroupInfo: GroupId={groupInfo.GroupId}, GroupName={groupInfo.GroupName}&#34;</span>);
+                <span style="color:#66d9ef">foreach</span> (MetadataFieldInfo fieldInfo <span style="color:#66d9ef">in</span> groupInfo.Fields)
+                {
+                    Console.WriteLine(
+                        <span style="color:#e6db74">$&#34; ---- FieldInfo: FieldId={fieldInfo.FieldId}, FieldType={fieldInfo.FieldType}, FieldName={fieldInfo.FieldName}&#34;</span>);
+                }
+            }
+            Console.WriteLine(<span style="color:#e6db74">&#34;--------------------------------------------------------------------------&#34;</span>);
+            Console.WriteLine();
+
+            <span style="color:#75715e">//Create an Arkiv, Arkivdel and one Mappe
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Set VirksomhetsspesifikkeMetadata for the Mappe
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> arkivskaper = <span style="color:#66d9ef">new</span> Arkivskaper(<span style="color:#e6db74">&#34;B67&#34;</span>, <span style="color:#e6db74">&#34;Jack Smith&#34;</span>);
+            <span style="color:#66d9ef">var</span> arkiv = <span style="color:#66d9ef">new</span> Arkiv(<span style="color:#e6db74">&#34;Arkiv - VirksomhetsspesifikkeMetadata Example&#34;</span>);
+            <span style="color:#66d9ef">var</span> arkivdel = <span style="color:#66d9ef">new</span> Arkivdel(<span style="color:#e6db74">&#34;Arkivdel - VirksomhetsspesifikkeMetadata Example&#34;</span>);
+
+            <span style="color:#66d9ef">var</span> mappe = <span style="color:#66d9ef">new</span> Mappe(<span style="color:#e6db74">&#34;Mappe with VirksomhetsspesifikkeMetadata&#34;</span>);
+
+            <span style="color:#75715e">//Add three meta-data fields to the Mappe:
+</span><span style="color:#75715e"></span>            mappe.VirksomhetsspesifikkeMetadata.AddBsmFieldValues(GROUP_ID, STRING_FIELD_ID, <span style="color:#e6db74">&#34;value 1&#34;</span>,
+                <span style="color:#e6db74">&#34;value 2&#34;</span>);
+            mappe.VirksomhetsspesifikkeMetadata.AddBsmFieldValues(GROUP_ID, DOUBLE_FIELD_ID, <span style="color:#ae81ff">1.2</span>);
+            mappe.VirksomhetsspesifikkeMetadata.AddBsmFieldValues(GROUP_ID, LONG_FIELD_ID, <span style="color:#ae81ff">2L</span>);
+
+            <span style="color:#66d9ef">var</span> transactionResponse = client.Transaction()
+                .Save(arkiv)
+                .Save(arkivskaper)
+                .Link(arkiv.LinkArkivskaper(arkivskaper))
+                .Save(arkivdel)
+                .Link(arkivdel.LinkArkiv(arkiv))
+                .Save(mappe)
+                .Link(mappe.LinkArkivdel(arkivdel))
+                .Commit();
+
+            <span style="color:#75715e">//Get the saved Mappe
+</span><span style="color:#75715e"></span>            mappe = transactionResponse.Saved[mappe.Id] <span style="color:#66d9ef">as</span> Mappe;
+
+            <span style="color:#75715e">//Print the VirksomhetsspesifikkeMetadata of the Mappe
+</span><span style="color:#75715e"></span>            Console.WriteLine(<span style="color:#e6db74">&#34;Added VirksomhetsspesifikkeMetadata to folder:&#34;</span>);
+            BsmGroupsMap groupsMap = mappe.VirksomhetsspesifikkeMetadata;
+            <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> groupId <span style="color:#66d9ef">in</span> groupsMap.Keys)
+            {
+                BsmFieldsMap fieldsMap = mappe.VirksomhetsspesifikkeMetadata[groupId];
+                <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> fieldId <span style="color:#66d9ef">in</span> fieldsMap.Keys)
+                {
+                    BsmFieldValues values = fieldsMap[fieldId];
+                    Console.WriteLine(
+                        <span style="color:#e6db74">$&#34;GroupId={groupId}, FieldId={fieldId}, ValueType={values.Type}, Values=[{string.Join(&#34;</span>,<span style="color:#e6db74">&#34;, values.Values)}]&#34;</span>);
+                }
+            }
+            Console.WriteLine();
+
+            <span style="color:#75715e">//Update the VirksomhetsspesifikkeMetadata of the Mappe
+</span><span style="color:#75715e"></span>
+            <span style="color:#75715e">//Add one more string value to the string field
+</span><span style="color:#75715e"></span>
+            <span style="color:#75715e">//To add a new field value, simply add it to the set of values of the particular field
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//Use the &#34;AddBsmFieldValues&#34; method, if you want to override the existing set of values with a new one
+</span><span style="color:#75715e"></span>            mappe.VirksomhetsspesifikkeMetadata[GROUP_ID][STRING_FIELD_ID].Values.Add(<span style="color:#e6db74">&#34;value 4&#34;</span>);
+
+            <span style="color:#75715e">//Remove one of the values of the double field
+</span><span style="color:#75715e"></span>            mappe.VirksomhetsspesifikkeMetadata.DeleteBsmFieldValue(GROUP_ID, DOUBLE_FIELD_ID, <span style="color:#ae81ff">2.6</span>);
+
+            <span style="color:#75715e">//Completely remove the long field
+</span><span style="color:#75715e"></span>            mappe.VirksomhetsspesifikkeMetadata.DeleteBsmField(GROUP_ID, LONG_FIELD_ID);
+
+            <span style="color:#75715e">//It is also possible to remove a whole group:
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//mappe.VirksomhetsspesifikkeMetadata.DeleteBsmGroup(groupIdentfier);
+</span><span style="color:#75715e"></span>            transactionResponse = client.Transaction()
+                .Save(mappe)
+                .Commit();
+
+            <span style="color:#75715e">//Make query to fetch the Mappe
+</span><span style="color:#75715e"></span>
+            QueryResponse&lt;Mappe&gt; queryResponse = client.Query&lt;Mappe&gt;(<span style="color:#e6db74">&#34;id=@id&#34;</span>, <span style="color:#ae81ff">1</span>)
+                .AddQueryParam(<span style="color:#e6db74">&#34;@id&#34;</span>, mappe.Id)
+                .Execute();
+            mappe = queryResponse.Results.First();
+
+            <span style="color:#75715e">//Print the new VirksomhetsspesifikkeMetadata
+</span><span style="color:#75715e"></span>            Console.WriteLine(<span style="color:#e6db74">&#34;Updated VirksomhetsspesifikkeMetadata of folder:&#34;</span>);
+            groupsMap = mappe.VirksomhetsspesifikkeMetadata;
+            <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> groupId <span style="color:#66d9ef">in</span> groupsMap.Keys)
+            {
+                BsmFieldsMap fieldsMap = mappe.VirksomhetsspesifikkeMetadata[groupId];
+                <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> fieldId <span style="color:#66d9ef">in</span> fieldsMap.Keys)
+                {
+                    BsmFieldValues values = fieldsMap[fieldId];
+                    Console.WriteLine(
+                        <span style="color:#e6db74">$&#34;GroupId={groupId}, FieldId={fieldId}, ValueType={values.Type}, Values=[{string.Join(&#34;</span>,<span style="color:#e6db74">&#34;, values.Values)}]&#34;</span>);
+                }
+            }
+
+            Console.WriteLine();
+
+
+            <span style="color:#75715e">//Delete field
+</span><span style="color:#75715e"></span>            client.DeleteBsmField(GROUP_ID, LONG_FIELD_ID);
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Deleted field with  FieldId={LONG_FIELD_ID}&#34;</span>);
+            Console.WriteLine();
+
+            <span style="color:#75715e">//Delete folder
+</span><span style="color:#75715e"></span>            client.Transaction().Delete(mappe).Commit();
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Deleted folder&#34;</span>);
+            Console.WriteLine();
+
+            <span style="color:#75715e">//Delete group
+</span><span style="color:#75715e"></span>            client.DeleteBsmGroup(GROUP_ID);
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Deleted group with GroupId={GROUP_ID}&#34;</span>);
+            Console.WriteLine();
+        }
+
+        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> CodeListsSample()
+        {
+            List&lt;CodeList&gt; allCodeLists = client.CodeLists();
+
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Code lists:{Environment.NewLine}&#34;</span>);
+            <span style="color:#66d9ef">foreach</span> (CodeList list <span style="color:#66d9ef">in</span> allCodeLists)
+            {
+                Console.WriteLine(<span style="color:#e6db74">$&#34;Code list: {list.Type}.{list.Field}&#34;</span>);
+                <span style="color:#66d9ef">foreach</span> (CodeValue codeValue <span style="color:#66d9ef">in</span> list.Values)
+                {
+                    Console.WriteLine(
+                        <span style="color:#e6db74">$&#34; --- Code value: Code={codeValue.Code}, Name={codeValue.Name}, Description={codeValue.Description}&#34;</span>);
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+            <span style="color:#75715e">//Create new list value for the code list Dokumenttype
+</span><span style="color:#75715e"></span>            Dokumenttype dokumenttype = <span style="color:#66d9ef">new</span> Dokumenttype(Guid.NewGuid().ToString(), Guid.NewGuid().ToString(),
+                <span style="color:#e6db74">&#34;Description&#34;</span>);
+            client.PutCodeListValue(dokumenttype);
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Created new code value: Code={dokumenttype.Code}, Name={dokumenttype.Name}, Description={dokumenttype.Description}&#34;</span>);
+            Console.WriteLine();
+
+            <span style="color:#75715e">//Update list value
+</span><span style="color:#75715e"></span>            Dokumenttype updatedValue = <span style="color:#66d9ef">new</span> Dokumenttype(dokumenttype.Code, dokumenttype.Name, <span style="color:#e6db74">&#34;New Description&#34;</span>);
+            client.PutCodeListValue(updatedValue);
+            Console.WriteLine(
+                <span style="color:#e6db74">$&#34;Updated code value: Code={updatedValue.Code}, Name={updatedValue.Name}, Description={updatedValue.Description}&#34;</span>);
+            Console.WriteLine();
+
+            <span style="color:#75715e">//Delete list value
+</span><span style="color:#75715e"></span>            client.DeleteCodeListValue(updatedValue);
+            Console.WriteLine(<span style="color:#e6db74">$&#34;Deleted code value&#34;</span>);
+            Console.WriteLine();
+        }
+    }
+
+    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Options</span>
+    {
+<span style="color:#a6e22e">        [Option(&#34;idpaddr&#34;, Required = true, HelpText = &#34;Idp server address&#34;)]</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> IdpServerAddress { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">        [Option(&#34;clientid&#34;, Required = true, HelpText = &#34;Idp Client Id&#34;)]</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> ClientId { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">        [Option(&#34;clientsecret&#34;, Required = true, HelpText = &#34;Idp Client Secret&#34;)]</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> ClientSecret { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">        [Option(&#34;username&#34;, Required = true, HelpText = &#34;Username&#34;)]</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> Username { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">        [Option(&#34;password&#34;, Required = true, HelpText = &#34;Password&#34;)]</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> Password { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">        [Option(&#34;addr&#34;, Required = true, HelpText = &#34;Server address&#34;)]</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> ServerAddress { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">        [Option(&#34;cert&#34;, HelpText = &#34;Path to certificate file&#34;)]</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> CertificatePath { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">        [Option(&#34;certpass&#34;, HelpText = &#34;Certificate password&#34;)]</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> CertificatePass { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">        [Option(&#34;testdoc&#34;, Required = true, HelpText = &#34;Path to test file&#34;)]</span>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> TestDoc { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+    }
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="JSON" data-tab-group="registryEntry" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;results&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Moeteregistrering&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;moeteregistreringstype&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;B&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Møtebok&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;MP&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Møteprotokoll&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;SF&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Saksframlegg&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;D&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Vedtak i møtesak&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;VL&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Vedlegg til møtesak&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;SL&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Saksliste&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;MI&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Møteinnkalling&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;M&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Møtereferat&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;SP&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Saksprotokoll&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;N&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Notat til politisk utvalg&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;O&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Oversikt over deltakere, representanter og medlemmer i utvalg, råd og møter&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Moeteregistrering&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;skjerming&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Moeteregistrering&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;dokumentmedium&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Moeteregistrering&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;moeteregistreringsstatus&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Moeteregistrering&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;administrativEnhet&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;AD1&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Administrative Unit 1&#34;</span>,
+                    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Moeteregistrering&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;moetesakstype&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;RS&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Referatsak&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;PS&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Politisk sak&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;U&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Uregistrert sak&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;FO&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Interpellasjon&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;DS&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Delegert møtesak&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Merknad&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;merknadstype&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;IMER&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Intern merknad&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;MER&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Merknad&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;saksstatus&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;B&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Under behandling&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;P&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Unntatt prosesstyring&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;A&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Avsluttet&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;B&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Under behandling&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;R&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Opprettet av saksbehandler&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Avsluttet av saksbehandler&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;U&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Utgår&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;F&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Ferdig fra saksbehandler&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;skjerming&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;mappetype&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;dokumentmedium&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;administrativEnhet&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;AD1&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Administrative Unit 1&#34;</span>,
+                    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Korrespondansepart&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;korrespondanseparttype&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;IK&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Intern kopimottaker&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;IM&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Intern mottaker&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;EK&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Kopimottaker&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;GM&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Gruppemottaker&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;EM&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Mottaker&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;IA&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Intern avsender&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;EA&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Avsender&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Korrespondansepart&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;ekspederingskanal&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;SvarUt&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;E-post&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;U&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Utskrift&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Korrespondansepart&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;administrativEnhet&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;AD1&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Administrative Unit 1&#34;</span>,
+                    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Plan&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;lovreferanse&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Plan&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;plantype&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Plan&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;planstatus&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Klasse&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;skjerming&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Arkivdel&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;skjerming&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Arkivdel&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;dokumentmedium&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Arkivdel&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;arkivdelstatus&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;A&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Aktiv periode&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;P&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Avsluttet periode&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;A&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Aktiv periode&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;U&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Uaktuelle mapper&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;O&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Overlappingsperiode&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Mappe&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;skjerming&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Mappe&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;mappetype&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Mappe&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;dokumentmedium&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Dokumentversjon&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;variantformat&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;P&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Produksjonsformat&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;P&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Produksjonsformat&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;A&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Arkivformat&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Dokument&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;dokumenttype&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Dokument&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;skjerming&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Dokument&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;tilknyttetRegistreringSom&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;V&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Vedlegg&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;H&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Hoveddokument&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;M&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Another&#34;</span>,
+                    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Dokument&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;dokumentmedium&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Dokument&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;dokumentstatus&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;B&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Dokumentet er under redigering&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;B&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Dokumentet er under redigering&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;F&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Dokumentet er ferdigstilt&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Dokumentflyt&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;flytStatus&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Sendt tilbake til saksbehandler med kommentarer&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;G&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Godkjent&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;I&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Ikke godkjent&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Moetemappe&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;skjerming&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Moetemappe&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;mappetype&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Moetemappe&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;dokumentmedium&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;journalstatus&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;J&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Journalført&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;A&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Arkivert&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;R&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Reservert dokument&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Saksbehandler har registrert innkommet dokument&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Ekspedert&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;U&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Utgår&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;F&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Ferdigstilt fra saksbehandler&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;G&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Godkjent av leder&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;J&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Journalført&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;M&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Midlertidig registrering av innkommet dokument&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;skjerming&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;dokumentmedium&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;journalposttype&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;S&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Saksframlegg&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;U&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Utgående dokument&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;X&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Organinternt dokument uten oppfølging&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;I&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Inngående dokument&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;N&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Organinternt dokument for oppfølging&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Basisregistrering&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;skjerming&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: []
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Basisregistrering&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;dokumentmedium&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Avskrivning&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;avskrivningsmaate&#34;</span>,
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;TE&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Tatt til etterretning&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;BU&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Besvart med brev&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;BE&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Besvart med e-post&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;TO&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Tatt til orientering&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;TLF&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Besvart på telefon&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Arkiv&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;arkivstatus&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;O&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Opprettet&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;A&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Avsluttet&#34;</span>
+                },
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;O&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Opprettet&#34;</span>
+                }
+            ]
+        },
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Arkiv&#34;</span>,
+            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;dokumentmedium&#34;</span>,
+            <span style="color:#f92672">&#34;defaultValue&#34;</span>: {
+                <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+            },
+            <span style="color:#f92672">&#34;values&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;code&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Elektronisk arkiv&#34;</span>
+                }
+            ]
+        }
+    ]
+}
+</code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+ 
+
+
+    <h2 id="abstractregistrierung--abstractrecord-fields">AbstractRegistrierung / AbstractRecord Fields</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field no.</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Field</th>
+<th style="text-align:center">Not null</th>
+<th style="text-align:center">Has default</th>
+<th style="text-align:center">Code list</th>
+<th style="text-align:left"></th>
+<th style="text-align:center">Save</th>
+<th style="text-align:center">View</th>
+<th style="text-align:center">Query</th>
+<th style="text-align:center">Sort</th>
+<th style="text-align:left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">id</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">sm</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">version</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">sm</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M001</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">
+<style>
+    .definition {
+        visibility: hidden;
+        width: 220px;
+        background-color: #555;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .term {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .term:hover .definition {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+<span class="term">
+
+     uuid 
+<span class="definition"> unique identifer of entity in Documaster system </span> 
+
+</span></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M600</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">
+<style>
+    .definition {
+        visibility: hidden;
+        width: 220px;
+        background-color: #555;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .term {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .term:hover .definition {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+<span class="term">
+
+     opprettetDato 
+<span class="definition"> createdDate (en) <br/> date at which the entity was created </span> 
+
+</span></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M601</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">opprettetAv</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M601</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">opprettetAvBrukerIdent</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M602</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">avsluttetDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M603</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">avsluttetAv</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M603</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">avsluttetAvBrukerIdent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">prefiks</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• optional identifier of the system this <strong>Journalpost</strong> originated from<!-- raw HTML omitted --><!-- raw HTML omitted -->• it is strongly advised to populate this field when the target system contains or will contain data from multiple source case management systems<!-- raw HTML omitted --><!-- raw HTML omitted -->• once set, this value cannot be modified<!-- raw HTML omitted --></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="entity-fields">Entity Fields</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field no.</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Field</th>
+<th style="text-align:center">Not null</th>
+<th style="text-align:center">Has default</th>
+<th style="text-align:center">Code list</th>
+<th style="text-align:left"></th>
+<th style="text-align:center">Save</th>
+<th style="text-align:center">View</th>
+<th style="text-align:center">Query</th>
+<th style="text-align:center">Sort</th>
+<th style="text-align:left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">id</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">sm</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">version</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">sm</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M001</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">
+<style>
+    .definition {
+        visibility: hidden;
+        width: 220px;
+        background-color: #555;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .term {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .term:hover .definition {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+<span class="term">
+
+     uuid 
+<span class="definition"> unique identifer of entity in Documaster system </span> 
+
+</span></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M600</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">
+<style>
+    .definition {
+        visibility: hidden;
+        width: 220px;
+        background-color: #555;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .term {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .term:hover .definition {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+<span class="term">
+
+     opprettetDato 
+<span class="definition"> createdDate (en) <br/> date at which the entity was created </span> 
+
+</span></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M601</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">opprettetAv</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M601</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">opprettetAvBrukerIdent</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M602</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">avsluttetDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M603</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">avsluttetAv</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M603</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">avsluttetAvBrukerIdent</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">prefiks</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• optional identifier of the system this <strong>Journalpost</strong> originated from<!-- raw HTML omitted --><!-- raw HTML omitted -->• it is strongly advised to populate this field when the target system contains or will contain data from multiple source case management systems<!-- raw HTML omitted --><!-- raw HTML omitted -->• once set, this value cannot be modified<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">M004</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">registreringsIdent</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M020</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">tittel</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M025</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">offentligTittel</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M021</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">beskrivelse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M024</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">forfatter</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M300</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">dokumentmedium</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">dokumentmedium</td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M013</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">journalaar</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M014</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">journalsekvensnummer</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M015</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">journalpostnummer</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">cw</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">journalansvarlig</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• The name of the person responsible for this Journalpost (similar to M306 Saksmappe#saksansvarlig)<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">journalansvarligBrukerIdent</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• The user ID of the person responsible for this Journalpost as stored in journalansvarlig (similar to M306 Saksmappe#saksansvarligBrukerIdent)<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">M082</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">journalposttype</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">journalposttype</td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M053</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">journalstatus</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">journalstatus</td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M101</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">registreringsDato</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M103</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">dokumentetsDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M109</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">forfallsdato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M104</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">mottattDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M105</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">sendtDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M110</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">offentlighetsvurdertDato</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">skjermKorrespondanseParterEInnsyn</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left">When <strong>true</strong>, it indicates that <strong>Korrespondansepart</strong> objects of this <strong>Journalpost</strong> referenced by <strong>refKorrespondansepart</strong> will be screened in eInnsyn, even if the <strong>Journalpost</strong> is not effectively screened. When <strong>false</strong> or <strong>null</strong>, it indicates that <strong>Korrespondansepart</strong> objects will not be screened in eInnsyn, even if the <strong>Journalpost</strong> is effectively screened. Defaults to <strong>false</strong>.</td>
+</tr>
+<tr>
+<td style="text-align:left">M500</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">skjerming</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">skjerming</td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">M711</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">virksomhetsspesifikkeMetadata</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="reference-fields">Reference Fields</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:center">Not null</th>
+<th style="text-align:center">View</th>
+<th style="text-align:center">Query</th>
+<th style="text-align:center">Link</th>
+<th style="text-align:center">Unlink</th>
+<th style="text-align:left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">refMappe</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• references <strong>Saksmappe</strong><!-- raw HTML omitted --><!-- raw HTML omitted -->• exactly one of <strong>refMappe</strong> and <strong>refArkivdel</strong> is required<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">refArkivdel</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• references <strong>Arkivdel</strong><!-- raw HTML omitted --><!-- raw HTML omitted -->• exactly one of <strong>refMappe</strong> and <strong>refArkivdel</strong> is required<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">refKorrespondansepart</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refDokument</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refPrimaerKlasse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• references a <strong>Klasse</strong> from the primary <strong>Klassifikasjonssystem</strong> of the <strong>Arkivdel</strong><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">refSekundaerKlasse</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"><!-- raw HTML omitted -->• references a <strong>Klasse</strong> from any <strong>Klassifikasjonssystem</strong><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">refEksternId</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refDokumentflyt</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refNoekkelord</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refAvskrivning</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refTilknyttetAvskrivning</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refMerknad</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refNasjonalIdentifikator</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">refKryssreferanseTilMappe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left">refers to <strong>AbstraktMappe</strong> that the current <strong>AbstraktRegistrering</strong> cross references</td>
+</tr>
+<tr>
+<td style="text-align:left">refKryssreferanseFraMappe</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left">refers to <strong>AbstraktMappe</strong> that cross reference the current <strong>AbstraktRegistrering</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">refKryssreferanseTilRegistrering</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left">refers to <strong>AbstraktRegistrering</strong> that the current <strong>AbstraktRegistrering</strong> cross references</td>
+</tr>
+<tr>
+<td style="text-align:left">refKryssreferanseFraRegistrering</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:left">refers to <strong>AbstraktRegistrering</strong> that cross reference the current <strong>AbstraktRegistrering</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="basic-usage-of-the-registry-entry">Basic Usage of the Registry Entry</h2>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/documaster-api-docs/model/entities/abstractrecord/basicrecord/" title="Basisregistrering / Basic Record"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/documaster-api-docs/model/entities/abstractrecord/meetingrecord/" title="Moeteregistrering / Meeting Record" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1637592549"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/learn.js?1637592549"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1637592549"></script>
+    
+        
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1637592549"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
