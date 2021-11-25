@@ -2,47 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://myakimov.github.io/documaster-api-docs/</loc>
-    <lastmod>2018-11-29T08:41:44+01:00</lastmod>
-  </url><url>
-    <loc>https://myakimov.github.io/documaster-api-docs/model/tags/</loc>
-    <lastmod>2018-11-29T08:41:44+01:00</lastmod>
-  </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/general/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
-    <loc>https://myakimov.github.io/documaster-api-docs/general/overview/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
-  </url><url>
-    <loc>https://myakimov.github.io/documaster-api-docs/common/</loc>
-  </url><url>
-    <loc>https://myakimov.github.io/documaster-api-docs/model/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/operations/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
   </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/tags/</loc>
+    <lastmod>2018-11-29T08:41:44+01:00</lastmod>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/general/overview/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractfolder/casefile/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractfolder/casefile/caseparty/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/common/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractrecord/registryentry/</loc>
+  </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/general/authentication/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractfolder/folder/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/fonds/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/operations/transaction/</loc>
   </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/fonds/fondscreator/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/classification/class/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/classification/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/series/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/</loc>
+    <lastmod>2018-11-29T08:41:44+01:00</lastmod>
+  </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractrecord/basicrecord/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/usage/perusecase/registryentryanddocument/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/usage/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/usage/perentity/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/usage/perusecase/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/usage/perentity/registryentry/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractfolder/</loc>
   </url><url>
-    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractrecord/registryentry/</loc>
-  </url><url>
-    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractfolder/folder/</loc>
-  </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractfolder/meetingfolder/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractfolder/meetingfolder/meetingparticipant/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractrecord/meetingrecord/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractrecord/</loc>
-  </url><url>
-    <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractfolder/casefile/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/operations/query/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>

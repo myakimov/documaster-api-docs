@@ -18,7 +18,7 @@ pre code.hljs {
   display: block;
   overflow-x: auto;
   padding: 1em;
-  background-color: #dcdffe;
+  background-color: #f0f2ff;
 }
 
 code.hljs {
@@ -45,7 +45,7 @@ code.hljs {
 }
 
 .hljs-comment {
-  color: #941d55;
+  color: #6b686d;
 }
 .hljs-tag,
 .hljs-punctuation {
@@ -58,14 +58,18 @@ code.hljs {
 }
 
 
-.hljs-keyword,
+.hljs-keyword {
+  font-weight: bold;
+  color: #BB1651;
+}
+
 .hljs-attribute,
 .hljs-selector-tag,
 .hljs-meta .hljs-keyword,
-
 .hljs-doctag,
 .hljs-name {
   font-weight: bold;
+  color: darkgreen;
 }
 
 
@@ -132,4 +136,8 @@ code.hljs {
 
 .hljs-strong {
   font-weight: bold;
+}
+
+.hljs-function .hljs-params {
+  color: #941d55;
 }

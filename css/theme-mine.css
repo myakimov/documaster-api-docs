@@ -110,7 +110,7 @@ a:hover {
 }
 
 pre {
-    background-color: #dcdffe !important;
+    background-color: #f0f2ff !important;
     border-width: 3px !important;
     border-color: #2b061f !important;
 }
@@ -133,13 +133,16 @@ pre {
     
 }
 
+#body .tab-item.active {
+    color: #ffffff !important;
+}
+
 a.btn.btn-default {
     background-color:var(--MENU-SEARCH-BOX-ICONS-color) !important;
     color: var(--MENU-SECTIONS-LINK-color) !important;
     transform: scale(1.1,1.1) !important;
     border: 2px solid transparent !important;
     border-radius: 60px !important;
-    font-size: x-large !important;
     align-content: center;
     font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important;
     text-transform:none !important;

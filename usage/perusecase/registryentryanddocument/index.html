@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.89.4" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/documaster-api-docs/images/favicon.png" type="image/png">
+
+    <title>Create Registry Entry and Document :: My New Hugo Site</title>
+
+    
+    <link href="/documaster-api-docs/css/nucleus.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1637851211" rel="stylesheet">
+    
+    <link href="/documaster-api-docs/css/theme-mine.css?1637851211" rel="stylesheet">
+    
+    <link href="/documaster-api-docs/css/syntax.css?1637851211" rel="stylesheet">
+
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1637851211"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/documaster-api-docs/usage/perusecase/registryentryanddocument/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/documaster-api-docs/'>
+
+<img src="/documaster-api-docs/images/Logo_Lockup.svg" style="width:200px;border-width:0px;border:0px;" alt="Logo" width="200">
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1637851211"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1637851211"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
+    
+</script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1637851211"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/documaster-api-docs'><i style='color:#dcdffe' class='fas fa-home'></i> Documaster Noark5 API v1</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/" title="Getting Started" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/">
+          <b>1. </b>Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/overview/" title="Overview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/overview/">
+          Overview
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/authentication/" title="Authentication" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/authentication/">
+          Authentication
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/operations/" title="Operations" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/operations/">
+          <b>2. </b>Operations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/operations/transaction/" title="Transaction" class="dd-item ">
+        <a href="/documaster-api-docs/operations/transaction/">
+        Transaction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/operations/query/" title="Query" class="dd-item ">
+        <a href="/documaster-api-docs/operations/query/">
+        Query
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/" title="Data Model" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/">
+          <b>3. </b>Data Model
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/tags/" title="Overview" class="dd-item ">
+        <a href="/documaster-api-docs/model/tags/">
+        Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/" title="Core Entities" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/">
+          Core Entities
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/fonds/" title="Fonds" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/fonds/">
+          Fonds
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/entities/fonds/fondscreator/" title="Fonds Creator" class="dd-item ">
+        <a href="/documaster-api-docs/model/entities/fonds/fondscreator/">
+        Fonds Creator
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/classification/" title="Classification System" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/classification/">
+          Classification System
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/entities/classification/class/" title="Class" class="dd-item ">
+        <a href="/documaster-api-docs/model/entities/classification/class/">
+        Class
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/entities/series/" title="Series" class="dd-item ">
+        <a href="/documaster-api-docs/model/entities/series/">
+        Series
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/" title="Folders" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/">
+          Folders
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/casefile/" title="Case File" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/casefile/">
+          Case File
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/casefile/caseparty/" title="Case Party" class="dd-item ">
+        <a href="/documaster-api-docs/model/entities/abstractfolder/casefile/caseparty/">
+        Case Party
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/folder/" title="Basic Folder" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/folder/">
+          Basic Folder
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/" title="Meeting Folder" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/">
+          Meeting Folder
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/meetingparticipant/" title="Meeting Participant" class="dd-item ">
+        <a href="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/meetingparticipant/">
+        Meeting Participant
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/" title="Records" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/">
+          Records
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/registryentry/" title="Registry Entry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/registryentry/">
+          Registry Entry
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/basicrecord/" title="Basic Record" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/basicrecord/">
+          Basic Record
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/meetingrecord/" title="Meeting Record" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/meetingrecord/">
+          Meeting Record
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/usage/" title="Examples" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/usage/">
+          <b>4. </b>Examples
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/usage/perentity/" title="Per Entity" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/usage/perentity/">
+          Per Entity
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/usage/perentity/registryentry/" title="Registry Entry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/usage/perentity/registryentry/">
+          Registry Entry
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/usage/perusecase/" title="Per Usecase" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/usage/perusecase/">
+          Per Usecase
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/usage/perusecase/registryentryanddocument/" title="Create Registry Entry and Document" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/documaster-api-docs/usage/perusecase/registryentryanddocument/">
+          Create Registry Entry and Document
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/documaster-api-docs/'>Documaster Noark5 API v1</a> > <a href='/documaster-api-docs/usage/'>Examples</a> > <a href='/documaster-api-docs/usage/perusecase/'>Per Usecase</a> > Create Registry Entry and Document
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#usecase-details">Usecase Details</a></li>
+        <li><a href="#authentication-and-authorization-1-2">Authentication and Authorization (1, 2)</a></li>
+        <li><a href="#retrieve-existing-case-file-3-4-5">Retrieve existing Case File (3, 4, 5)</a></li>
+        <li><a href="#creating-new-registryentry-and-linked-correspondence-party-6-7-8">Creating new RegistryEntry and linked Correspondence Party (6, 7, 8)</a></li>
+        <li><a href="#upload-an-electronic-document-9-10-11">Upload an electronic document (9, 10, 11)</a></li>
+        <li><a href="#creating-a-document-and-documentversion-and-link-them-to-registryentry-12-13">Creating a Document and DocumentVersion and link them to RegistryEntry (12, 13)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Create Registry Entry and Document
+            </h1>
+          
+
+        
+
+
+
+	<h3 id="usecase-details">Usecase Details</h3>
+<p>Common usecase for an integrating system is to create a Registry Entry(<code>Journalpost</code>) and a single Document(<code>Dokument</code>) with a single DocumentVersion(<code>Dokumentversjon</code>) and an electronic document uploaded. The Registry Entry (<code>Journalpost</code>) is linked to an existing Case File (<code>Saksmappe</code>).</p>
+<p>Accomplishing this through the API is done following a set of steps outlined in the diagram below.</p>
+<p><img src="/documaster-api-docs/usage/perUsecase/registryEntryAndDocument/images/usecase.createRegistryEntryAndDocument.png" alt="child-parent-relation"></p>
+<h3 id="authentication-and-authorization-1-2">Authentication and Authorization (1, 2)</h3>
+<p>Aquiring an OAuth2 access token is done through the configured Identity Provider (IDP) used by the customer. Details on how to get the access token, how it should be cached and renewed can be found in <a href="../_index.en.md">Authentication and Authorization</a> section of the documentation.</p>
+<h3 id="retrieve-existing-case-file-3-4-5">Retrieve existing Case File (3, 4, 5)</h3>
+<p>Already created case files in the Documaster system can be found using the <code>POST /query</code> operation. Recommended case files query criteria would be the case year and sequence number (<code>saksaar</code> and <code>sakssekvensnummer</code>) or an externalID (through <code>refExternId</code>).</p>
+<p>Examples below retrieve a case with externalID : <strong>ISID:0000004572</strong>, case year : <strong>2021</strong> and sequence number : <strong>6</strong>.</p>
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="registryEntry"
+          class="tab-nav-button btn active"
+          onclick="switchTab('registryEntry','HTTP')"
+         >HTTP</button>
+    
+        <button
+          data-tab-item="Java"
+          data-tab-group="registryEntry"
+          class="tab-nav-button btn "
+          onclick="switchTab('registryEntry','Java')"
+         >Java</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="registryEntry" class="tab-item active">
+            <p>      <strong>Query Request by CaseYear and CaseSequenceNumber</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">POST</span> https://v2-34-0.local.documaster.tech:8083/rms/api/public/noark5/v1/query <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+
+Authorization: Bearer {{accessTokenIntegrator}}
+Content-Type: application/json
+X-Documaster-Error-Response-Type: application/json
+
+{
+  &#34;type&#34;: &#34;Saksmappe&#34;,
+  &#34;limit&#34;: 1,
+  &#34;query&#34;: &#34;saksaar = @caseYear &amp;&amp; sakssekvensnummer = @caseSequenceNumber&#34;,
+  &#34;parameters&#34; : {
+      &#34;@caseYear&#34; : &#34;2021&#34;,
+      &#34;@caseSequenceNumber&#34; : &#34;6&#34;
+  }
+}
+
+</code></pre></div><p>      <strong>Query Request by ExternalID</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">POST</span> https://v2-34-0.local.documaster.tech:8083/rms/api/public/noark5/v1/query <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+Authorization<span style="color:#f92672">:</span> <span style="color:#ae81ff">Bearer {{accessTokenIntegrator}}</span>
+Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+X-Documaster-Error-Response-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+
+{
+  <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+  <span style="color:#f92672">&#34;limit&#34;</span>: <span style="color:#ae81ff">1</span>,
+  <span style="color:#f92672">&#34;query&#34;</span>: <span style="color:#e6db74">&#34;refEksternId.eksternID = @externalID&#34;</span>,
+  <span style="color:#f92672">&#34;parameters&#34;</span> : {
+      <span style="color:#f92672">&#34;@externalID&#34;</span> : <span style="color:#e6db74">&#34;ISID:0000004572&#34;</span>
+  }
+}
+
+</code></pre></div><p>      <strong>Response</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">OK</span>
+Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+
+{
+    <span style="color:#f92672">&#34;hasMore&#34;</span>: <span style="color:#66d9ef">false</span>,
+    <span style="color:#f92672">&#34;results&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;981&#34;</span>,
+            <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;8&#34;</span>,
+            <span style="color:#f92672">&#34;fields&#34;</span>: {
+                <span style="color:#f92672">&#34;uuid&#34;</span>: <span style="color:#e6db74">&#34;31b474d1-9474-4139-b1e6-2d0ffb77b2e0&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetDato&#34;</span>: <span style="color:#e6db74">&#34;2021-11-25T13:51:10.494+0100&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAv&#34;</span>: <span style="color:#e6db74">&#34;External Integrator ACME&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAvBrukerIdent&#34;</span>: <span style="color:#e6db74">&#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;</span>,
+                <span style="color:#f92672">&#34;mappeIdent&#34;</span>: <span style="color:#e6db74">&#34;2021/6&#34;</span>,
+                <span style="color:#f92672">&#34;tittel&#34;</span>: <span style="color:#e6db74">&#34;API Created Case File&#34;</span>,
+                <span style="color:#f92672">&#34;beskrivelse&#34;</span>: <span style="color:#e6db74">&#34;First API created Case File&#34;</span>,
+                <span style="color:#f92672">&#34;dokumentmedium&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;saksaar&#34;</span>: <span style="color:#ae81ff">2021</span>,
+                <span style="color:#f92672">&#34;sakssekvensnummer&#34;</span>: <span style="color:#ae81ff">6</span>,
+                <span style="color:#f92672">&#34;saksdato&#34;</span>: <span style="color:#e6db74">&#34;2021-11-25&#34;</span>,
+                <span style="color:#f92672">&#34;administrativEnhet&#34;</span>: <span style="color:#e6db74">&#34;AD1&#34;</span>,
+                <span style="color:#f92672">&#34;saksansvarlig&#34;</span>: <span style="color:#e6db74">&#34;External Integrator ACME&#34;</span>,
+                <span style="color:#f92672">&#34;saksansvarligBrukerIdent&#34;</span>: <span style="color:#e6db74">&#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;</span>,
+                <span style="color:#f92672">&#34;saksstatus&#34;</span>: <span style="color:#e6db74">&#34;B&#34;</span>
+            },
+            <span style="color:#f92672">&#34;links&#34;</span>: {
+                <span style="color:#f92672">&#34;refPrimaerKlasse&#34;</span>: <span style="color:#ae81ff">681</span>,
+                <span style="color:#f92672">&#34;refArkivdel&#34;</span>: <span style="color:#ae81ff">688</span>
+            }
+        }
+    ]
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Java" data-tab-group="registryEntry" class="tab-item ">
+            <p>      <strong>Query by CaseYear and CaseSequenceNumber</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#75715e">// client is an instance of NoarkClient
+</span><span style="color:#75715e"></span>    QueryResponse<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> queryResults <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span><span style="color:#a6e22e">query</span><span style="color:#f92672">(</span>Saksmappe<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;saksaar = @caseYear &amp;&amp; sakssekvensnummer = @caseSequenceNumber&#34;</span><span style="color:#f92672">,</span> 1<span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">addQueryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;@caseYear&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;2021&#34;</span><span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">addQueryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;@caseSequenceNumber&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;6&#34;</span><span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">();</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span>queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        Optional<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> first <span style="color:#f92672">=</span> queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">findFirst</span><span style="color:#f92672">();</span>
+
+        <span style="color:#75715e">// ID of the first case file, assuming only one is returned
+</span><span style="color:#75715e"></span>        String caseFileID <span style="color:#f92672">=</span> first<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p>      <strong>Query Request by ExternalID</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#75715e">// client is an instance of NoarkClient
+</span><span style="color:#75715e"></span>    QueryResponse<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> queryResults <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span><span style="color:#a6e22e">query</span><span style="color:#f92672">(</span>Saksmappe<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;refEksternId.eksternID = @externalID&#34;</span><span style="color:#f92672">,</span> 1<span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">addQueryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;@externalID&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;ISID:0000004572&#34;</span><span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">();</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span>queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        Optional<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> first <span style="color:#f92672">=</span> queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">findFirst</span><span style="color:#f92672">();</span>
+
+        <span style="color:#75715e">// ID of the first case file, assuming only one is returned
+</span><span style="color:#75715e"></span>        String caseFileID <span style="color:#f92672">=</span> first<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+<p>Important detail to be retrieved from the response is the ID of the existing case file - <code>$.results[0].id</code> in this case equal to <strong>981</strong>. Client SDKs faciliate the extraction of the ID from the response as shown in the examples.</p>
+<h3 id="creating-new-registryentry-and-linked-correspondence-party-6-7-8">Creating new RegistryEntry and linked Correspondence Party (6, 7, 8)</h3>
+<p>Creating a new registry entry is described in details in <a href="/documaster-api-docs/usage/perentity/registryentry"><strong>this example</strong></a>, here it is provided for completenes. Bear in mind that the retrieved CaseFile ID (<code>Saksmappe</code>) should be used to link the newly created RegistryEntry to it. This is done (in the case of the raw HTTP API) through the element <code>$.actions[1].linkToId</code> as can be seen below.</p>
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="registryEntry"
+          class="tab-nav-button btn active"
+          onclick="switchTab('registryEntry','HTTP')"
+         >HTTP</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="registryEntry" class="tab-item active">
+            <p>      <strong>Request</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">POST</span> https://v2-34-0.local.documaster.tech:8083/rms/api/public/noark5/v1/transaction <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+<span style="color:#960050;background-color:#1e0010">...</span>
+Authorization: Bearer {{accessTokenIntegrator}}
+Content-Type: application/json
+X-Documaster-Error-Response-Type: application/json
+
+{
+    &#34;actions&#34;: [
+        {
+            &#34;action&#34;: &#34;save&#34;,
+            &#34;type&#34;: &#34;Journalpost&#34;,
+            &#34;id&#34;: &#34;journalpost-temp-id-1&#34;,
+            &#34;fields&#34;: {
+                &#34;tittel&#34;: &#34;API Created Registry Entry&#34;,
+                &#34;beskrivelse&#34;: &#34;Registry Entry Description&#34;,
+                &#34;journalposttype&#34;: &#34;U&#34;
+            }
+        },
+        {
+            &#34;action&#34;: &#34;link&#34;,
+            &#34;type&#34;: &#34;Journalpost&#34;,
+            &#34;id&#34;: &#34;journalpost-temp-id-1&#34;,
+            &#34;ref&#34;: &#34;refMappe&#34;,
+            &#34;linkToId&#34;: &#34;981&#34;
+        },
+        {
+            &#34;action&#34;: &#34;save&#34;,
+            &#34;type&#34;: &#34;Korrespondansepart&#34;,
+            &#34;id&#34;: &#34;korrespondansepart-temp-id-1&#34;,
+            &#34;fields&#34;: {
+                &#34;korrespondanseparttype&#34;: &#34;EA&#34;,
+                &#34;korrespondansepartNavn&#34;: &#34;Correspondence Party Name&#34;
+            }
+        },
+        {
+            &#34;action&#34;: &#34;link&#34;,
+            &#34;type&#34;: &#34;Korrespondansepart&#34;,
+            &#34;id&#34;: &#34;korrespondansepart-temp-id-1&#34;,
+            &#34;ref&#34;: &#34;refRegistrering&#34;,
+            &#34;linkToId&#34;: &#34;journalpost-temp-id-1&#34;
+        }
+    ]
+}
+</code></pre></div><p>      <strong>Response</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">OK</span>
+Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+
+{
+    <span style="color:#f92672">&#34;saved&#34;</span>: {
+        <span style="color:#f92672">&#34;journalpost-temp-id-1&#34;</span>: {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;994&#34;</span>,
+            <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;8&#34;</span>,
+            <span style="color:#f92672">&#34;fields&#34;</span>: {
+                <span style="color:#f92672">&#34;uuid&#34;</span>: <span style="color:#e6db74">&#34;cf7eb80b-5c58-4418-b3e5-fb09c978e794&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetDato&#34;</span>: <span style="color:#e6db74">&#34;2021-11-25T14:18:55.674+0100&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAv&#34;</span>: <span style="color:#e6db74">&#34;External Integrator ACME&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAvBrukerIdent&#34;</span>: <span style="color:#e6db74">&#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;</span>,
+                <span style="color:#f92672">&#34;registreringsIdent&#34;</span>: <span style="color:#e6db74">&#34;2021/9&#34;</span>,
+                <span style="color:#f92672">&#34;tittel&#34;</span>: <span style="color:#e6db74">&#34;API Created Registry Entry&#34;</span>,
+                <span style="color:#f92672">&#34;beskrivelse&#34;</span>: <span style="color:#e6db74">&#34;Registry Entry Description&#34;</span>,
+                <span style="color:#f92672">&#34;registreringsDato&#34;</span>: <span style="color:#e6db74">&#34;2021-11-25T14:18:55.714+0100&#34;</span>,
+                <span style="color:#f92672">&#34;dokumentmedium&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;journalaar&#34;</span>: <span style="color:#ae81ff">2021</span>,
+                <span style="color:#f92672">&#34;journalsekvensnummer&#34;</span>: <span style="color:#ae81ff">9</span>,
+                <span style="color:#f92672">&#34;journalpostnummer&#34;</span>: <span style="color:#ae81ff">1</span>,
+                <span style="color:#f92672">&#34;journalansvarlig&#34;</span>: <span style="color:#e6db74">&#34;External Integrator ACME&#34;</span>,
+                <span style="color:#f92672">&#34;journalansvarligBrukerIdent&#34;</span>: <span style="color:#e6db74">&#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;</span>,
+                <span style="color:#f92672">&#34;journalposttype&#34;</span>: <span style="color:#e6db74">&#34;U&#34;</span>,
+                <span style="color:#f92672">&#34;journalstatus&#34;</span>: <span style="color:#e6db74">&#34;J&#34;</span>,
+                <span style="color:#f92672">&#34;skjermKorrespondanseParterEInnsyn&#34;</span>: <span style="color:#66d9ef">false</span>
+            },
+            <span style="color:#f92672">&#34;links&#34;</span>: {
+                <span style="color:#f92672">&#34;refMappe&#34;</span>: <span style="color:#ae81ff">981</span>
+            }
+        },
+        <span style="color:#f92672">&#34;korrespondansepart-temp-id-1&#34;</span>: {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Korrespondansepart&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;995&#34;</span>,
+            <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;3&#34;</span>,
+            <span style="color:#f92672">&#34;fields&#34;</span>: {
+                <span style="color:#f92672">&#34;uuid&#34;</span>: <span style="color:#e6db74">&#34;ff3ec7de-6451-4347-88e2-0b81de6f1b75&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetDato&#34;</span>: <span style="color:#e6db74">&#34;2021-11-25T14:18:55.718+0100&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAv&#34;</span>: <span style="color:#e6db74">&#34;External Integrator ACME&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAvBrukerIdent&#34;</span>: <span style="color:#e6db74">&#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;</span>,
+                <span style="color:#f92672">&#34;korrespondanseparttype&#34;</span>: <span style="color:#e6db74">&#34;EA&#34;</span>,
+                <span style="color:#f92672">&#34;korrespondansepartNavn&#34;</span>: <span style="color:#e6db74">&#34;Correspondence Party Name&#34;</span>
+            },
+            <span style="color:#f92672">&#34;links&#34;</span>: {
+                <span style="color:#f92672">&#34;refRegistrering&#34;</span>: <span style="color:#ae81ff">994</span>
+            }
+        }
+    }
+}
+</code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+<h3 id="upload-an-electronic-document-9-10-11">Upload an electronic document (9, 10, 11)</h3>
+<p>Uploading a document is done using the <code>POST /upload</code> operation. The file content is streamed in the API request and as a result the API returns a new unique identifier of this electronic document. The document is deleted from Documaster Archive in case it is not linked for a certain period of time to a DocumentVersion (<code>Documentverjion</code>) and from there to a Document (<code>Dokument</code>).</p>
+
+<div class="notices note" ><p>The ID of the electronic document is not the same ID as the one of the Document (<code>Dokument</code>) entity objects. Document (<code>Dokument</code>) entity object is metadata describing the document, while the ID returned as a result of this operation identfies the actually uploaded document.</p>
+</div>
+
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="registryEntry"
+          class="tab-nav-button btn active"
+          onclick="switchTab('registryEntry','HTTP')"
+         >HTTP</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="registryEntry" class="tab-item active">
+            <p>      <strong>Request</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">POST</span> https://v2-34-0.local.documaster.tech:8083/rms/api/public/noark5/v1/upload <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+<span style="color:#960050;background-color:#1e0010">...</span>
+Authorization: Bearer {{accessTokenIntegrator}}
+Content-Disposition: attachment; filename=&#34;sample-document.pdf&#34;; filename*=utf-8&#39;&#39;sample-document.pdf
+Content-Type: application/octet-stream
+
+... binary file content ...
+</code></pre></div><p>      <strong>Response</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">OK</span>
+Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+
+{
+    <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;999&#34;</span>
+}
+</code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+<p>ID of the electronic document is extracted from <code>$.id</code> of the response.</p>
+<h3 id="creating-a-document-and-documentversion-and-link-them-to-registryentry-12-13">Creating a Document and DocumentVersion and link them to RegistryEntry (12, 13)</h3>
+<p>As a final set of steps to be executed as part of this use case, a Document (<code>Dokument</code>) and DocumentVersion (<code>Dokumentversjion</code>) should be created. The electronic document ID, created in the previous step is now used in the creation of the DocumentVersion(<code>Dokumentversjion</code>) through the field <code>$.actions[?(@.action == 'save' &amp;&amp; @.type=='Dokumentversjon')].fields.referanseDokumentfil</code>, which is a field of DocumentVersion.</p>
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="registryEntry"
+          class="tab-nav-button btn active"
+          onclick="switchTab('registryEntry','HTTP')"
+         >HTTP</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="registryEntry" class="tab-item active">
+            <p>      <strong>Request</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#960050;background-color:#1e0010">POST https://v2-34-0.local.documaster.tech:8083/rms/api/public/noark5/v1/transaction
+</span><span style="color:#960050;background-color:#1e0010">Authorization: Bearer {{accessTokenIntegrator}}
+</span><span style="color:#960050;background-color:#1e0010">Content-Type: application/json
+</span><span style="color:#960050;background-color:#1e0010">X-Documaster-Error-Response-Type: application/json
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">{
+</span><span style="color:#960050;background-color:#1e0010">    &#34;actions&#34;: [
+</span><span style="color:#960050;background-color:#1e0010">        {
+</span><span style="color:#960050;background-color:#1e0010">            &#34;action&#34;: &#34;save&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;type&#34;: &#34;Dokument&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;id&#34;: &#34;dokument-temp-id-1&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;fields&#34;: {
+</span><span style="color:#960050;background-color:#1e0010">                &#34;tittel&#34;: &#34;sample-document.pdf&#34;,
+</span><span style="color:#960050;background-color:#1e0010">                &#34;tilknyttetRegistreringSom&#34;: &#34;V&#34;
+</span><span style="color:#960050;background-color:#1e0010">            }
+</span><span style="color:#960050;background-color:#1e0010">        },
+</span><span style="color:#960050;background-color:#1e0010">        {
+</span><span style="color:#960050;background-color:#1e0010">            &#34;action&#34;: &#34;link&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;type&#34;: &#34;Dokument&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;id&#34;: &#34;dokument-temp-id-1&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;ref&#34;: &#34;refRegistrering&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;linkToId&#34;: &#34;994&#34;
+</span><span style="color:#960050;background-color:#1e0010">        },
+</span><span style="color:#960050;background-color:#1e0010">        {
+</span><span style="color:#960050;background-color:#1e0010">            &#34;action&#34;: &#34;save&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;type&#34;: &#34;Dokumentversjon&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;id&#34;: &#34;dokumentversjon-temp-id-1&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;fields&#34;: {
+</span><span style="color:#960050;background-color:#1e0010">                &#34;format&#34;: &#34;pdf&#34;,
+</span><span style="color:#960050;background-color:#1e0010">                &#34;referanseDokumentfil&#34;: &#34;1079&#34;,
+</span><span style="color:#960050;background-color:#1e0010">                &#34;variantformat&#34;: &#34;P&#34;
+</span><span style="color:#960050;background-color:#1e0010">            }
+</span><span style="color:#960050;background-color:#1e0010">        },
+</span><span style="color:#960050;background-color:#1e0010">        {
+</span><span style="color:#960050;background-color:#1e0010">            &#34;action&#34;: &#34;link&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;type&#34;: &#34;Dokumentversjon&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;id&#34;: &#34;dokumentversjon-temp-id-1&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;ref&#34;: &#34;refDokument&#34;,
+</span><span style="color:#960050;background-color:#1e0010">            &#34;linkToId&#34;: &#34;dokument-temp-id-1&#34;
+</span><span style="color:#960050;background-color:#1e0010">        }
+</span><span style="color:#960050;background-color:#1e0010">    ]
+</span><span style="color:#960050;background-color:#1e0010">}
+</span></code></pre></div><p>      <strong>Response</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">OK</span>
+Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+
+{
+    <span style="color:#f92672">&#34;saved&#34;</span>: {
+        <span style="color:#f92672">&#34;dokument-temp-id-1&#34;</span>: {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Dokument&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;1081&#34;</span>,
+            <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;7&#34;</span>,
+            <span style="color:#f92672">&#34;fields&#34;</span>: {
+                <span style="color:#f92672">&#34;uuid&#34;</span>: <span style="color:#e6db74">&#34;8775e127-29ad-48de-a549-7a0c75ab0bd2&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetDato&#34;</span>: <span style="color:#e6db74">&#34;2021-11-25T14:58:35.242+0100&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAv&#34;</span>: <span style="color:#e6db74">&#34;External Integrator ACME&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAvBrukerIdent&#34;</span>: <span style="color:#e6db74">&#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;</span>,
+                <span style="color:#f92672">&#34;dokumentstatus&#34;</span>: <span style="color:#e6db74">&#34;B&#34;</span>,
+                <span style="color:#f92672">&#34;tittel&#34;</span>: <span style="color:#e6db74">&#34;sample-document.pdf&#34;</span>,
+                <span style="color:#f92672">&#34;dokumentmedium&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>,
+                <span style="color:#f92672">&#34;tilknyttetRegistreringSom&#34;</span>: <span style="color:#e6db74">&#34;V&#34;</span>,
+                <span style="color:#f92672">&#34;dokumentnummer&#34;</span>: <span style="color:#ae81ff">2</span>
+            },
+            <span style="color:#f92672">&#34;links&#34;</span>: {
+                <span style="color:#f92672">&#34;refRegistrering&#34;</span>: <span style="color:#ae81ff">994</span>
+            }
+        },
+        <span style="color:#f92672">&#34;dokumentversjon-temp-id-1&#34;</span>: {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Dokumentversjon&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;1082&#34;</span>,
+            <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;5&#34;</span>,
+            <span style="color:#f92672">&#34;fields&#34;</span>: {
+                <span style="color:#f92672">&#34;uuid&#34;</span>: <span style="color:#e6db74">&#34;f20796a3-3550-4c87-85dd-36bc18cc65f7&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetDato&#34;</span>: <span style="color:#e6db74">&#34;2021-11-25T14:58:35.250+0100&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAv&#34;</span>: <span style="color:#e6db74">&#34;External Integrator ACME&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAvBrukerIdent&#34;</span>: <span style="color:#e6db74">&#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;</span>,
+                <span style="color:#f92672">&#34;versjonsnummer&#34;</span>: <span style="color:#ae81ff">1</span>,
+                <span style="color:#f92672">&#34;variantformat&#34;</span>: <span style="color:#e6db74">&#34;P&#34;</span>,
+                <span style="color:#f92672">&#34;format&#34;</span>: <span style="color:#e6db74">&#34;pdf&#34;</span>,
+                <span style="color:#f92672">&#34;kryptertDokument&#34;</span>: <span style="color:#66d9ef">false</span>,
+                <span style="color:#f92672">&#34;sjekksum&#34;</span>: <span style="color:#e6db74">&#34;59844ce7572b1411445179c25e4182e328e43391d733782828277f22e340166b&#34;</span>,
+                <span style="color:#f92672">&#34;sjekksumAlgoritme&#34;</span>: <span style="color:#e6db74">&#34;SHA-256&#34;</span>,
+                <span style="color:#f92672">&#34;filstoerrelse&#34;</span>: <span style="color:#ae81ff">3191</span>,
+                <span style="color:#f92672">&#34;filnavn&#34;</span>: <span style="color:#e6db74">&#34;sample-document.pdf&#34;</span>,
+                <span style="color:#f92672">&#34;referanseDokumentfil&#34;</span>: <span style="color:#e6db74">&#34;1079&#34;</span>,
+                <span style="color:#f92672">&#34;innholdstype&#34;</span>: <span style="color:#e6db74">&#34;application/pdf&#34;</span>
+            },
+            <span style="color:#f92672">&#34;links&#34;</span>: {
+                <span style="color:#f92672">&#34;refDokument&#34;</span>: <span style="color:#ae81ff">1081</span>
+            }
+        }
+    }
+}
+</code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/documaster-api-docs/usage/perusecase/" title="Per Usecase"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/documaster-api-docs/usage/perentity/" title="Per Entity" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1637851211"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/learn.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1637851211"></script>
+    
+        
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1637851211"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>

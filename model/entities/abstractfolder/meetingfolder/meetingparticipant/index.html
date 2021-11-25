@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.89.4" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/documaster-api-docs/images/favicon.png" type="image/png">
+
+    <title>Meeting Participant :: My New Hugo Site</title>
+
+    
+    <link href="/documaster-api-docs/css/nucleus.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1637851211" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1637851211" rel="stylesheet">
+    
+    <link href="/documaster-api-docs/css/theme-mine.css?1637851211" rel="stylesheet">
+    
+    <link href="/documaster-api-docs/css/syntax.css?1637851211" rel="stylesheet">
+
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1637851211"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/meetingparticipant/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/documaster-api-docs/'>
+
+<img src="/documaster-api-docs/images/Logo_Lockup.svg" style="width:200px;border-width:0px;border:0px;" alt="Logo" width="200">
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1637851211"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1637851211"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
+    
+</script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1637851211"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/documaster-api-docs'><i style='color:#dcdffe' class='fas fa-home'></i> Documaster Noark5 API v1</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/" title="Getting Started" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/">
+          <b>1. </b>Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/overview/" title="Overview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/overview/">
+          Overview
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/authentication/" title="Authentication" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/authentication/">
+          Authentication
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/operations/" title="Operations" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/operations/">
+          <b>2. </b>Operations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/operations/transaction/" title="Transaction" class="dd-item ">
+        <a href="/documaster-api-docs/operations/transaction/">
+        Transaction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/operations/query/" title="Query" class="dd-item ">
+        <a href="/documaster-api-docs/operations/query/">
+        Query
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/" title="Data Model" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/">
+          <b>3. </b>Data Model
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/tags/" title="Overview" class="dd-item ">
+        <a href="/documaster-api-docs/model/tags/">
+        Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/" title="Core Entities" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/">
+          Core Entities
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/fonds/" title="Fonds" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/fonds/">
+          Fonds
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/entities/fonds/fondscreator/" title="Fonds Creator" class="dd-item ">
+        <a href="/documaster-api-docs/model/entities/fonds/fondscreator/">
+        Fonds Creator
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/classification/" title="Classification System" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/classification/">
+          Classification System
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/entities/classification/class/" title="Class" class="dd-item ">
+        <a href="/documaster-api-docs/model/entities/classification/class/">
+        Class
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/entities/series/" title="Series" class="dd-item ">
+        <a href="/documaster-api-docs/model/entities/series/">
+        Series
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/" title="Folders" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/">
+          Folders
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/casefile/" title="Case File" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/casefile/">
+          Case File
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/casefile/caseparty/" title="Case Party" class="dd-item ">
+        <a href="/documaster-api-docs/model/entities/abstractfolder/casefile/caseparty/">
+        Case Party
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/folder/" title="Basic Folder" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/folder/">
+          Basic Folder
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/" title="Meeting Folder" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/">
+          Meeting Folder
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/meetingparticipant/" title="Meeting Participant" class="dd-item active">
+        <a href="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/meetingparticipant/">
+        Meeting Participant
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/" title="Records" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/">
+          Records
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/registryentry/" title="Registry Entry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/registryentry/">
+          Registry Entry
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/basicrecord/" title="Basic Record" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/basicrecord/">
+          Basic Record
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/model/entities/abstractrecord/meetingrecord/" title="Meeting Record" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/model/entities/abstractrecord/meetingrecord/">
+          Meeting Record
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/usage/" title="Examples" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/usage/">
+          <b>4. </b>Examples
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/usage/perentity/" title="Per Entity" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/usage/perentity/">
+          Per Entity
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/usage/perentity/registryentry/" title="Registry Entry" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/usage/perentity/registryentry/">
+          Registry Entry
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/usage/perusecase/" title="Per Usecase" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/usage/perusecase/">
+          Per Usecase
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/usage/perusecase/registryentryanddocument/" title="Create Registry Entry and Document" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/usage/perusecase/registryentryanddocument/">
+          Create Registry Entry and Document
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/documaster-api-docs/'>Documaster Noark5 API v1</a> > <a href='/documaster-api-docs/model/'>Data Model</a> > <a href='/documaster-api-docs/model/entities/'>Core Entities</a> > <a href='/documaster-api-docs/model/entities/abstractfolder/'>Folders</a> > <a href='/documaster-api-docs/model/entities/abstractfolder/meetingfolder/'>Meeting Folder</a> > Meeting Participant
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#moetedeltaker">Moetedeltaker</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Meeting Participant
+            </h1>
+          
+
+        
+
+
+<h2 id="moetedeltaker">Moetedeltaker</h2>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/documaster-api-docs/model/entities/abstractfolder/meetingfolder/" title="Meeting Folder"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/documaster-api-docs/model/entities/abstractrecord/" title="Records" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1637851211"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/learn.js?1637851211"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1637851211"></script>
+    
+        
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1637851211"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
