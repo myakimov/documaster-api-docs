@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Documaster Noark5 API v1 on Documaster Noark5 API</title>
+    <title>Documaster Noark5 API</title>
     <link>https://myakimov.github.io/documaster-api-docs/</link>
-    <description>Recent content in Documaster Noark5 API v1 on Documaster Noark5 API</description>
+    <description>Recent content on Documaster Noark5 API</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Nov 2018 08:41:44 +0100</lastBuildDate><atom:link href="https://myakimov.github.io/documaster-api-docs/index.xml" rel="self" type="application/rss+xml" />

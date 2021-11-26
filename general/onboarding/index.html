@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/documaster-api-docs/images/favicon.png" type="image/png">
 
-    <title>Case File :: Documaster Noark5 API</title>
+    <title>Onboarding :: Documaster Noark5 API</title>
 
     
     <link href="/documaster-api-docs/css/nucleus.css?1637923943" rel="stylesheet">
@@ -41,7 +41,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/documaster-api-docs/model/entities/abstractfolder/casefile/">
+  <body class="" data-url="/documaster-api-docs/general/onboarding/">
     <nav id="sidebar" class="">
 
 
@@ -97,7 +97,7 @@
   
     
     <li data-nav-id="/documaster-api-docs/general/" title="Getting Started" class="dd-item
-        
+        parent
         
         
         ">
@@ -152,8 +152,8 @@
   
     
     <li data-nav-id="/documaster-api-docs/general/onboarding/" title="Onboarding" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/documaster-api-docs/general/onboarding/">
@@ -339,7 +339,7 @@
   
     
     <li data-nav-id="/documaster-api-docs/model/" title="Data Model" class="dd-item
-        parent
+        
         
         
         ">
@@ -389,7 +389,7 @@
   
     
     <li data-nav-id="/documaster-api-docs/model/entities/" title="Core Entities" class="dd-item
-        parent
+        
         
         
         ">
@@ -553,7 +553,7 @@
   
     
     <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/" title="Folders" class="dd-item
-        parent
+        
         
         
         ">
@@ -582,8 +582,8 @@
   
     
     <li data-nav-id="/documaster-api-docs/model/entities/abstractfolder/casefile/" title="Case File" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/documaster-api-docs/model/entities/abstractfolder/casefile/">
@@ -1066,19 +1066,7 @@
             
           
           
-            
-            
-          
-          
-            
-            
-          
-          
-            <a href='/documaster-api-docs/'>Documaster Noark5 API</a> > <a href='/documaster-api-docs/model/'>Data Model</a> > <a href='/documaster-api-docs/model/entities/'>Core Entities</a> > <a href='/documaster-api-docs/model/entities/abstractfolder/'>Folders</a> > Case File
-          
-        
-          
-        
+            <a href='/documaster-api-docs/'>Documaster Noark5 API</a> > <a href='/documaster-api-docs/general/'>Getting Started</a> > Onboarding
           
         
           
@@ -1093,7 +1081,8 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#saksmappe">Saksmappe</a></li>
+    <li><a href="#integration-team">Integration Team</a></li>
+    <li><a href="#setting-up-access">Setting up access</a></li>
   </ul>
 </nav>
     </div>
@@ -1111,7 +1100,7 @@
           
             <h1>
               
-              Case File
+              Onboarding
             </h1>
           
 
@@ -1119,7 +1108,43 @@
 
 
 
-	<h2 id="saksmappe">Saksmappe</h2>
+	<h2 id="integration-team">Integration Team</h2>
+<p>Documaster Integration Team is reachable at <a href="mailto:integration@documaster.com">integration@documaster.com</a>. This is the team that would support you in your integration effort and can be contacted for any issues or questions related to the Documaster Noark5 APIs.</p>
+<h2 id="setting-up-access">Setting up access</h2>
+<p>Documaster supports a set of integration environments that a developer can be granted access to. Depending on the specific project and use cases, the setup process on Documaster side includes the following steps:</p>
+<ul>
+<li><code>client_id</code> and <code>client_secret</code>, together with <code>username</code> and <code>password</code> for the integration user are setup on the integration servers and provided back to integration developers in a secure manner</li>
+<li>Documaster Archive integration instance endpoint is provide back to integration developers</li>
+<li>Any additional security measures required (VPN, 2-way TLS, etc.) coming as a specific requirement of the project are setup by Documaster team</li>
+<li>At least one Fonds (<code>Arkiv</code>) with a single Series (<code>Arkivdel</code>) is setup, to which the developers have access to.
+<ul>
+<li>Details of the Fonds and Series are provided back to developers</li>
+</ul>
+</li>
+<li>Integration user is assigned a particular Documaster Archive access group, which restricts access to certain functionality</li>
+</ul>
+<p>Having all the details above, you can try to aquire an access token.</p>
+<p><i class="far fa-dot-circle"></i> If you would be using our Client SDKs, please take a look at the next section.</p>
+
+<a  href="/documaster-api-docs/general/clientsdk/" target="_parent"  class="btn btn-default">
+  
+  
+  
+  <i class="fas fa-angle-double-right"></i> Client SDKs
+  
+</a>
+
+<hr>
+<p><i class="far fa-dot-circle"></i> If you are using the Raw HTTP approach, you can proceed to Authentication and Authorization section.</p>
+
+<a  href="/documaster-api-docs/general/authentication/" target="_parent"  class="btn btn-default">
+  
+  
+  
+  <i class="fas fa-angle-double-right"></i> Authentication and Authorization
+  
+</a>
+
 
 
 
@@ -1160,8 +1185,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1177,6 +1200,45 @@
             
             
                 
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1221,38 +1283,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1309,7 +1339,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1324,9 +1353,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1344,7 +1370,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1359,9 +1384,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1443,7 +1465,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1459,7 +1480,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1472,9 +1492,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1708,10 +1725,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/documaster-api-docs/model/entities/abstractfolder/" title="Folders"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/documaster-api-docs/general/overview/" title="Overview"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/documaster-api-docs/model/entities/abstractfolder/casefile/caseparty/" title="Case Party" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/documaster-api-docs/general/clientsdk/" title="Client SDKs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

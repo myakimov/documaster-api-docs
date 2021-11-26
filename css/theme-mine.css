@@ -40,8 +40,9 @@ h2, h3, h4, h5 {
     color: var(--MAIN-TITLES-TEXT-color) !important;
 }
 
-a {
+#body a {
     color: var(--MAIN-LINK-color);
+    font-weight: bold;
 }
 
 .anchor {
