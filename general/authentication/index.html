@@ -12,22 +12,22 @@
     <title>Authentication and Authorization :: Documaster Noark5 API</title>
 
     
-    <link href="/documaster-api-docs/css/nucleus.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hybrid.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/featherlight.min.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/auto-complete.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/theme.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/tabs.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hugo-theme.css?1637923943" rel="stylesheet">
+    <link href="/documaster-api-docs/css/nucleus.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1638196144" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/theme-mine.css?1637923943" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme-mine.css?1638196144" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/syntax.css?1637923943" rel="stylesheet">
+    <link href="/documaster-api-docs/css/syntax.css?1638196144" rel="stylesheet">
 
-    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1637923943"></script>
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638196144"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1637923943"></script>
-<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1637923943"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638196144"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638196144"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
     
 </script>
-<script type="text/javascript" src="/documaster-api-docs/js/search.js?1637923943"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638196144"></script>
 
     
   </div>
@@ -210,6 +210,32 @@
         ">
       <a href="/documaster-api-docs/general/authentication/">
           Authentication and Authorization
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/modeloverview/" title="Model and Operations Overview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/modeloverview/">
+          Model and Operations Overview
           
       </a>
       
@@ -1089,6 +1115,12 @@
         <li></li>
       </ul>
     </li>
+    <li><a href="#using-the-access-token">Using the Access Token</a></li>
+    <li><a href="#access-token-management">Access Token Management</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -1143,32 +1175,38 @@
 <tbody>
 <tr>
 <td><code>Authorization</code></td>
-<td>Header</td>
-<td></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td>Base64 encoded client_id:client_secret</td>
 </tr>
 <tr>
 <td><code>Content-Type</code></td>
-<td>Header</td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
 <td>fixed value of <strong>application/x-www-form-urlencoded</strong></td>
 </tr>
 <tr>
 <td><code>grant_type</code></td>
-<td>Body</td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
 <td>fixed value of <strong>password</strong></td>
 </tr>
 <tr>
 <td><code>username</code></td>
-<td>Body</td>
-<td></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>username provided during onboarding process</td>
 </tr>
 <tr>
 <td><code>password</code></td>
-<td>Body</td>
-<td></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>password provided during onboarding process</td>
 </tr>
 <tr>
 <td><code>scope</code></td>
-<td>Body</td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
 <td>fixed value of <strong>openid</strong></td>
 </tr>
 </tbody>
@@ -1180,29 +1218,29 @@
     
         <button
           data-tab-item="HTTP"
-          data-tab-group="accessToken"
+          data-tab-group="authorization"
           class="tab-nav-button btn active"
-          onclick="switchTab('accessToken','HTTP')"
+          onclick="switchTab('authorization','HTTP')"
          >HTTP</button>
     
         <button
           data-tab-item="Java"
-          data-tab-group="accessToken"
+          data-tab-group="authorization"
           class="tab-nav-button btn "
-          onclick="switchTab('accessToken','Java')"
+          onclick="switchTab('authorization','Java')"
          >Java</button>
     
         <button
           data-tab-item="C#"
-          data-tab-group="accessToken"
+          data-tab-group="authorization"
           class="tab-nav-button btn "
-          onclick="switchTab('accessToken','C#')"
+          onclick="switchTab('authorization','C#')"
          >C#</button>
     
     </div>
     <div class="tab-content">
         
-        <div data-tab-item="HTTP" data-tab-group="accessToken" class="tab-item active">
+        <div data-tab-item="HTTP" data-tab-group="authorization" class="tab-item active">
             <p>      <strong>Request</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">POST</span> https://v2-34-0.local.documaster.tech/idp/oauth2/token <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
 <span style="color:#960050;background-color:#1e0010">...</span>
@@ -1227,7 +1265,7 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
 </code></pre></div>
         </div>
         
-        <div data-tab-item="Java" data-tab-group="accessToken" class="tab-item ">
+        <div data-tab-item="Java" data-tab-group="authorization" class="tab-item ">
             <p>      <strong>Query by CaseYear and CaseSequenceNumber</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#75715e">// client is an instance of NoarkClient
 </span><span style="color:#75715e"></span>    QueryResponse<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> queryResults <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span><span style="color:#a6e22e">query</span><span style="color:#f92672">(</span>Saksmappe<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;saksaar = @caseYear &amp;&amp; sakssekvensnummer = @caseSequenceNumber&#34;</span><span style="color:#f92672">,</span> 1<span style="color:#f92672">)</span>
@@ -1256,7 +1294,165 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
 </code></pre></div>
         </div>
         
-        <div data-tab-item="C#" data-tab-group="accessToken" class="tab-item ">
+        <div data-tab-item="C#" data-tab-group="authorization" class="tab-item ">
+            <p>      <strong>Query by CaseYear and CaseSequenceNumber</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#75715e">// client is an instance of NoarkClient
+</span><span style="color:#75715e"></span>    QueryResponse<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> queryResults <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span><span style="color:#a6e22e">query</span><span style="color:#f92672">(</span>Saksmappe<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;saksaar = @caseYear &amp;&amp; sakssekvensnummer = @caseSequenceNumber&#34;</span><span style="color:#f92672">,</span> 1<span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">addQueryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;@caseYear&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;2021&#34;</span><span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">addQueryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;@caseSequenceNumber&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;6&#34;</span><span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">();</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span>queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        Optional<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> first <span style="color:#f92672">=</span> queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">findFirst</span><span style="color:#f92672">();</span>
+
+        <span style="color:#75715e">// ID of the first case file, assuming only one is returned
+</span><span style="color:#75715e"></span>        String caseFileID <span style="color:#f92672">=</span> first<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p>      <strong>Query Request by ExternalID</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#75715e">// client is an instance of NoarkClient
+</span><span style="color:#75715e"></span>    QueryResponse<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> queryResults <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span><span style="color:#a6e22e">query</span><span style="color:#f92672">(</span>Saksmappe<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;refEksternId.eksternID = @externalID&#34;</span><span style="color:#f92672">,</span> 1<span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">addQueryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;@externalID&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;ISID:0000004572&#34;</span><span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">();</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span>queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        Optional<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> first <span style="color:#f92672">=</span> queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">findFirst</span><span style="color:#f92672">();</span>
+
+        <span style="color:#75715e">// ID of the first case file, assuming only one is returned
+</span><span style="color:#75715e"></span>        String caseFileID <span style="color:#f92672">=</span> first<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+<h2 id="using-the-access-token">Using the Access Token</h2>
+<p>Access tokens are supplied with each and every call to the Documaster Noark5 API in the <code>Authorization</code> HTTP header, in the format <code>Bearer {{accessTokenIntegrator}}</code>. Calls to the API without the header or with an invalid format or access token result in HTTP <code>401 Unauthorized</code> code to be returned back.</p>
+<h2 id="access-token-management">Access Token Management</h2>
+<p>Access tokens (<code>$.accessToken</code> in HTTP response) generated by Documaster IDP are with default lifetime of <strong>3600 seconds</strong>, which is <strong>1 hour</strong>. Refresh tokens are valid for <strong>14 days</strong>.</p>
+<p>The access tokens should be cached and reused across calls, for the period of their validity (1 hour). Refreshing the access token can be done in one of two ways - either aquire a new access token, or use the refresh token (<code>$.refreshToken</code>) to aquire a new access token.</p>
+<p>Recommended approach is to use the refresh token as shown in the samples below. The result of refreshing the access token using the refresh token is another set of both tokens. Refresh token should also be cached if that would be the chosen uproach for aquiring new access tokens.</p>
+
+<div class="notices warning" ><p>Access token should be renewed in one of two scenarios - when an API call return HTTP 401 Unauthorized or on a regular basis. Recommended is the first scenario, since there is always a chance that access tokens may get invalidated on IDP side earlier than they are to expire.</p>
+</div>
+
+<h5 id="http-parameters-mapping-1">HTTP parameters mapping</h5>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td>Base64 encoded client_id:client_secret</td>
+</tr>
+<tr>
+<td><code>Content-Type</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td>fixed value of <strong>application/x-www-form-urlencoded</strong></td>
+</tr>
+<tr>
+<td><code>grant_type</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>fixed value of <strong>refresh_token</strong></td>
+</tr>
+<tr>
+<td><code>refresh_token</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>refresh token received as a response of the Resource Owner Password Grant call above, from element <code>$.refresh_token</code></td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="authorization"
+          class="tab-nav-button btn active"
+          onclick="switchTab('authorization','HTTP')"
+         >HTTP</button>
+    
+        <button
+          data-tab-item="Java"
+          data-tab-group="authorization"
+          class="tab-nav-button btn "
+          onclick="switchTab('authorization','Java')"
+         >Java</button>
+    
+        <button
+          data-tab-item="C#"
+          data-tab-group="authorization"
+          class="tab-nav-button btn "
+          onclick="switchTab('authorization','C#')"
+         >C#</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="authorization" class="tab-item active">
+            <p>      <strong>Request</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#960050;background-color:#1e0010">POST https://v2-34-0.local.documaster.tech/idp/oauth2/token
+</span><span style="color:#960050;background-color:#1e0010">Authorization: Basic {client_id:client_secret}
+</span><span style="color:#960050;background-color:#1e0010">Content-Type: application/x-www-form-urlencoded
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">grant_type=refresh_token
+</span><span style="color:#960050;background-color:#1e0010">&amp;refresh_token=0a4a4f8633a8c9a289fca751e181eeaea5cd2455
+</span></code></pre></div><p>      <strong>Response</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">OK</span>
+Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+
+{
+    <span style="color:#f92672">&#34;access_token&#34;</span>: <span style="color:#e6db74">&#34;504e347005b2df9a8769b884c2bbfcb6fe4ab387&#34;</span>,
+    <span style="color:#f92672">&#34;expires_in&#34;</span>: <span style="color:#ae81ff">3600</span>,
+    <span style="color:#f92672">&#34;token_type&#34;</span>: <span style="color:#e6db74">&#34;Bearer&#34;</span>,
+    <span style="color:#f92672">&#34;scope&#34;</span>: <span style="color:#e6db74">&#34;openid&#34;</span>,
+    <span style="color:#f92672">&#34;refresh_token&#34;</span>: <span style="color:#e6db74">&#34;6562ff52129474fe9029518b28bbb1a20f8c9ecc&#34;</span>
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Java" data-tab-group="authorization" class="tab-item ">
+            <p>      <strong>Query by CaseYear and CaseSequenceNumber</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#75715e">// client is an instance of NoarkClient
+</span><span style="color:#75715e"></span>    QueryResponse<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> queryResults <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span><span style="color:#a6e22e">query</span><span style="color:#f92672">(</span>Saksmappe<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;saksaar = @caseYear &amp;&amp; sakssekvensnummer = @caseSequenceNumber&#34;</span><span style="color:#f92672">,</span> 1<span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">addQueryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;@caseYear&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;2021&#34;</span><span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">addQueryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;@caseSequenceNumber&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;6&#34;</span><span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">();</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span>queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        Optional<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> first <span style="color:#f92672">=</span> queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">findFirst</span><span style="color:#f92672">();</span>
+
+        <span style="color:#75715e">// ID of the first case file, assuming only one is returned
+</span><span style="color:#75715e"></span>        String caseFileID <span style="color:#f92672">=</span> first<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p>      <strong>Query Request by ExternalID</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#75715e">// client is an instance of NoarkClient
+</span><span style="color:#75715e"></span>    QueryResponse<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> queryResults <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span><span style="color:#a6e22e">query</span><span style="color:#f92672">(</span>Saksmappe<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;refEksternId.eksternID = @externalID&#34;</span><span style="color:#f92672">,</span> 1<span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">addQueryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;@externalID&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;ISID:0000004572&#34;</span><span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">();</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(!</span>queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        Optional<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> first <span style="color:#f92672">=</span> queryResults<span style="color:#f92672">.</span><span style="color:#a6e22e">getResults</span><span style="color:#f92672">().</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">findFirst</span><span style="color:#f92672">();</span>
+
+        <span style="color:#75715e">// ID of the first case file, assuming only one is returned
+</span><span style="color:#75715e"></span>        String caseFileID <span style="color:#f92672">=</span> first<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getId</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="C#" data-tab-group="authorization" class="tab-item ">
             <p>      <strong>Query by CaseYear and CaseSequenceNumber</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#75715e">// client is an instance of NoarkClient
 </span><span style="color:#75715e"></span>    QueryResponse<span style="color:#f92672">&lt;</span>Saksmappe<span style="color:#f92672">&gt;</span> queryResults <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span><span style="color:#a6e22e">query</span><span style="color:#f92672">(</span>Saksmappe<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;saksaar = @caseYear &amp;&amp; sakssekvensnummer = @caseSequenceNumber&#34;</span><span style="color:#f92672">,</span> 1<span style="color:#f92672">)</span>
@@ -1414,6 +1610,22 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1871,7 +2083,7 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
 			<a class="nav nav-prev" href="/documaster-api-docs/general/clientsdk/" title="Client SDKs"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/documaster-api-docs/general/firstcontact/" title="First API Interaction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/documaster-api-docs/general/modeloverview/" title="Model and Operations Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1881,19 +2093,19 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/documaster-api-docs/js/clipboard.min.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/jquery.sticky.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/featherlight.min.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/highlight.pack.js?1637923943"></script>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1638196144"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/learn.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/hugo-learn.js?1637923943"></script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/learn.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1638196144"></script>
     
         
-            <script src="/documaster-api-docs/mermaid/mermaid.js?1637923943"></script>
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1638196144"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

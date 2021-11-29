@@ -12,22 +12,22 @@
     <title>First API Interaction :: Documaster Noark5 API</title>
 
     
-    <link href="/documaster-api-docs/css/nucleus.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hybrid.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/featherlight.min.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/auto-complete.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/theme.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/tabs.css?1637923943" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hugo-theme.css?1637923943" rel="stylesheet">
+    <link href="/documaster-api-docs/css/nucleus.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1638196144" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/theme-mine.css?1637923943" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme-mine.css?1638196144" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/syntax.css?1637923943" rel="stylesheet">
+    <link href="/documaster-api-docs/css/syntax.css?1638196144" rel="stylesheet">
 
-    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1637923943"></script>
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638196144"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1637923943"></script>
-<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1637923943"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638196144"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638196144"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
     
 </script>
-<script type="text/javascript" src="/documaster-api-docs/js/search.js?1637923943"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638196144"></script>
 
     
   </div>
@@ -210,6 +210,32 @@
         ">
       <a href="/documaster-api-docs/general/authentication/">
           Authentication and Authorization
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documaster-api-docs/general/modeloverview/" title="Model and Operations Overview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documaster-api-docs/general/modeloverview/">
+          Model and Operations Overview
           
       </a>
       
@@ -1079,7 +1105,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#execute-fist-query">Execute Fist Query</a>
+      <ul>
+        <li><a href="#get-fonds-details">Get Fonds Details</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -1103,7 +1137,105 @@
 
 
 
-	
+	<h2 id="execute-fist-query">Execute Fist Query</h2>
+<p>At this point, the integration developer should have the following details:</p>
+<ul>
+<li><code>client_id</code> and <code>client_secret</code>, <code>username</code> and <code>password</code>, provided as part of the onboarding process</li>
+<li>Integration environment API HTTP endpoint</li>
+<li>Fonds ID (<code>Arkiv</code>) and Series ID (<code>Arkivdel</code>)</li>
+</ul>
+<h3 id="get-fonds-details">Get Fonds Details</h3>
+<p>Query any core Noark5 entity object in Documaster is done through the Query (<code>POST /noark5/v1/query</code>) operation. The operation allows selecting a single type of objects (or a set of different object, having the same base type).</p>
+<p>Retrieving the Fonds (<code>Arkiv</code>) details would require the following call to be made, where as input the already created Fonds ID (in this case <strong>1088</strong>) is provided as a query parameter. Additionally an access token should have already beein aquired as part of the <a href="/documaster-api-docs/general/authentication/">Authentication and Authorization</a> process.</p>
+<ul>
+<li><a href="http://google.com">Query Operation</a></li>
+<li><a href="https://google.com">Data Model Overview</a></li>
+</ul>
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="firstcontact"
+          class="tab-nav-button btn active"
+          onclick="switchTab('firstcontact','HTTP')"
+         >HTTP</button>
+    
+        <button
+          data-tab-item="Java"
+          data-tab-group="firstcontact"
+          class="tab-nav-button btn "
+          onclick="switchTab('firstcontact','Java')"
+         >Java</button>
+    
+        <button
+          data-tab-item="C#"
+          data-tab-group="firstcontact"
+          class="tab-nav-button btn "
+          onclick="switchTab('firstcontact','C#')"
+         >C#</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="firstcontact" class="tab-item active">
+            <p>      <strong>Request</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">POST</span> https://v2-34-0.local.documaster.tech:8083/rms/api/public/noark5/v1/query <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+<span style="color:#960050;background-color:#1e0010">...</span>
+Authorization: Bearer {{accessTokenIntegrator}}
+Content-Type: application/json
+X-Documaster-Error-Response-Type: application/json
+
+{
+  &#34;type&#34;: &#34;Arkiv&#34;,
+  &#34;limit&#34;: 1,
+  &#34;query&#34;: &#34;id = @fondsID&#34;,
+  &#34;parameters&#34; : {
+    &#34;@fondsID&#34; : &#34;1088&#34;
+  }
+}
+</code></pre></div><p>      <strong>Response</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">OK</span>
+Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+
+{
+    <span style="color:#f92672">&#34;hasMore&#34;</span>: <span style="color:#66d9ef">false</span>,
+    <span style="color:#f92672">&#34;results&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Arkiv&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;1088&#34;</span>,
+            <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;4&#34;</span>,
+            <span style="color:#f92672">&#34;fields&#34;</span>: {
+                <span style="color:#f92672">&#34;uuid&#34;</span>: <span style="color:#e6db74">&#34;82281a12-3453-43d9-bca6-4ae0910bf5ec&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetDato&#34;</span>: <span style="color:#e6db74">&#34;2021-11-29T12:54:32.303+0100&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAv&#34;</span>: <span style="color:#e6db74">&#34;External Integrator ACME&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAvBrukerIdent&#34;</span>: <span style="color:#e6db74">&#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;</span>,
+                <span style="color:#f92672">&#34;tittel&#34;</span>: <span style="color:#e6db74">&#34;Integration Fonds&#34;</span>,
+                <span style="color:#f92672">&#34;beskrivelse&#34;</span>: <span style="color:#e6db74">&#34;API Created Fonds&#34;</span>,
+                <span style="color:#f92672">&#34;arkivstatus&#34;</span>: <span style="color:#e6db74">&#34;O&#34;</span>,
+                <span style="color:#f92672">&#34;dokumentmedium&#34;</span>: <span style="color:#e6db74">&#34;E&#34;</span>
+            },
+            <span style="color:#f92672">&#34;links&#34;</span>: {}
+        }
+    ]
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Java" data-tab-group="firstcontact" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+        </div>
+        
+        <div data-tab-item="C#" data-tab-group="firstcontact" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"></code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+
 
 
 
@@ -1226,6 +1358,22 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1683,7 +1831,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/documaster-api-docs/general/authentication/" title="Authentication and Authorization"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/documaster-api-docs/general/modeloverview/" title="Model and Operations Overview"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/documaster-api-docs/operations/" title="Operations" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1696,19 +1844,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/documaster-api-docs/js/clipboard.min.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/jquery.sticky.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/featherlight.min.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/highlight.pack.js?1637923943"></script>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1638196144"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/learn.js?1637923943"></script>
-    <script src="/documaster-api-docs/js/hugo-learn.js?1637923943"></script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/learn.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1638196144"></script>
     
         
-            <script src="/documaster-api-docs/mermaid/mermaid.js?1637923943"></script>
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1638196144"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

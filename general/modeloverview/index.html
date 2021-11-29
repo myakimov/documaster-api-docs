@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/documaster-api-docs/images/favicon.png" type="image/png">
 
-    <title>Overview :: Documaster Noark5 API</title>
+    <title>Model and Operations Overview :: Documaster Noark5 API</title>
 
     
     <link href="/documaster-api-docs/css/nucleus.css?1638196144" rel="stylesheet">
@@ -41,7 +41,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/documaster-api-docs/general/overview/">
+  <body class="" data-url="/documaster-api-docs/general/modeloverview/">
     <nav id="sidebar" class="">
 
 
@@ -126,8 +126,8 @@
   
     
     <li data-nav-id="/documaster-api-docs/general/overview/" title="Overview" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/documaster-api-docs/general/overview/">
@@ -230,8 +230,8 @@
   
     
     <li data-nav-id="/documaster-api-docs/general/modeloverview/" title="Model and Operations Overview" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/documaster-api-docs/general/modeloverview/">
@@ -1092,7 +1092,7 @@
             
           
           
-            <a href='/documaster-api-docs/'>Documaster Noark5 API</a> > <a href='/documaster-api-docs/general/'>Getting Started</a> > Overview
+            <a href='/documaster-api-docs/'>Documaster Noark5 API</a> > <a href='/documaster-api-docs/general/'>Getting Started</a> > Model and Operations Overview
           
         
           
@@ -1107,12 +1107,13 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#overview">Overview</a>
+    <li><a href="#documaster-model">Documaster Model</a></li>
+    <li><a href="#operations">Operations</a>
       <ul>
-        <li><a href="#noark5">Noark5</a></li>
+        <li></li>
       </ul>
     </li>
-    <li><a href="#start-using-the-documaster-noark5-api">Start Using the Documaster Noark5 API</a></li>
+    <li><a href="#relations">Relations</a></li>
   </ul>
 </nav>
     </div>
@@ -1130,7 +1131,7 @@
           
             <h1>
               
-              Overview
+              Model and Operations Overview
             </h1>
           
 
@@ -1138,82 +1139,29 @@
 
 
 
-	<h2 id="overview">Overview</h2>
-<p>Documaster API provides the capabilities of managing the Noark5 compliant model, that <strong>Documaster Archive</strong> is based on. Supporting various use cases and integration scenarios is at the basis of the API design, combined with strong focus on <strong>security</strong>, <strong>consistency</strong> and <strong>efficiency</strong>.</p>
-<p>Documaster Noark5 API key features:</p>
+	<h2 id="documaster-model">Documaster Model</h2>
+<p>Documaster model closely follows the Noark5 stadnard. As in the Noark5 definition, at the very top of the entities objects structure are the Fonds (<code>Arkiv</code>).</p>
+<p>As depicted on the diagram below, a Fonds (<code>Arkiv</code>) should have at least one Fonds Creator (<code>Arkivskaper</code>) and can have zero or many (0..*) linked Series (<code>Arkivdel</code>). Relations between entities can be referenced by two different names depending on the entity which is using the link. As in the example below, Fonds (<code>Arkiv</code>) link to Series (<code>Arkivdel</code>), when referenced from the Fonds is accessed by the reference name <code>refArkivdel</code>. When the same link is refferred to from the Series (<code>Arkivde</code>) it is accesed by the reference name <code>refArkiv</code>. All reference names start with the <code>ref</code> prefix.</p>
+<p>Each relation also has cardinality depicted on the diagrams, which indicates whether the relation is one-to-one, one-to-many or many-to-many.</p>
+<p><img src="/documaster-api-docs/general/modeloverview/images/diagram-fonds-firstconact.png" alt="child-parent-relation"></p>
+<h2 id="operations">Operations</h2>
+<p>Keeping data in consistent state, requires fine grained control over core entities creation and modification. Documaster Noark5 API v1 uses a single operation <code>POST /noark5/v1/transaction</code> to execute a sequencial series of actions towards the Noark5 structure in order to modify it. Transaction is considered successfully completed only when all the actions part of it are executed without an error. An error in any of the actions would result in rollback of the whole transaction.</p>
+<h4 id="key-takeouts">Key Takeouts</h4>
 <ul>
-<li>Supports full control over Noark5 compliant model of Documaster Archive
-<ul>
-<li>Strong consistency model for entities creation</li>
-<li>Flexible query language</li>
-<li>Full-text search capabilities</li>
-<li>Bulk operations</li>
+<li>Core Noark5 entity objects are modified using <code>POST /noark5/v1/transaction</code> API (reffered in the documentation as <code>transacton</code>)</li>
+<li>Core Noark5 entity objects are queries using <code>POST /noark5/v1/query</code> API (reffered in the documentation as <code>query</code>)</li>
 </ul>
+<h2 id="relations">Relations</h2>
+<p>Relations between entities are used for two purposes:</p>
+<ul>
+<li>
+<p>link entities to each other (using <code>POST /noark/v1/transaction</code> operation, <code>transaction::link</code> action)</p>
 </li>
-<li>Secured using OAuth2/OIC, which combined with Documaster Archive internal security model, provides fine grained control over each and every aspect of the Noark5 entities</li>
-<li>Support for external IDP (Identity Providers) such as Azure ADFS (Office365 integration), Active Directory, LDAP, others.</li>
-<li>HTTP/JSON based, making it easy to integrate with wide varieaty of external systems</li>
-<li>API designed to be solely consumed in a server-to-server manner</li>
-<li>Documaster developed client SDKs for both Java and .NET</li>
+<li>
+<p>query linked entities (using <code>POST /noark/v1/query</code> operation)</p>
+</li>
 </ul>
-<h3 id="noark5">Noark5</h3>
-<p>Noark is a Norwegian national standard for electronic records management and archiving which began its history in 1984. The latest major version of the standard, Noark 5, is based on the EU standard MoReq. Even though there are many similarities between the two, Noark 5 is more pragmatic than MoReq in certain areas where MoReq follows core archival principles more strictly.</p>
-<p><a href="https://www.arkivverket.no/forvaltning-og-utvikling/noark-standarden/noark-5/noark5-standarden">Noark5 Standard Official Page</a></p>
-<h2 id="start-using-the-documaster-noark5-api">Start Using the Documaster Noark5 API</h2>
-<p><i class="far fa-dot-circle"></i> As a very first step of using the API, one should be provided with the required access (credentils, certificates, hosts, etc.).</p>
-
-<a  href="/documaster-api-docs/general/onboarding/" target="_parent"  class="btn btn-default">
-  
-  
-  
-  <i class="fas fa-angle-double-right"></i> Onboarding
-  
-</a>
-
-<hr>
-<p><i class="far fa-dot-circle"></i> Second would be deciding on the type of client you would be developing. If your system is Java or .NET based, please consider using our Client SDKs.</p>
-
-<a  href="/documaster-api-docs/general/clientsdk/" target="_parent"  class="btn btn-default">
-  
-  
-  
-  <i class="fas fa-angle-double-right"></i> Client SDKs
-  
-</a>
-
-<hr>
-<p><i class="far fa-dot-circle"></i> Third, authenticate using your credentials agains the integration instance you gained access to. We provide IDP Client SDKs for Java and .NET in case this is your preffered way.</p>
-
-<a  href="/documaster-api-docs/general/authentication/" target="_parent"  class="btn btn-default">
-  
-  
-  
-  <i class="fas fa-angle-double-right"></i> Authentication and Authorization
-  
-</a>
-
-<hr>
-<p><i class="far fa-dot-circle"></i> Forth, take a brief look at the Documaster Noark5 Model and Operations.</p>
-
-<a  href="/documaster-api-docs/general/modeloverview/" target="_parent"  class="btn btn-default">
-  
-  
-  
-  <i class="fas fa-angle-double-right"></i> Model and Operatons Overview
-  
-</a>
-
-<hr>
-<p><i class="far fa-dot-circle"></i> As a last of having a working development environment, try a couple of examples.</p>
-
-<a  href="/documaster-api-docs/general/firstcontact/" target="_parent"  class="btn btn-default">
-  
-  
-  
-  <i class="fas fa-angle-double-right"></i> First API Interaction
-  
-</a>
-
+<p>While the Documaster implementation is flexible in regards of how references are used, as a general rule, when two objects are linked using <code>POST /noark5/v1/transaction</code> operation, the child entity (the one lower in the Noark5 structure), should reference an entity object up the structure. Querying the structure can be done using any references suitable.</p>
 
 
 
@@ -1270,23 +1218,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -1353,6 +1284,26 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1807,10 +1758,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/documaster-api-docs/general/" title="Getting Started"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/documaster-api-docs/general/authentication/" title="Authentication and Authorization"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/documaster-api-docs/general/onboarding/" title="Onboarding" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/documaster-api-docs/general/firstcontact/" title="First API Interaction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

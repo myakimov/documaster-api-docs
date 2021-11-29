@@ -163,3 +163,26 @@ g.classGroup text {
     fill:#33a1ff !important;
 }
 
+button.pill.body {
+    pointer-events: none;
+    background-color: #941d55;
+    border: none;
+    color: #dcdffe;
+    padding: 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+button.pill.others {
+    pointer-events: none;
+    background-color: #dcdffe;
+    border: none;
+    color: #941d55;
+    padding: 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
