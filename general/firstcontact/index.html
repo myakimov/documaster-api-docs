@@ -12,22 +12,22 @@
     <title>First API Interaction :: Documaster Noark5 API</title>
 
     
-    <link href="/documaster-api-docs/css/nucleus.css?1638196144" rel="stylesheet">
-    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638196144" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hybrid.css?1638196144" rel="stylesheet">
-    <link href="/documaster-api-docs/css/featherlight.min.css?1638196144" rel="stylesheet">
-    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638196144" rel="stylesheet">
-    <link href="/documaster-api-docs/css/auto-complete.css?1638196144" rel="stylesheet">
-    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638196144" rel="stylesheet">
-    <link href="/documaster-api-docs/css/theme.css?1638196144" rel="stylesheet">
-    <link href="/documaster-api-docs/css/tabs.css?1638196144" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hugo-theme.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/nucleus.css?1638279390" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638279390" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1638279390" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1638279390" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638279390" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1638279390" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638279390" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1638279390" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1638279390" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1638279390" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/theme-mine.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme-mine.css?1638279390" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/syntax.css?1638196144" rel="stylesheet">
+    <link href="/documaster-api-docs/css/syntax.css?1638279390" rel="stylesheet">
 
-    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638279390"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638196144"></script>
-<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638196144"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638279390"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638279390"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
     
 </script>
-<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638196144"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638279390"></script>
 
     
   </div>
@@ -1107,9 +1107,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#execute-fist-query">Execute Fist Query</a>
+    <li><a href="#execute-first-query">Execute First Query</a>
       <ul>
         <li><a href="#get-fonds-details">Get Fonds Details</a></li>
+        <li><a href="#get-fonds-creator">Get Fonds Creator</a></li>
+        <li><a href="#get-fonds-series">Get Fonds Series</a></li>
       </ul>
     </li>
   </ul>
@@ -1137,7 +1139,7 @@
 
 
 
-	<h2 id="execute-fist-query">Execute Fist Query</h2>
+	<h2 id="execute-first-query">Execute First Query</h2>
 <p>At this point, the integration developer should have the following details:</p>
 <ul>
 <li><code>client_id</code> and <code>client_secret</code>, <code>username</code> and <code>password</code>, provided as part of the onboarding process</li>
@@ -1151,6 +1153,68 @@
 <li><a href="http://google.com">Query Operation</a></li>
 <li><a href="https://google.com">Data Model Overview</a></li>
 </ul>
+<h5 id="http-parameters-mapping">HTTP parameters mapping</h5>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td>Bearer {{accessToken}}</td>
+<td>access token aquired as part of the authentication call, prefixed with <code>Bearer</code></td>
+</tr>
+<tr>
+<td><code>Content-Type</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td>value of <strong>application/json</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><code>X-Documaster-Error-Response-Type</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td>value of <strong>application/json</strong></td>
+<td>custom header indicating that any error should be reported in JSON format, rather than the standard text format</td>
+</tr>
+<tr>
+<td><code>$.type</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>value of <strong>Arkiv</strong></td>
+<td>the element defines the type of the entity the query is executed for, in this case it is <code>Arkiv</code></td>
+</tr>
+<tr>
+<td><code>$.limit</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>value of <strong>1</strong></td>
+<td>maximum number of records the query should return</td>
+</tr>
+<tr>
+<td><code>$.query</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>value of <strong>id = @fonds</strong></td>
+<td>query written in the Documaster Noark5 API language, where @fondsID is a parameter supplied in <code>$.parameters</code> object</td>
+</tr>
+<tr>
+<td>`$.parameters.@fondsID</td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>the parameter <code>@fonds</code> value to be used, in this case <strong>1088</strong>, alredy existing Fonds ID</td>
+<td>defines the parameter value for @fondsID parameter of the query</td>
+</tr>
+</tbody>
+</table>
 
 
 <div class="tab-panel">
@@ -1235,6 +1299,124 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
     </div>
 </div>
 
+<p>The result of the query above returns the details of the Fonds (<code>Arkiv</code>) entity object that is already present. All the elements under <code>$.results[].fields</code> are the specific fields for the Fonds with their respective values. Details about the meaning of those fields can be found in <a href="/documaster-api-docs/model/entities/fonds/">Data Model/Core Entities/Fonds</a>.</p>
+<h3 id="get-fonds-creator">Get Fonds Creator</h3>
+<p>Now that the Fonds (<code>Arkiv</code>) details are retrieved, it would be important to see how relations between entity objects can be used for queries. As depicted on the diagram in <a href="/documaster-api-docs/general/modeloverview/">Model and Operations Overview</a>, each Fonds (<code>Arkiv</code>) should have a least one Fonds Creator (<code>Arkivskaper</code>), so the already existing Fonds with ID : 1088 should have a creator.</p>
+<p>Querying for an object based on the objects it is linked to is done through the reference fields (fields prefixed with <code>ref</code>). Example queries how this is achived through the API follow.</p>
+<h5 id="http-parameters-mapping-1">HTTP parameters mapping</h5>
+<p><em>Only modified elements in the current request are shown, other headers/body elements remain the same</em></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$.type</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>value of <strong>Arkivskaper</strong></td>
+<td>the element defines the type of the entity the query is executed for, in this case it is <code>Arkivskaper</code> (Fonds Creator)</td>
+</tr>
+<tr>
+<td><code>$.query</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>value of <strong>refArkiv.id = @fondsID</strong></td>
+<td>query written in the Documaster Noark5 API language, where @fondsID is a parameter supplied in <code>$.parameters</code> object, containing the FondsID. The change with the previous query is that now the query uses <code>refArkiv</code>, refernece to the link between the Fonds (<code>Arkiv</code>) and the Fonds Creator (<code>Arkivskaper</code>), name as defined for the Fonds Creator (<code>Arkivskaper</code>) entity. <code>refArkiv.id</code> referes to the Fonds ID that is linked to the creator.</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="firstcontact"
+          class="tab-nav-button btn active"
+          onclick="switchTab('firstcontact','HTTP')"
+         >HTTP</button>
+    
+        <button
+          data-tab-item="Java"
+          data-tab-group="firstcontact"
+          class="tab-nav-button btn "
+          onclick="switchTab('firstcontact','Java')"
+         >Java</button>
+    
+        <button
+          data-tab-item="C#"
+          data-tab-group="firstcontact"
+          class="tab-nav-button btn "
+          onclick="switchTab('firstcontact','C#')"
+         >C#</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="firstcontact" class="tab-item active">
+            <p>      <strong>Request</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">POST</span> https://v2-34-0.local.documaster.tech:8083/rms/api/public/noark5/v1/query <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+<span style="color:#960050;background-color:#1e0010">...</span>
+Authorization: Bearer {{accessTokenIntegrator}}
+Content-Type: application/json
+X-Documaster-Error-Response-Type: application/json
+
+{
+  &#34;type&#34;: &#34;Arkivskaper&#34;,
+  &#34;limit&#34;: 5,
+  &#34;query&#34;: &#34;refArkiv.id = @fondsID&#34;,
+  &#34;parameters&#34; : {
+    &#34;@fondsID&#34; : &#34;1088&#34;
+  }
+}
+</code></pre></div><p>      <strong>Response</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">OK</span>
+Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+
+{
+    <span style="color:#f92672">&#34;hasMore&#34;</span>: <span style="color:#66d9ef">false</span>,
+    <span style="color:#f92672">&#34;results&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Arkivskaper&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;1089&#34;</span>,
+            <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;2&#34;</span>,
+            <span style="color:#f92672">&#34;fields&#34;</span>: {
+                <span style="color:#f92672">&#34;uuid&#34;</span>: <span style="color:#e6db74">&#34;93d0938f-e4bd-4fb2-9e31-2f41fe48ac9d&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetDato&#34;</span>: <span style="color:#e6db74">&#34;2021-11-29T12:54:32.307+0100&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAv&#34;</span>: <span style="color:#e6db74">&#34;External Integrator ACME&#34;</span>,
+                <span style="color:#f92672">&#34;opprettetAvBrukerIdent&#34;</span>: <span style="color:#e6db74">&#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;</span>,
+                <span style="color:#f92672">&#34;arkivskaperIdent&#34;</span>: <span style="color:#e6db74">&#34;EXI&#34;</span>,
+                <span style="color:#f92672">&#34;arkivskaperNavn&#34;</span>: <span style="color:#e6db74">&#34;External Integrator&#34;</span>
+            },
+            <span style="color:#f92672">&#34;links&#34;</span>: {
+                <span style="color:#f92672">&#34;refArkiv&#34;</span>: <span style="color:#ae81ff">1088</span>
+            }
+        }
+    ]
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Java" data-tab-group="firstcontact" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+        </div>
+        
+        <div data-tab-item="C#" data-tab-group="firstcontact" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"></code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+<h3 id="get-fonds-series">Get Fonds Series</h3>
+<p>Retrieving the Series (<code>Arkivdel</code>) linked to the Fonds (<code>Arkiv</code>) should be trivial, following the samples above. Entity type is <code>Arkivdel</code> and the relation from Series (<code>Arkivdel</code>) to Fonds (<code>Arkiv</code>) is again <code>refArkiv</code>. Details for this example are left out so it can be used as simple check point for basic query opertion usage knowledge.</p>
 
 
 
@@ -1844,19 +2026,19 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/documaster-api-docs/js/clipboard.min.js?1638196144"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638196144"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638196144"></script>
-    <script src="/documaster-api-docs/js/jquery.sticky.js?1638196144"></script>
-    <script src="/documaster-api-docs/js/featherlight.min.js?1638196144"></script>
-    <script src="/documaster-api-docs/js/highlight.pack.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1638279390"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638279390"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638279390"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1638279390"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1638279390"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1638279390"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638196144"></script>
-    <script src="/documaster-api-docs/js/learn.js?1638196144"></script>
-    <script src="/documaster-api-docs/js/hugo-learn.js?1638196144"></script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638279390"></script>
+    <script src="/documaster-api-docs/js/learn.js?1638279390"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1638279390"></script>
     
         
-            <script src="/documaster-api-docs/mermaid/mermaid.js?1638196144"></script>
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1638279390"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
