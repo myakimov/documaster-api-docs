@@ -9,19 +9,19 @@
     <lastBuildDate>Thu, 29 Nov 2018 08:41:44 +0100</lastBuildDate><atom:link href="https://myakimov.github.io/documaster-api-docs/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Overview</title>
-      <link>https://myakimov.github.io/documaster-api-docs/model/tags/</link>
+      <link>https://myakimov.github.io/documaster-api-docs/model/overview/</link>
       <pubDate>Thu, 29 Nov 2018 08:41:44 +0100</pubDate>
       
-      <guid>https://myakimov.github.io/documaster-api-docs/model/tags/</guid>
+      <guid>https://myakimov.github.io/documaster-api-docs/model/overview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Query</title>
-      <link>https://myakimov.github.io/documaster-api-docs/operations/query/</link>
+      <link>https://myakimov.github.io/documaster-api-docs/operations/core/query/</link>
       <pubDate>Thu, 29 Nov 2018 08:41:44 +0100</pubDate>
       
-      <guid>https://myakimov.github.io/documaster-api-docs/operations/query/</guid>
+      <guid>https://myakimov.github.io/documaster-api-docs/operations/core/query/</guid>
       <description></description>
     </item>
     

@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 29 Nov 2018 08:41:44 +0100</lastBuildDate><atom:link href="https://myakimov.github.io/documaster-api-docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Overview</title>
-      <link>https://myakimov.github.io/documaster-api-docs/model/tags/</link>
+      <link>https://myakimov.github.io/documaster-api-docs/model/overview/</link>
       <pubDate>Thu, 29 Nov 2018 08:41:44 +0100</pubDate>
       
-      <guid>https://myakimov.github.io/documaster-api-docs/model/tags/</guid>
+      <guid>https://myakimov.github.io/documaster-api-docs/model/overview/</guid>
       <description></description>
     </item>
     
@@ -36,10 +36,19 @@
     
     <item>
       <title>Transaction</title>
-      <link>https://myakimov.github.io/documaster-api-docs/operations/transaction/</link>
+      <link>https://myakimov.github.io/documaster-api-docs/operations/core/transaction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://myakimov.github.io/documaster-api-docs/operations/transaction/</guid>
+      <guid>https://myakimov.github.io/documaster-api-docs/operations/core/transaction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Query</title>
+      <link>https://myakimov.github.io/documaster-api-docs/operations/core/query/</link>
+      <pubDate>Thu, 29 Nov 2018 08:41:44 +0100</pubDate>
+      
+      <guid>https://myakimov.github.io/documaster-api-docs/operations/core/query/</guid>
       <description></description>
     </item>
     
@@ -71,21 +80,30 @@
     </item>
     
     <item>
+      <title>Upload</title>
+      <link>https://myakimov.github.io/documaster-api-docs/operations/core/upload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://myakimov.github.io/documaster-api-docs/operations/core/upload/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Download</title>
+      <link>https://myakimov.github.io/documaster-api-docs/operations/core/download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://myakimov.github.io/documaster-api-docs/operations/core/download/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Meeting Participant</title>
       <link>https://myakimov.github.io/documaster-api-docs/model/entities/abstractfolder/meetingfolder/meetingparticipant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://myakimov.github.io/documaster-api-docs/model/entities/abstractfolder/meetingfolder/meetingparticipant/</guid>
       <description>Moetedeltaker </description>
-    </item>
-    
-    <item>
-      <title>Query</title>
-      <link>https://myakimov.github.io/documaster-api-docs/operations/query/</link>
-      <pubDate>Thu, 29 Nov 2018 08:41:44 +0100</pubDate>
-      
-      <guid>https://myakimov.github.io/documaster-api-docs/operations/query/</guid>
-      <description></description>
     </item>
     
   </channel>

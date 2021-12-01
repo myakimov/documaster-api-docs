@@ -186,3 +186,12 @@ button.pill.others {
     display: inline-block;
     border-radius: 20px;
 }
+
+a.tag-link {
+    background-color: #941d55 !important;
+}
+
+a.tag-link::before {
+    border-right-color: #941d55 !important;
+    border-left-width: 1px !important;
+}

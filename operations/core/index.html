@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/documaster-api-docs/images/favicon.png" type="image/png">
 
-    <title>Common :: Documaster Noark5 API</title>
+    <title>Core Operations :: Documaster Noark5 API</title>
 
     
     <link href="/documaster-api-docs/css/nucleus.css?1638367959" rel="stylesheet">
@@ -41,7 +41,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/documaster-api-docs/common/">
+  <body class="" data-url="/documaster-api-docs/operations/core/">
     <nav id="sidebar" class="">
 
 
@@ -289,7 +289,7 @@
   
     
     <li data-nav-id="/documaster-api-docs/operations/" title="Operations" class="dd-item
-        
+        parent
         
         
         ">
@@ -318,8 +318,8 @@
   
     
     <li data-nav-id="/documaster-api-docs/operations/core/" title="Core Operations" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/documaster-api-docs/operations/core/">
@@ -1168,7 +1168,13 @@
             
           
           
-            <a href='/documaster-api-docs/'>Documaster Noark5 API</a> > Common
+            
+            
+          
+          
+            <a href='/documaster-api-docs/'>Documaster Noark5 API</a> > <a href='/documaster-api-docs/operations/'>Operations</a> > Core Operations
+          
+        
           
         
           
@@ -1181,9 +1187,17 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#entities-managed-with-core-operations">Entities Managed with Core Operations</a>
       <ul>
-        <li><a href="#abstraktregistrering--abstract-record-fields">AbstraktRegistrering / Abstract Record Fields</a></li>
+        <li><a href="#fonds">Fonds</a></li>
+        <li><a href="#classification">Classification</a></li>
+        <li><a href="#series">Series</a></li>
+        <li><a href="#folders-level">Folders Level</a></li>
+        <li><a href="#records-level">Records Level</a></li>
+        <li><a href="#documents">Documents</a></li>
+        <li><a href="#national-identifiers">National Identifiers</a></li>
+        <li><a href="#shared-entities">Shared Entities</a></li>
       </ul>
     </li>
   </ul>
@@ -1203,263 +1217,88 @@
           
             <h1>
               
-              Common
+              Core Operations
             </h1>
           
 
         
 
 
-<h3 id="abstraktregistrering--abstract-record-fields">AbstraktRegistrering / Abstract Record Fields</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Field no.</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Field</th>
-<th style="text-align:center">Not null</th>
-<th style="text-align:center">Has default</th>
-<th style="text-align:center">Code list</th>
-<th style="text-align:left"></th>
-<th style="text-align:center">Save</th>
-<th style="text-align:center">View</th>
-<th style="text-align:center">Query</th>
-<th style="text-align:center">Sort</th>
-<th style="text-align:left">Comment</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">id</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center">sm</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">version</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center">sm</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">M001</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">
-<style>
-    .definition {
-        visibility: hidden;
-        width: 220px;
-        background-color: #555;
-        color: #fff;
-        text-align: left;
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -60px;
-        opacity: 0;
-        transition: opacity 0.3s;
-        padding: 5px 5px 5px 5px;
-    }
 
-    .term {
-        position: relative;
-        display: inline-block;
-        border-bottom: 1px dotted black;
-    }
-
-    .term:hover .definition {
-        visibility: visible;
-        opacity: 1;
-    }
-</style>
-<span class="term">
-
-     uuid 
-<span class="definition"> unique identifer of entity in Documaster system </span> 
-
-</span></td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center">cw</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">M600</td>
-<td style="text-align:left">timestamp</td>
-<td style="text-align:left">
-<style>
-    .definition {
-        visibility: hidden;
-        width: 220px;
-        background-color: #555;
-        color: #fff;
-        text-align: left;
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -60px;
-        opacity: 0;
-        transition: opacity 0.3s;
-        padding: 5px 5px 5px 5px;
-    }
-
-    .term {
-        position: relative;
-        display: inline-block;
-        border-bottom: 1px dotted black;
-    }
-
-    .term:hover .definition {
-        visibility: visible;
-        opacity: 1;
-    }
-</style>
-<span class="term">
-
-     opprettetDato 
-<span class="definition"> createdDate (en) <br/> date at which the entity was created </span> 
-
-</span></td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center">cw</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">M601</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">opprettetAv</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center">cw</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">M601</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">opprettetAvBrukerIdent</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center">cw</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">M602</td>
-<td style="text-align:left">timestamp</td>
-<td style="text-align:left">avsluttetDato</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center">cw</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">M603</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">avsluttetAv</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center">cw</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">M603</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">avsluttetAvBrukerIdent</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center">cw</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">prefiks</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-<td style="text-align:center">cw</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:left"><p>• optional identifier of the system this <strong>Journalpost</strong> originated from</p><p>• it is strongly advised to populate this field when the target system contains or will contain data from multiple source case management systems</p><p>• once set, this value cannot be modified</p></td>
-</tr>
-</tbody>
-</table>
+	<h2 id="overview">Overview</h2>
+<p>Core operations are considered all operations which manage the most important entities in the system, those being part of the Noark5 model.</p>
+<p>Any update of the Documaster Archive structure is done using the <a href="transaction"><code>Transaction :: POST /noark5/v1/transaction</code></a> operation.
+Retrieving data from the archive is done using the <a href="query"><code>Query :: POST /noark5/v1/query</code></a> oepration.</p>
+<p>When working with the electronic documents, uploading a documents is done using the <a href="upload"><code>Upload :: POST /noark5/v1/upload</code></a> operation. Respectively, downloading a document is done using the <a href="download"><code>Download :: POST /noark5/v1/download</code></a> operation.</p>
+<h2 id="entities-managed-with-core-operations">Entities Managed with Core Operations</h2>
+<p>Below is a complete list of the entities that are managed using Core Operations, more specifically <code>transaction</code> and <code>query</code> operations.</p>
+<p>Take a look at the <a href="/documaster-api-docs/model/overview">Data Model Oveview</a> page for more details on the entities and their relations.</p>
+<h3 id="fonds">Fonds</h3>
+<ul>
+<li>Fonds (<code>Arkiv</code>)</li>
+<li>Fonds Creator (<code>Arkivskaper</code>)</li>
+</ul>
+<h3 id="classification">Classification</h3>
+<ul>
+<li>Classification System (<code>Klassifikasjonssystem</code>)</li>
+<li>Class (<code>Klasse</code>)</li>
+</ul>
+<h3 id="series">Series</h3>
+<ul>
+<li>Seies (<code>Arkivdel</code>)</li>
+</ul>
+<h3 id="folders-level">Folders Level</h3>
+<ul>
+<li>Basic Folder (<code>Mappe</code>)</li>
+<li>Meeting Folder (<code>Moetemappe</code>)
+<ul>
+<li>Meeting Participant (<code>Moetedeltaker</code>)</li>
+</ul>
+</li>
+<li>Case File (<code>Saksmappe</code>)
+<ul>
+<li>Case Party (<code>Sakspart</code>)</li>
+</ul>
+</li>
+</ul>
+<h3 id="records-level">Records Level</h3>
+<ul>
+<li>Basic Record (<code>Basisregistrering</code>)</li>
+<li>Registry Entry (<code>Journalpost</code>)
+<ul>
+<li>Correspondence Party (<code>Korrespondansepart</code>)</li>
+<li>Document Flow (<code>Dokumentflyt</code>)</li>
+<li>Sign-Off (<code>Avskrivning</code>)</li>
+</ul>
+</li>
+<li>Meeting Record (<code>Moeteregistrering</code>)</li>
+</ul>
+<h3 id="documents">Documents</h3>
+<ul>
+<li>Document (<code>Dokument</code>)</li>
+<li>Document Version (<code>Dokumentversjon</code>)</li>
+</ul>
+<hr>
+<h3 id="national-identifiers">National Identifiers</h3>
+<ul>
+<li>Address (<code>Adresse</code>)</li>
+<li>Building (<code>Bygning</code>)</li>
+<li>Property (<code>Eiendom</code>)</li>
+<li>Plan (<code>Plan</code>)</li>
+</ul>
+<hr>
+<h3 id="shared-entities">Shared Entities</h3>
+<ul>
+<li>External ID (<code>EksternId</code>)</li>
+<li>Keywords (<code>Noekkelord</code>)</li>
+<li>Note (<code>Merknad</code>)</li>
+</ul>
 
 
-<footer class="footline">
+
+
+
+<footer class=" footline" >
 	
 </footer>
 
@@ -1611,6 +1450,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1626,6 +1466,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1638,6 +1479,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2095,8 +1939,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/documaster-api-docs/operations/" title="Operations"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/documaster-api-docs/general/" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/documaster-api-docs/operations/core/transaction/" title="Transaction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2128,4 +1974,3 @@
 
   </body>
 </html>
-

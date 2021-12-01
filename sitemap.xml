@@ -11,8 +11,11 @@
     <loc>https://myakimov.github.io/documaster-api-docs/operations/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
   </url><url>
-    <loc>https://myakimov.github.io/documaster-api-docs/model/tags/</loc>
+    <loc>https://myakimov.github.io/documaster-api-docs/model/overview/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/operations/core/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/general/overview/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
@@ -25,17 +28,20 @@
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractrecord/registryentry/</loc>
   </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/operations/core/transaction/</loc>
+  </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/general/onboarding/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/general/clientsdk/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/operations/core/query/</loc>
+    <lastmod>2018-11-29T08:41:44+01:00</lastmod>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/general/authentication/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractfolder/folder/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/fonds/</loc>
-  </url><url>
-    <loc>https://myakimov.github.io/documaster-api-docs/operations/transaction/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/fonds/fondscreator/</loc>
   </url><url>
@@ -54,7 +60,11 @@
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/general/firstcontact/</loc>
   </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/operations/core/upload/</loc>
+  </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/usage/perusecase/registryentryanddocument/</loc>
+  </url><url>
+    <loc>https://myakimov.github.io/documaster-api-docs/operations/core/download/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/usage/</loc>
   </url><url>
@@ -75,9 +85,6 @@
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractrecord/meetingrecord/</loc>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/model/entities/abstractrecord/</loc>
-  </url><url>
-    <loc>https://myakimov.github.io/documaster-api-docs/operations/query/</loc>
-    <lastmod>2018-11-29T08:41:44+01:00</lastmod>
   </url><url>
     <loc>https://myakimov.github.io/documaster-api-docs/tags/documentation/</loc>
     <lastmod>2018-11-29T08:41:44+01:00</lastmod>
