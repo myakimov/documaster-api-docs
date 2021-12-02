@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/documaster-api-docs/images/favicon.png" type="image/png">
 
-    <title>Query :: Documaster Noark5 API</title>
+    <title>Usage Guidelines :: Documaster Noark5 API</title>
 
     
     <link href="/documaster-api-docs/css/nucleus.css?1638454205" rel="stylesheet">
@@ -41,7 +41,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/documaster-api-docs/operations/core/query/">
+  <body class="" data-url="/documaster-api-docs/operations/core/transaction/usage-guidelines/">
     <nav id="sidebar" class="">
 
 
@@ -347,7 +347,7 @@
   
     
     <li data-nav-id="/documaster-api-docs/operations/core/transaction/" title="Transaction" class="dd-item
-        
+        parent
         
         
         ">
@@ -373,7 +373,7 @@
  
   
     
-      <li data-nav-id="/documaster-api-docs/operations/core/transaction/usage-guidelines/" title="Usage Guidelines" class="dd-item ">
+      <li data-nav-id="/documaster-api-docs/operations/core/transaction/usage-guidelines/" title="Usage Guidelines" class="dd-item active">
         <a href="/documaster-api-docs/operations/core/transaction/usage-guidelines/">
         Usage Guidelines
         
@@ -403,7 +403,7 @@
  
   
     
-      <li data-nav-id="/documaster-api-docs/operations/core/query/" title="Query" class="dd-item active">
+      <li data-nav-id="/documaster-api-docs/operations/core/query/" title="Query" class="dd-item ">
         <a href="/documaster-api-docs/operations/core/query/">
         Query
         
@@ -1214,7 +1214,13 @@
             
           
           
-            <a href='/documaster-api-docs/'>Documaster Noark5 API</a> > <a href='/documaster-api-docs/operations/'>Operations</a> > <a href='/documaster-api-docs/operations/core/'>Core Operations</a> > Query
+            
+            
+          
+          
+            <a href='/documaster-api-docs/'>Documaster Noark5 API</a> > <a href='/documaster-api-docs/operations/'>Operations</a> > <a href='/documaster-api-docs/operations/core/'>Core Operations</a> > <a href='/documaster-api-docs/operations/core/transaction/'>Transaction</a> > Usage Guidelines
+          
+        
           
         
           
@@ -1229,7 +1235,12 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#key-usage-points">Key Usage Points</a></li>
+    <li><a href="#best-practices">Best Practices</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -1239,27 +1250,41 @@
             
         <div id="head-tags">
         
-<div class="tags">
-
-  <a class="tag-link" href="/documaster-api-docs/tags/documentation">documentation</a>
-
-  <a class="tag-link" href="/documaster-api-docs/tags/tutorial">tutorial</a>
-
-</div>
-
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-              Query
+              Usage Guidelines
             </h1>
           
 
         
 
 
+<h2 id="key-usage-points">Key Usage Points</h2>
+<ul>
+<li>Actions order is important since they are executed sequentially</li>
+<li>All transaction actions should succeed for the transaction to be successful</li>
+<li>Each action works on a single entity, identified by the combination of <code>$.actions[].type</code> and <code>$.actions[].id</code></li>
+<li><code>save</code> action manages entity fields, while <code>link</code>/<code>unlink</code> actions use the reference field (prefixed with <code>ref</code>)</li>
+<li>Creating an entity object with <code>save</code> should always be followed by a <code>link</code> action, where a reference of the new entity is used to link it to another entity</li>
+<li>Always link the new entity objects to the existing structure or to another new entity which was already linked to the structure</li>
+<li>Temporary IDs in <code>$.actions[].id</code> are used only for objects that are being created in the tranasction. The validity of the temporary IDs is only in the scope of the transaction. Temporary IDs must be non-numberic values, while permanent IDs are numeric values.</li>
+</ul>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>Although the <code>transaction</code> operation allows creating many entity objects at once, restrict its usage to entities at atmost 2 levels (Folders Level, Records Level, etc.), where having it restricted to a single level makes it more easily reusable
+<ul>
+<li>Create a Case File (<code>Saksmappe</code>) linked to a primary Class (<code>Klasse</code>) and an ExternalID (<code>EksternId</code>) <strong>1 level - Folder Level</strong></li>
+<li>Create a Registry Entry (<code>Journalpost</code>) linked to a Correspondence Party (<code>Korrespondansepart</code>) <strong>1 level - Records Level</strong></li>
+<li>Create a Registry Entry (<code>Journalpost</code>), Document (<code>Dokument</code>) and Dokument Version (<code>Dokumentversjon</code>) <strong>2 levels - Records and Document Level</strong></li>
+</ul>
+</li>
+<li>Avoid modifying in the same transacton unrelated entities</li>
+<li><code>link</code> actions should be executed against the child object which is linking to an entity up the structure, not the other way around. Registry Entry is linking itself to the Case File, through the <code>refMappe</code> reference, not the Case File adding the Registry Entry to the list of its records.</li>
+</ul>
 
 
 <footer class="footline">
@@ -1446,8 +1471,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1456,25 +1479,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
                     
                         
             
@@ -1493,6 +1497,9 @@
             
         
                     
+            
+        
+                    
                         
             
             
@@ -1500,6 +1507,22 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1925,10 +1948,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/documaster-api-docs/operations/core/transaction/usage-guidelines/" title="Usage Guidelines"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/documaster-api-docs/operations/core/transaction/" title="Transaction"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/documaster-api-docs/operations/core/upload/" title="Upload" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/documaster-api-docs/operations/core/query/" title="Query" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

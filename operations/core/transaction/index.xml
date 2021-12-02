@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transaction on Documaster Noark5 API</title>
+    <link>https://myakimov.github.io/documaster-api-docs/operations/core/transaction/</link>
+    <description>Recent content in Transaction on Documaster Noark5 API</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://myakimov.github.io/documaster-api-docs/operations/core/transaction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Usage Guidelines</title>
+      <link>https://myakimov.github.io/documaster-api-docs/operations/core/transaction/usage-guidelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://myakimov.github.io/documaster-api-docs/operations/core/transaction/usage-guidelines/</guid>
+      <description>Key Usage Points  Actions order is important since they are executed sequentially All transaction actions should succeed for the transaction to be successful Each action works on a single entity, identified by the combination of $.actions[].type and $.actions[].id save action manages entity fields, while link/unlink actions use the reference field (prefixed with ref) Creating an entity object with save should always be followed by a link action, where a reference of the new entity is used to link it to another entity Always link the new entity objects to the existing structure or to another new entity which was already linked to the structure Temporary IDs in $.</description>
+    </item>
+    
+  </channel>
+</rss>

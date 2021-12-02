@@ -12,22 +12,22 @@
     <title>Transaction :: Documaster Noark5 API</title>
 
     
-    <link href="/documaster-api-docs/css/nucleus.css?1638367959" rel="stylesheet">
-    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638367959" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hybrid.css?1638367959" rel="stylesheet">
-    <link href="/documaster-api-docs/css/featherlight.min.css?1638367959" rel="stylesheet">
-    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638367959" rel="stylesheet">
-    <link href="/documaster-api-docs/css/auto-complete.css?1638367959" rel="stylesheet">
-    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638367959" rel="stylesheet">
-    <link href="/documaster-api-docs/css/theme.css?1638367959" rel="stylesheet">
-    <link href="/documaster-api-docs/css/tabs.css?1638367959" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hugo-theme.css?1638367959" rel="stylesheet">
+    <link href="/documaster-api-docs/css/nucleus.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1638454205" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/theme-mine.css?1638367959" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme-mine.css?1638454205" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/syntax.css?1638367959" rel="stylesheet">
+    <link href="/documaster-api-docs/css/syntax.css?1638454205" rel="stylesheet">
 
-    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638367959"></script>
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638454205"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638367959"></script>
-<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638367959"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638454205"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638454205"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
     
 </script>
-<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638367959"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638454205"></script>
 
     
   </div>
@@ -331,6 +331,8 @@
         <ul>
           
           
+            
+          
           
 
         
@@ -344,13 +346,49 @@
  
   
     
-      <li data-nav-id="/documaster-api-docs/operations/core/transaction/" title="Transaction" class="dd-item active">
-        <a href="/documaster-api-docs/operations/core/transaction/">
-        Transaction
+    <li data-nav-id="/documaster-api-docs/operations/core/transaction/" title="Transaction" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/documaster-api-docs/operations/core/transaction/">
+          Transaction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/operations/core/transaction/usage-guidelines/" title="Usage Guidelines" class="dd-item ">
+        <a href="/documaster-api-docs/operations/core/transaction/usage-guidelines/">
+        Usage Guidelines
         
         </a>
     </li>
      
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
   
  
 
@@ -1191,7 +1229,36 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#description">Description</a>
+      <ul>
+        <li></li>
+        <li><a href="#key-points">Key Points</a></li>
+      </ul>
+    </li>
+    <li><a href="#actionsave">Action::Save</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#actionlink">Action::Link</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#actionunlink">Action::Unlink</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#actiondelete">Action::Delete</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -1215,8 +1282,584 @@
 
 
 
+	<h2 id="description">Description</h2>
+<h4 id="post-noark5v1transaction">POST /noark5/v1/transaction</h4>
+<p>The <code>POST /noark5/v1/transaction</code> or as referred to in the documentation <code>transaction</code> operation is the only way to introduce changes inside the Documaster Archive Noark5 structure of core entities. The operation payload is an ordered set of <strong>actions</strong>, which are executed in a sequential manner. Call execution is considered successful only in case all the actions part of the transaction are completed successfully, otherwise all of the actions are reverted back. This way the structure remains consistent, with no partial updates or corrupted links as a result of a partially executed set of actions.</p>
+<p>Actions supported by the operation are as follows:</p>
+<ul>
+<li><code>save</code> - used to insert or update a core entity fields. <code>save</code> for a new entity object must be followed by a <code>link</code> action, connecting the new entity to an entity in the existing structure. Eexception of this rule are the Fonds (<code>Arkiv</code>) as being root objects in the structure and Classification Systems (<code>Klassifikasjonssystem</code>).</li>
+<li><code>link</code> - used to link two (or more) core entities using one of the entities reference field to the connecton between the two</li>
+<li><code>delete</code> - used to delete a core entity from the structure (used only with special permissions)</li>
+<li><code>unlink</code> - used to disassociate two entities</li>
+</ul>
 
-<footer class="footline">
+<div class="notices warning" ><p>Order of the actions in a transaction is important for the execution, especially during creation of new entity objects. Always order the actions in a way that newly created entity objects are linked to the existing structure and only then link other entity objects to them.</p>
+</div>
+
+<p>Actions are supplied in the payload body of the request in an array <code>$.actions[]</code>, where each action has a field <code>$.actions[].action</code> which can take one of the values above.</p>
+<p>Typical transaction is depicted below, showing a new Registry Entry (<code>Journalpost</code>) created and a Correspondence Party (<code>Korrespondansepart</code>). The Registry Entry is linked to an existing Case File (<code>Saksmappe</code>), while the Correspondence Party is linked to the Registry Entry.</p>
+<p><img src="/documaster-api-docs/operations/core/images/diagrams-transaction-operation.png" alt="child-parent-relation"></p>
+<h5 id="common-http-request-mapping">Common HTTP Request Mapping</h5>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td>string</td>
+<td>access token aquired as part of the authentication call, prefixed with <code>Bearer</code></td>
+</tr>
+<tr>
+<td><code>Content-Type</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td>string</td>
+<td>content type header, should always be provided as <strong>application/json</strong></td>
+</tr>
+<tr>
+<td><code>X-Documaster-Error-Response-Type</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td>string</td>
+<td>custom header indicating that any error should be reported in JSON format, rather than the standard text format, should always be provided as <strong>application/json</strong></td>
+</tr>
+<tr>
+<td><code>$.actions[]</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>array</td>
+<td>array of actions executed sequentially</td>
+</tr>
+<tr>
+<td><code>$.actions[].action</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>one of the supported action types : <code>save</code>, <code>link</code>, <code>delete</code>, <code>unlink</code></td>
+</tr>
+<tr>
+<td><code>$.actions[].type</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>type of the core entity affected by the action (<code>Arkiv</code>, <code>Arkivdel</code>, <code>Saksmappe</code>, <code>Journalpost</code>, etc.)</td>
+</tr>
+<tr>
+<td><code>$.actions[].id</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>Unique identifier of the entity which is being affected by the action. If the entity is a new one, the identifer should be a <strong>non-numeric ID</strong> valid only in the context of the transaction</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-points">Key Points</h3>
+<ul>
+<li>Actions order is important since they are executed sequentially</li>
+<li>All transaction actions should succeed for the transaction to be successful</li>
+<li>Each action can work on a single entity, identified by the combination of <code>$.actions[].type</code> and <code>$.actions[].id</code></li>
+<li>Creating an entity object with <code>save</code> should always be followed by a <code>link</code> action, where a reference of the new entity is used to link it to another entity</li>
+<li><code>link</code> actions should be executed against the child object which is linking to an entity up the structure, not the other way around. Registry Entry is linking itself to the Case File, through the <code>refMappe</code> reference, not the Case File adding the Registry Entry to the list of its records.</li>
+<li>Temporary IDs <code>$.actions[].id</code> is used only for object that are being created and are valid only in the scope of the transaction. Temporary IDs must be non-numberic values</li>
+<li>Always link the new entity objects to the existing structure or to another new entity which was already linked to the structure</li>
+</ul>
+<h2 id="actionsave">Action::Save</h2>
+<p><code>save</code> action is used to <strong>create</strong> or <strong>update</strong> an entity object part. As part of the <code>save</code> action, only fields related to the specific entity can be set or modified. Reference fields (fields prefixed with <code>ref</code>) cannot be accessed using the <code>save</code> action. Reference fields are used in <code>link</code> and <code>unlink</code> actions to indicate a connection between two entities.</p>
+<h5 id="http-request-mapping">HTTP Request Mapping</h5>
+<p><em>Only modified elements in the current request are shown, other headers/body elements remain the same</em></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$.actions[].action</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>value of <code>save</code></td>
+</tr>
+<tr>
+<td><code>$.actions[].id</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>Unique identifier of the entity which is being affected by the action. If the entity is a new one, the identifer should be a <strong>non-numeric ID</strong> valid only in the context of the transaction</td>
+</tr>
+<tr>
+<td><code>$.actions[].fields</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>object</td>
+<td>an object containing entity specific fields and their respective values. Entity specific fields can be found in the <a href="/documaster-api-docs/model">Model</a> section of the documentation</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="transaction"
+          class="tab-nav-button btn active"
+          onclick="switchTab('transaction','HTTP')"
+         >HTTP</button>
+    
+        <button
+          data-tab-item="Java"
+          data-tab-group="transaction"
+          class="tab-nav-button btn "
+          onclick="switchTab('transaction','Java')"
+         >Java</button>
+    
+        <button
+          data-tab-item="C#"
+          data-tab-group="transaction"
+          class="tab-nav-button btn "
+          onclick="switchTab('transaction','C#')"
+         >C#</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="transaction" class="tab-item active">
+            <p>      <strong>Create</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;actions&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;save&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;journalpost-temp-id-1&#34;</span>,
+            <span style="color:#f92672">&#34;fields&#34;</span>: {
+                <span style="color:#f92672">&#34;tittel&#34;</span>: <span style="color:#e6db74">&#34;API Created Registry Entry&#34;</span>,
+                <span style="color:#f92672">&#34;beskrivelse&#34;</span>: <span style="color:#e6db74">&#34;Registry Entry Description&#34;</span>,
+                <span style="color:#f92672">&#34;journalposttype&#34;</span>: <span style="color:#e6db74">&#34;U&#34;</span>
+            }
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">required</span> <span style="color:#960050;background-color:#1e0010">link</span> <span style="color:#960050;background-color:#1e0010">action</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">link</span> <span style="color:#960050;background-color:#1e0010">the</span> <span style="color:#960050;background-color:#1e0010">entity</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">the</span> <span style="color:#960050;background-color:#1e0010">structure</span> <span style="color:#960050;background-color:#1e0010">....</span>
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;link&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;journalpost-temp-id-1&#34;</span>,
+            <span style="color:#f92672">&#34;ref&#34;</span>: <span style="color:#e6db74">&#34;refMappe&#34;</span>,
+            <span style="color:#f92672">&#34;linkToId&#34;</span>: <span style="color:#e6db74">&#34;691&#34;</span>
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">other</span> <span style="color:#960050;background-color:#1e0010">actions</span> <span style="color:#960050;background-color:#1e0010">....</span>
+    ]
+}
+</code></pre></div><p>      <strong>Update</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;actions&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;save&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;864&#34;</span>,
+            <span style="color:#f92672">&#34;fields&#34;</span>: {
+                <span style="color:#f92672">&#34;tittel&#34;</span>: <span style="color:#e6db74">&#34;API Created Registry Entry(Updated Title)&#34;</span>,
+                <span style="color:#f92672">&#34;beskrivelse&#34;</span>: <span style="color:#e6db74">&#34;Registry Entry Description (Updated Description)&#34;</span>
+            }
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">other</span> <span style="color:#960050;background-color:#1e0010">actions</span> <span style="color:#960050;background-color:#1e0010">....</span>
+    ]
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Java" data-tab-group="transaction" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+        </div>
+        
+        <div data-tab-item="C#" data-tab-group="transaction" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"></code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+<h2 id="actionlink">Action::Link</h2>
+<p><code>link</code> action is used to connect core entities using their reference fields. When a new entity object is created it should be linked in the same transaction to objects part of the structure. Excluded from this rule are Fonds (<code>Arkiv</code>) and Classification System (<code>Klassifikasjonssystem</code>) which can exist without any relation to an object in the structure. <code>link</code> action is commonly used together with a <code>save</code> action for creation of new entity objects or separately when associating entities to Classes (<code>Klasse</code>). <code>link</code> is also used together witn <code>unlink</code> action to &ldquo;move&rdquo; an entity in the tree, first unliking it and then linking it to another parent object.</p>
+<h5 id="http-request-mapping-1">HTTP Request Mapping</h5>
+<p><em>Only modified elements in the current request are shown, other headers/body elements remain the same</em></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$.actions[].action</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>value of <code>link</code></td>
+</tr>
+<tr>
+<td><code>$.actions[].id</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>unique identifier of the entity which is being affected by the action. If the entity is a new one, the identifer should be a <strong>non-numeric ID</strong> valid only in the context of the transaction</td>
+</tr>
+<tr>
+<td><code>$.actions[].ref</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>name of the reference field which is updated by the <code>link</code> action. The reference field is part of the entity model identified by <code>$.actons[].type</code> element</td>
+</tr>
+<tr>
+<td><code>$.actions[].linkToId</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>array</td>
+<td>a string array (or a single string value) identifying another core entity which can be referenced using the field in <code>$.actions[].ref</code>. It can contain a temporary ID in case the referenced entity object is also created in the same transaction</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="transaction"
+          class="tab-nav-button btn active"
+          onclick="switchTab('transaction','HTTP')"
+         >HTTP</button>
+    
+        <button
+          data-tab-item="Java"
+          data-tab-group="transaction"
+          class="tab-nav-button btn "
+          onclick="switchTab('transaction','Java')"
+         >Java</button>
+    
+        <button
+          data-tab-item="C#"
+          data-tab-group="transaction"
+          class="tab-nav-button btn "
+          onclick="switchTab('transaction','C#')"
+         >C#</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="transaction" class="tab-item active">
+            <p>      <strong>Link New Entity</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;actions&#34;</span>: [
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">save</span> <span style="color:#960050;background-color:#1e0010">action</span> <span style="color:#960050;background-color:#1e0010">creating</span> <span style="color:#960050;background-color:#1e0010">new</span> <span style="color:#960050;background-color:#1e0010">Regisry</span> <span style="color:#960050;background-color:#1e0010">Entry</span> <span style="color:#960050;background-color:#1e0010">(Journalpost)</span> <span style="color:#960050;background-color:#1e0010">....</span>
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;save&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;journalpost-temp-id-1&#34;</span>,
+            <span style="color:#f92672">&#34;fields&#34;</span>: {
+                <span style="color:#f92672">&#34;tittel&#34;</span>: <span style="color:#e6db74">&#34;API Created Registry Entry&#34;</span>,
+                <span style="color:#f92672">&#34;beskrivelse&#34;</span>: <span style="color:#e6db74">&#34;Registry Entry Description&#34;</span>,
+                <span style="color:#f92672">&#34;journalposttype&#34;</span>: <span style="color:#e6db74">&#34;U&#34;</span>
+            }
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">required</span> <span style="color:#960050;background-color:#1e0010">link</span> <span style="color:#960050;background-color:#1e0010">action</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">link</span> <span style="color:#960050;background-color:#1e0010">the</span> <span style="color:#960050;background-color:#1e0010">entity</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">the</span> <span style="color:#960050;background-color:#1e0010">structure</span> <span style="color:#960050;background-color:#1e0010">....</span>
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;link&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;journalpost-temp-id-1&#34;</span>,
+            <span style="color:#f92672">&#34;ref&#34;</span>: <span style="color:#e6db74">&#34;refMappe&#34;</span>,
+            <span style="color:#f92672">&#34;linkToId&#34;</span>: <span style="color:#e6db74">&#34;691&#34;</span>
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">other</span> <span style="color:#960050;background-color:#1e0010">actions</span> <span style="color:#960050;background-color:#1e0010">....</span>
+    ]
+}
+</code></pre></div><p>      <strong>Link Existing Entities</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;actions&#34;</span>: [
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">link</span> <span style="color:#960050;background-color:#1e0010">existing</span> <span style="color:#960050;background-color:#1e0010">Case</span> <span style="color:#960050;background-color:#1e0010">File</span> <span style="color:#960050;background-color:#1e0010">(Saksmappe)</span> <span style="color:#960050;background-color:#1e0010">with</span> <span style="color:#960050;background-color:#1e0010">ID</span> <span style="color:#ae81ff">981</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">a</span> <span style="color:#960050;background-color:#1e0010">Class</span> <span style="color:#960050;background-color:#1e0010">(Klasse)</span> <span style="color:#ae81ff">598</span> <span style="color:#960050;background-color:#1e0010">as</span> <span style="color:#960050;background-color:#1e0010">secondary</span> <span style="color:#960050;background-color:#1e0010">class</span> <span style="color:#960050;background-color:#1e0010">....</span>
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;link&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;981&#34;</span>,
+            <span style="color:#f92672">&#34;ref&#34;</span>: <span style="color:#e6db74">&#34;refSekundaerKlasse&#34;</span>,
+            <span style="color:#f92672">&#34;linkToId&#34;</span>: <span style="color:#e6db74">&#34;598&#34;</span>
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">other</span> <span style="color:#960050;background-color:#1e0010">actions</span> <span style="color:#960050;background-color:#1e0010">....</span>
+    ]
+}
+</code></pre></div><p>      <strong>Move Entity Objects (unlink + link)</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;actions&#34;</span>: [
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">unlink</span> <span style="color:#960050;background-color:#1e0010">RegisryEntry</span> <span style="color:#960050;background-color:#1e0010">from</span> <span style="color:#960050;background-color:#1e0010">Case</span> <span style="color:#960050;background-color:#1e0010">File</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#ae81ff">981</span><span style="color:#960050;background-color:#1e0010">)....</span>
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;unlink&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;1001&#34;</span>,
+            <span style="color:#f92672">&#34;ref&#34;</span>: <span style="color:#e6db74">&#34;refMappe&#34;</span>,
+            <span style="color:#f92672">&#34;unlinkFromId&#34;</span>: <span style="color:#e6db74">&#34;981&#34;</span>
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">link</span> <span style="color:#960050;background-color:#1e0010">RegisryEntry</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">another</span> <span style="color:#960050;background-color:#1e0010">Case</span> <span style="color:#960050;background-color:#1e0010">File</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#ae81ff">666</span><span style="color:#960050;background-color:#1e0010">)....</span>
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;link&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;1001&#34;</span>,
+            <span style="color:#f92672">&#34;ref&#34;</span>: <span style="color:#e6db74">&#34;refMappe&#34;</span>,
+            <span style="color:#f92672">&#34;linkToId&#34;</span>: <span style="color:#e6db74">&#34;666&#34;</span>
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">other</span> <span style="color:#960050;background-color:#1e0010">actions</span> <span style="color:#960050;background-color:#1e0010">....</span>
+    ]
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Java" data-tab-group="transaction" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+        </div>
+        
+        <div data-tab-item="C#" data-tab-group="transaction" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"></code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+<h2 id="actionunlink">Action::Unlink</h2>
+<p><code>unlink</code> action is used to remove connection between core entity objects. It can be used to remove links between entities which can remain unattached, like Case File (<code>Saksmappe</code>) and a Class (<code>Klasse</code>) as secondary. The action does not allow unlinking an entity which cannot exist without its parent, like unlinking a Registry Entry (<code>Journalpost</code>) from the Case File (<code>Saksmappe</code>) it is part of. In this case the Registr Entry (<code>Journalpost</code>) should be linked to another Case File (<code>Saksmappe</code>) in the same transaction using <code>link</code> action.</p>
+<h5 id="http-request-mapping-2">HTTP Request Mapping</h5>
+<p><em>Only modified elements in the current request are shown, other headers/body elements remain the same</em></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$.actions[].action</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>value of <code>unlink</code></td>
+</tr>
+<tr>
+<td><code>$.actions[].id</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>unique identifier of the entity which is being affected by the action.</td>
+</tr>
+<tr>
+<td><code>$.actions[].ref</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>name of the reference field which is updated by the <code>unlink</code> action. The reference field is part of the entity model identified by <code>$.actons[].type</code> element</td>
+</tr>
+<tr>
+<td><code>$.actions[].unlinkFromId</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>array</td>
+<td>a string array (or a single string value) identifying another core entity which is linked to the entity</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="transaction"
+          class="tab-nav-button btn active"
+          onclick="switchTab('transaction','HTTP')"
+         >HTTP</button>
+    
+        <button
+          data-tab-item="Java"
+          data-tab-group="transaction"
+          class="tab-nav-button btn "
+          onclick="switchTab('transaction','Java')"
+         >Java</button>
+    
+        <button
+          data-tab-item="C#"
+          data-tab-group="transaction"
+          class="tab-nav-button btn "
+          onclick="switchTab('transaction','C#')"
+         >C#</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="transaction" class="tab-item active">
+            <p>      <strong>Unlink Entities</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;actions&#34;</span>: [
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">unlink</span> <span style="color:#960050;background-color:#1e0010">existing</span> <span style="color:#960050;background-color:#1e0010">Case</span> <span style="color:#960050;background-color:#1e0010">File</span> <span style="color:#960050;background-color:#1e0010">(Saksmappe)</span> <span style="color:#960050;background-color:#1e0010">with</span> <span style="color:#960050;background-color:#1e0010">ID</span> <span style="color:#ae81ff">981</span> <span style="color:#960050;background-color:#1e0010">and</span> <span style="color:#960050;background-color:#1e0010">linked</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">it</span> <span style="color:#960050;background-color:#1e0010">Class</span> <span style="color:#960050;background-color:#1e0010">(Klasse)</span> <span style="color:#ae81ff">598</span> <span style="color:#960050;background-color:#1e0010">as</span> <span style="color:#960050;background-color:#1e0010">secondary</span> <span style="color:#960050;background-color:#1e0010">class</span> <span style="color:#960050;background-color:#1e0010">....</span>
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;unlink&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Saksmappe&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;981&#34;</span>,
+            <span style="color:#f92672">&#34;ref&#34;</span>: <span style="color:#e6db74">&#34;refSekundaerKlasse&#34;</span>,
+            <span style="color:#f92672">&#34;unlinkFromId&#34;</span>: <span style="color:#e6db74">&#34;598&#34;</span>
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">other</span> <span style="color:#960050;background-color:#1e0010">actions</span> <span style="color:#960050;background-color:#1e0010">....</span>
+    ]
+}
+</code></pre></div><p>      <strong>Move Entity Objects (unlink + link)</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;actions&#34;</span>: [
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">unlink</span> <span style="color:#960050;background-color:#1e0010">RegisryEntry</span> <span style="color:#960050;background-color:#1e0010">from</span> <span style="color:#960050;background-color:#1e0010">Case</span> <span style="color:#960050;background-color:#1e0010">File</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#ae81ff">981</span><span style="color:#960050;background-color:#1e0010">)....</span>
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;unlink&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;1001&#34;</span>,
+            <span style="color:#f92672">&#34;ref&#34;</span>: <span style="color:#e6db74">&#34;refMappe&#34;</span>,
+            <span style="color:#f92672">&#34;unlinkFromId&#34;</span>: <span style="color:#e6db74">&#34;981&#34;</span>
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">link</span> <span style="color:#960050;background-color:#1e0010">RegisryEntry</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">another</span> <span style="color:#960050;background-color:#1e0010">Case</span> <span style="color:#960050;background-color:#1e0010">File</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#ae81ff">666</span><span style="color:#960050;background-color:#1e0010">)....</span>
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;link&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;1001&#34;</span>,
+            <span style="color:#f92672">&#34;ref&#34;</span>: <span style="color:#e6db74">&#34;refMappe&#34;</span>,
+            <span style="color:#f92672">&#34;linkToId&#34;</span>: <span style="color:#e6db74">&#34;666&#34;</span>
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">other</span> <span style="color:#960050;background-color:#1e0010">actions</span> <span style="color:#960050;background-color:#1e0010">....</span>
+    ]
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Java" data-tab-group="transaction" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+        </div>
+        
+        <div data-tab-item="C#" data-tab-group="transaction" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"></code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+<h2 id="actiondelete">Action::Delete</h2>
+<p><code>delete</code> action is used to remove core entities objects from the archive structure.</p>
+
+<div class="notices warning" ><p>The <code>delete</code> action is available only for internal use and mentioned here for completenes. It is not available to integrating parties unless a specific uses cases require it.</p>
+</div>
+
+<h5 id="http-request-mapping-3">HTTP Request Mapping</h5>
+<p><em>Only modified elements in the current request are shown, other headers/body elements remain the same</em></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$.actions[].action</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>value of <code>delete</code></td>
+</tr>
+<tr>
+<td><code>$.actions[].id</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>unique identifier of the entity which is being affected by the action.</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="transaction"
+          class="tab-nav-button btn active"
+          onclick="switchTab('transaction','HTTP')"
+         >HTTP</button>
+    
+        <button
+          data-tab-item="Java"
+          data-tab-group="transaction"
+          class="tab-nav-button btn "
+          onclick="switchTab('transaction','Java')"
+         >Java</button>
+    
+        <button
+          data-tab-item="C#"
+          data-tab-group="transaction"
+          class="tab-nav-button btn "
+          onclick="switchTab('transaction','C#')"
+         >C#</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="transaction" class="tab-item active">
+            <p>      <strong>Delete Entities</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;actions&#34;</span>: [
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">delete</span> <span style="color:#960050;background-color:#1e0010">Registry</span> <span style="color:#960050;background-color:#1e0010">Entry</span> <span style="color:#960050;background-color:#1e0010">(Journalpost)</span> <span style="color:#960050;background-color:#1e0010">with</span> <span style="color:#960050;background-color:#1e0010">ID</span> <span style="color:#ae81ff">994</span> <span style="color:#960050;background-color:#1e0010">....</span>
+        {
+            <span style="color:#f92672">&#34;action&#34;</span>: <span style="color:#e6db74">&#34;delete&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;Journalpost&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;994&#34;</span>
+        },
+        <span style="color:#960050;background-color:#1e0010">....</span> <span style="color:#960050;background-color:#1e0010">other</span> <span style="color:#960050;background-color:#1e0010">actions</span> <span style="color:#960050;background-color:#1e0010">....</span>
+    ]
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Java" data-tab-group="transaction" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+        </div>
+        
+        <div data-tab-item="C#" data-tab-group="transaction" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"></code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+<footer class=" footline" >
 	
 </footer>
 
@@ -1390,6 +2033,8 @@
 
                     
                     
+                        
+                    
                     
 
                     
@@ -1398,6 +2043,22 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1410,13 +2071,13 @@
             
         
                     
+            
+        
+                    
                         
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1861,7 +2522,7 @@
 			<a class="nav nav-prev" href="/documaster-api-docs/operations/core/" title="Core Operations"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/documaster-api-docs/operations/core/query/" title="Query" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/documaster-api-docs/operations/core/transaction/usage-guidelines/" title="Usage Guidelines" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1871,19 +2532,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/documaster-api-docs/js/clipboard.min.js?1638367959"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638367959"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638367959"></script>
-    <script src="/documaster-api-docs/js/jquery.sticky.js?1638367959"></script>
-    <script src="/documaster-api-docs/js/featherlight.min.js?1638367959"></script>
-    <script src="/documaster-api-docs/js/highlight.pack.js?1638367959"></script>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1638454205"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638367959"></script>
-    <script src="/documaster-api-docs/js/learn.js?1638367959"></script>
-    <script src="/documaster-api-docs/js/hugo-learn.js?1638367959"></script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/learn.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1638454205"></script>
     
         
-            <script src="/documaster-api-docs/mermaid/mermaid.js?1638367959"></script>
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1638454205"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
@@ -1893,4 +2554,3 @@
 
   </body>
 </html>
-
