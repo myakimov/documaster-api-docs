@@ -187,6 +187,46 @@ button.pill.others {
     border-radius: 20px;
 }
 
+button.pill.yes {
+    pointer-events: none;
+    background-color: #ffffff;
+    color: red;
+    border-width: 1px !important;
+    border-color: red;
+    padding: 2px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+button.pill.no {
+    pointer-events: none;
+    background-color: #ffffff;
+    color: lightslategray;
+    border-width: 1px !important;
+    border-color: darkorange;
+    border-style: dashed;
+    padding: 2px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+button.pill.cond {
+    pointer-events: none;
+    background-color: #ffffff;
+    color: green;
+    border-width: 1px !important;
+    border-color: green;
+    padding: 2px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
 a.tag-link {
     background-color: #941d55 !important;
 }

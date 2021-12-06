@@ -12,22 +12,22 @@
     <title>Query :: Documaster Noark5 API</title>
 
     
-    <link href="/documaster-api-docs/css/nucleus.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hybrid.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/featherlight.min.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/auto-complete.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/theme.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/tabs.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hugo-theme.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/nucleus.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1638787432" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/theme-mine.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme-mine.css?1638787432" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/syntax.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/syntax.css?1638787432" rel="stylesheet">
 
-    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638787432"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638454205"></script>
-<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638454205"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638787432"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638787432"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
     
 </script>
-<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638454205"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638787432"></script>
 
     
   </div>
@@ -403,13 +403,18 @@
  
   
     
-      <li data-nav-id="/documaster-api-docs/operations/core/query/" title="Query" class="dd-item active">
-        <a href="/documaster-api-docs/operations/core/query/">
-        Query
+    <li data-nav-id="/documaster-api-docs/operations/core/query/" title="Query" class="dd-item
+        parent
+        active
         
-        </a>
+        ">
+      <a href="/documaster-api-docs/operations/core/query/">
+          Query
+          
+      </a>
+      
+      
     </li>
-     
   
  
 
@@ -1229,7 +1234,22 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#description">Description</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#request">Request</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#response">Response</a></li>
+    <li><a href="#query-language">Query Language</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -1239,14 +1259,6 @@
             
         <div id="head-tags">
         
-<div class="tags">
-
-  <a class="tag-link" href="/documaster-api-docs/tags/documentation">documentation</a>
-
-  <a class="tag-link" href="/documaster-api-docs/tags/tutorial">tutorial</a>
-
-</div>
-
         </div>
         
         <div id="body-inner">
@@ -1261,8 +1273,303 @@
 
 
 
+	<h2 id="description">Description</h2>
+<h4 id="post-noark5v1query">POST /noark5/v1/query</h4>
+<p>The <code>POST /noark5/v1/query</code> or as referred to in the documentation as <code>query</code>, is the operation for retrieving entitiy details from the Documaster Archive model. The operation allows querying for a single type of entity (or entities from a common type). Flexible query language allows retrieval of entities by complex relations traversal throught the archive structure.</p>
+<h2 id="request">Request</h2>
+<h5 id="http-request-mapping">HTTP Request Mapping</h5>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th style="text-align:center">Mandatory</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>string</td>
+<td>access token aquired as part of the authentication call, prefixed with <code>Bearer</code></td>
+</tr>
+<tr>
+<td><code>Content-Type</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>string</td>
+<td>content type header, should always be provided as <strong>application/json</strong></td>
+</tr>
+<tr>
+<td><code>X-Documaster-Error-Response-Type</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>string</td>
+<td>custom header indicating that any error should be reported in JSON format, rather than the standard text format, should always be provided as <strong>application/json</strong></td>
+</tr>
+<tr>
+<td><code>$.type</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>array</td>
+<td>type of the core entity to be retrieved by the query (<code>Arkiv</code>, <code>Arkivdel</code>, <code>Saksmappe</code>, <code>Journalpost</code>, etc.). The query can refere to abstract types like <code>AbstraktMappe</code>, <code>AbstraktRegistrering</code>  or <code>NasjonalIdentifikator</code>.</td>
+</tr>
+<tr>
+<td><code>$.limit</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>number</td>
+<td>number of entity objects to be returned as a result of the query. Using limit that is too high may result in slow queries, so consider using a sensible value in accordance with the use case the query is used in.</td>
+</tr>
+<tr>
+<td><code>$.offset</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill no" style="width:100px">no</button></td>
+<td>number</td>
+<td>offset of the first result of the query, used when an initial query results exceed the defined limit (indicated in the response by the <code>$.hasMore</code> element set to <strong>true</strong>) and a consequent calls wants to return the remaining entity objects</td>
+</tr>
+<tr>
+<td><code>$.query</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill no" style="width:100px">no</button></td>
+<td>string</td>
+<td>API specific query language expression using parameters defined in <code>$.parameters</code>, details in the <a href="#query-language">Query Language</a> section</td>
+</tr>
+<tr>
+<td><code>$.joins</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill no" style="width:100px">no</button></td>
+<td>object</td>
+<td>object in which each element name is an alias definition and the value is the reference field of the entity object to which the alias points. Take a look at the <a href="#query-joins">Query Joins</a> section.</td>
+</tr>
+<tr>
+<td><code>$.joins.{alias}</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill cond" style="width:100px">cond</button></td>
+<td>string</td>
+<td>join alias for the reference field in the value. The alias should be prefixed with <strong>#</strong>.</td>
+</tr>
+<tr>
+<td><code>$.parameters</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill cond" style="width:100px">cond</button></td>
+<td>object</td>
+<td>object with elements for each parameter used in <code>$.query</code>, should always be provided in case specific query is used</td>
+</tr>
+<tr>
+<td><code>$.parameters.{paramName}</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill cond" style="width:100px">cond</button></td>
+<td>string</td>
+<td>name of the parameter as used in the <code>$.query</code> element, the name of the element must be prefixed with <strong>@</strong> indicating it is a parameter</td>
+</tr>
+<tr>
+<td><code>$.sortOrder[]</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill no" style="width:100px">no</button></td>
+<td>array</td>
+<td>list of sorting parameters to be applied on the returned entity objects, each of the elemetn <code>$.sortOrder[].field</code>  and <code>$.sortOrder[].order</code> are required for the elements of the array</td>
+</tr>
+<tr>
+<td><code>$.sortOrder[].field</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill cond" style="width:100px">cond</button></td>
+<td>string</td>
+<td>entity field used to sort over. Note that reference fields (prefixed with <code>ref</code>) cannot be used to sort over</td>
+</tr>
+<tr>
+<td><code>$.sortOrder[].order</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill cond" style="width:100px">cond</button></td>
+<td>string</td>
+<td>sorting order, supported values are <strong>asc</strong> and <strong>desc</strong></td>
+</tr>
+<tr>
+<td><code>$.publicUse</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill no" style="width:100px">no</button></td>
+<td>boolean</td>
+<td>true/false value indicating whether screened entities should be returned or not. Default is <strong>true</strong> indicating no screened entities will be returned.</td>
+</tr>
+</tbody>
+</table>
+<p>Example of a simple query using parameters can be found in the <a href="/documaster-api-docs/general/firstcontact/">Getting Starter/First API Interaction</a> section. Sample queries for every core entity type can be found in the <a href="/documaster-api-docs/usage">Examples</a> section.
+A more complex query utilizing parameters, joins and sorting follows. The sample query below queries for any type of Folders, through basic type <code>AbstraktMappe</code> type, that has 2 distinct secondary classes, referenced through <code>refSekundaerKlasse</code> field. One of the classes is with id <strong>1111</strong>, while the other one has an class identity <strong>APIC2</strong>. The results are sorder by the folder identity element <code>mappeIdent</code>. Note that some of the response entities fields in the response are omitted from the sample for clarity.</p>
 
-<footer class="footline">
+<div class="notices note" ><p>Although the example below uses joins, it is done mainly for illustrating possible operation uses. Most practical use cases do not require use of joins or complex deep reference chaining to filter results.</p>
+</div>
+
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="query"
+          class="tab-nav-button btn active"
+          onclick="switchTab('query','HTTP')"
+         >HTTP</button>
+    
+        <button
+          data-tab-item="Java"
+          data-tab-group="query"
+          class="tab-nav-button btn "
+          onclick="switchTab('query','Java')"
+         >Java</button>
+    
+        <button
+          data-tab-item="C#"
+          data-tab-group="query"
+          class="tab-nav-button btn "
+          onclick="switchTab('query','C#')"
+         >C#</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="query" class="tab-item active">
+            <p>      <strong>Request</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a6e22e">POST</span> https://v2-34-0.local.documaster.tech:8083/rms/api/public/noark5/v1/query <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+<span style="color:#960050;background-color:#1e0010">...</span>
+Authorization: Bearer {{accessTokenIntegrator}}
+Content-Type: application/json
+X-Documaster-Error-Response-Type: application/json
+
+{
+  &#34;type&#34;: &#34;AbstraktMappe&#34;,
+  &#34;limit&#34;: 10,
+  &#34;query&#34;: &#34;#secClass1.id = @class1Id &amp;&amp; #secClass2.klasseIdent = @class2Ident&#34;,
+  &#34;parameters&#34; : {
+    &#34;@class1Id&#34; : &#34;1111&#34;,
+    &#34;@class2Ident&#34; : &#34;APIC2&#34;
+  },
+  &#34;joins&#34;: {
+    &#34;#secClass1&#34; : &#34;refSekundaerKlasse&#34;,
+    &#34;#secClass2&#34; : &#34;refSekundaerKlasse&#34;
+  },
+  &#34;sortOrder&#34; : [
+    {
+      &#34;field&#34; : &#34;mappeIdent&#34;,
+      &#34;order&#34; : &#34;desc&#34;
+    }
+  ]
+}
+</code></pre></div><p>      <strong>Response</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">OK</span>
+<span style="color:#960050;background-color:#1e0010">...</span>
+Content-Type: application/json
+
+HTTP/1.1 200 OK
+Connection: close
+Date: Mon, 06 Dec 2021 09:57:13 GMT
+Content-Type: application/json
+
+{
+  &#34;hasMore&#34;: false,
+  &#34;results&#34;: [
+    {
+      &#34;type&#34;: &#34;Saksmappe&#34;,
+      &#34;id&#34;: &#34;1122&#34;,
+      &#34;version&#34;: &#34;10&#34;,
+      &#34;fields&#34;: {
+        &#34;opprettetAv&#34;: &#34;External Integrator ACME&#34;,
+        &#34;mappeIdent&#34;: &#34;2021/7&#34;,
+        &#34;tittel&#34;: &#34;API Created Case File - 2&#34;,
+        &#34;beskrivelse&#34;: &#34;Second API created Case File&#34;,
+        &#34;dokumentmedium&#34;: &#34;E&#34;,
+        &#34;saksaar&#34;: 2021,
+        &#34;sakssekvensnummer&#34;: 7,
+        &#34;administrativEnhet&#34;: &#34;AD1&#34;,
+        &#34;saksansvarlig&#34;: &#34;External Integrator ACME&#34;,
+        &#34;saksstatus&#34;: &#34;B&#34;
+      },
+      &#34;links&#34;: {
+        &#34;refPrimaerKlasse&#34;: 681,
+        &#34;refArkivdel&#34;: 688
+      }
+    },
+    {
+      &#34;type&#34;: &#34;Saksmappe&#34;,
+      &#34;id&#34;: &#34;981&#34;,
+      &#34;version&#34;: &#34;14&#34;,
+      &#34;fields&#34;: {
+        &#34;opprettetAv&#34;: &#34;External Integrator ACME&#34;,
+        &#34;mappeIdent&#34;: &#34;2021/6&#34;,
+        &#34;tittel&#34;: &#34;API Created Case File&#34;,
+        &#34;beskrivelse&#34;: &#34;First API created Case File&#34;,
+        &#34;dokumentmedium&#34;: &#34;E&#34;,
+        &#34;saksaar&#34;: 2021,
+        &#34;sakssekvensnummer&#34;: 6,
+        &#34;administrativEnhet&#34;: &#34;AD1&#34;,
+        &#34;saksansvarlig&#34;: &#34;External Integrator ACME&#34;,
+        &#34;saksstatus&#34;: &#34;B&#34;
+      },
+      &#34;links&#34;: {
+        &#34;refPrimaerKlasse&#34;: 681,
+        &#34;refArkivdel&#34;: 688
+      }
+    }
+  ]
+}
+
+
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Java" data-tab-group="query" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+        </div>
+        
+        <div data-tab-item="C#" data-tab-group="query" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"></code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+<h2 id="response">Response</h2>
+<h2 id="query-language">Query Language</h2>
+<p>Query Language Section</p>
+
+
+
+
+
+<footer class=" footline" >
 	
 </footer>
 
@@ -1938,19 +2245,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/documaster-api-docs/js/clipboard.min.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/jquery.sticky.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/featherlight.min.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/highlight.pack.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1638787432"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/learn.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/hugo-learn.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/learn.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1638787432"></script>
     
         
-            <script src="/documaster-api-docs/mermaid/mermaid.js?1638454205"></script>
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1638787432"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
@@ -1960,4 +2267,3 @@
 
   </body>
 </html>
-

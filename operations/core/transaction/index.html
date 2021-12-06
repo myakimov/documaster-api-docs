@@ -12,22 +12,22 @@
     <title>Transaction :: Documaster Noark5 API</title>
 
     
-    <link href="/documaster-api-docs/css/nucleus.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hybrid.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/featherlight.min.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/auto-complete.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/theme.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/tabs.css?1638454205" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hugo-theme.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/nucleus.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1638787432" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1638787432" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/theme-mine.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme-mine.css?1638787432" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/syntax.css?1638454205" rel="stylesheet">
+    <link href="/documaster-api-docs/css/syntax.css?1638787432" rel="stylesheet">
 
-    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638787432"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638454205"></script>
-<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638454205"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638787432"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638787432"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
     
 </script>
-<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638454205"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638787432"></script>
 
     
   </div>
@@ -403,13 +403,18 @@
  
   
     
-      <li data-nav-id="/documaster-api-docs/operations/core/query/" title="Query" class="dd-item ">
-        <a href="/documaster-api-docs/operations/core/query/">
-        Query
+    <li data-nav-id="/documaster-api-docs/operations/core/query/" title="Query" class="dd-item
         
-        </a>
+        
+        
+        ">
+      <a href="/documaster-api-docs/operations/core/query/">
+          Query
+          
+      </a>
+      
+      
     </li>
-     
   
  
 
@@ -1234,27 +1239,24 @@
     <li><a href="#description">Description</a>
       <ul>
         <li></li>
-        <li><a href="#key-points">Key Points</a></li>
       </ul>
     </li>
-    <li><a href="#actionsave">Action::Save</a>
+    <li><a href="#request">Request</a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#actionlink">Action::Link</a>
+    <li><a href="#response">Response</a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#actionunlink">Action::Unlink</a>
+    <li><a href="#actions">Actions</a>
       <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#actiondelete">Action::Delete</a>
-      <ul>
-        <li></li>
+        <li><a href="#actionsave">Action::Save</a></li>
+        <li><a href="#actionlink">Action::Link</a></li>
+        <li><a href="#actionunlink">Action::Unlink</a></li>
+        <li><a href="#actiondelete">Action::Delete</a></li>
       </ul>
     </li>
   </ul>
@@ -1287,7 +1289,7 @@
 <p>The <code>POST /noark5/v1/transaction</code> or as referred to in the documentation <code>transaction</code> operation is the only way to introduce changes inside the Documaster Archive Noark5 structure of core entities. The operation payload is an ordered set of <strong>actions</strong>, which are executed in a sequential manner. Call execution is considered successful only in case all the actions part of the transaction are completed successfully, otherwise all of the actions are reverted back. This way the structure remains consistent, with no partial updates or corrupted links as a result of a partially executed set of actions.</p>
 <p>Actions supported by the operation are as follows:</p>
 <ul>
-<li><code>save</code> - used to insert or update a core entity fields. <code>save</code> for a new entity object must be followed by a <code>link</code> action, connecting the new entity to an entity in the existing structure. Eexception of this rule are the Fonds (<code>Arkiv</code>) as being root objects in the structure and Classification Systems (<code>Klassifikasjonssystem</code>).</li>
+<li><code>save</code> - used to create or update a core entity fields.</li>
 <li><code>link</code> - used to link two (or more) core entities using one of the entities reference field to the connecton between the two</li>
 <li><code>delete</code> - used to delete a core entity from the structure (used only with special permissions)</li>
 <li><code>unlink</code> - used to disassociate two entities</li>
@@ -1296,15 +1298,16 @@
 <div class="notices warning" ><p>Order of the actions in a transaction is important for the execution, especially during creation of new entity objects. Always order the actions in a way that newly created entity objects are linked to the existing structure and only then link other entity objects to them.</p>
 </div>
 
+<h2 id="request">Request</h2>
 <p>Actions are supplied in the payload body of the request in an array <code>$.actions[]</code>, where each action has a field <code>$.actions[].action</code> which can take one of the values above.</p>
 <p>Typical transaction is depicted below, showing a new Registry Entry (<code>Journalpost</code>) created and a Correspondence Party (<code>Korrespondansepart</code>). The Registry Entry is linked to an existing Case File (<code>Saksmappe</code>), while the Correspondence Party is linked to the Registry Entry.</p>
-<p><img src="/documaster-api-docs/operations/core/images/diagrams-transaction-operation.png" alt="child-parent-relation"></p>
 <h5 id="common-http-request-mapping">Common HTTP Request Mapping</h5>
 <table>
 <thead>
 <tr>
 <th>Field</th>
 <th>Location</th>
+<th style="text-align:center">Mandatory</th>
 <th>Type</th>
 <th>Description</th>
 </tr>
@@ -1314,6 +1317,8 @@
 <td><code>Authorization</code></td>
 <td>
 <button class="pill others" style="width:100px">Header</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>access token aquired as part of the authentication call, prefixed with <code>Bearer</code></td>
 </tr>
@@ -1321,6 +1326,8 @@
 <td><code>Content-Type</code></td>
 <td>
 <button class="pill others" style="width:100px">Header</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>content type header, should always be provided as <strong>application/json</strong></td>
 </tr>
@@ -1328,6 +1335,8 @@
 <td><code>X-Documaster-Error-Response-Type</code></td>
 <td>
 <button class="pill others" style="width:100px">Header</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>custom header indicating that any error should be reported in JSON format, rather than the standard text format, should always be provided as <strong>application/json</strong></td>
 </tr>
@@ -1335,6 +1344,8 @@
 <td><code>$.actions[]</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>array</td>
 <td>array of actions executed sequentially</td>
 </tr>
@@ -1342,6 +1353,8 @@
 <td><code>$.actions[].action</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>one of the supported action types : <code>save</code>, <code>link</code>, <code>delete</code>, <code>unlink</code></td>
 </tr>
@@ -1349,6 +1362,8 @@
 <td><code>$.actions[].type</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>type of the core entity affected by the action (<code>Arkiv</code>, <code>Arkivdel</code>, <code>Saksmappe</code>, <code>Journalpost</code>, etc.)</td>
 </tr>
@@ -1356,12 +1371,15 @@
 <td><code>$.actions[].id</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>Unique identifier of the entity which is being affected by the action. If the entity is a new one, the identifer should be a <strong>non-numeric ID</strong> valid only in the context of the transaction</td>
 </tr>
 </tbody>
 </table>
-<h3 id="key-points">Key Points</h3>
+<p><img src="/documaster-api-docs/operations/core/images/diagrams-transaction-operation.png" alt="child-parent-relation"></p>
+<h4 id="key-points">Key Points</h4>
 <ul>
 <li>Actions order is important since they are executed sequentially</li>
 <li>All transaction actions should succeed for the transaction to be successful</li>
@@ -1371,10 +1389,10 @@
 <li>Temporary IDs <code>$.actions[].id</code> is used only for object that are being created and are valid only in the scope of the transaction. Temporary IDs must be non-numberic values</li>
 <li>Always link the new entity objects to the existing structure or to another new entity which was already linked to the structure</li>
 </ul>
-<h2 id="actionsave">Action::Save</h2>
-<p><code>save</code> action is used to <strong>create</strong> or <strong>update</strong> an entity object part. As part of the <code>save</code> action, only fields related to the specific entity can be set or modified. Reference fields (fields prefixed with <code>ref</code>) cannot be accessed using the <code>save</code> action. Reference fields are used in <code>link</code> and <code>unlink</code> actions to indicate a connection between two entities.</p>
-<h5 id="http-request-mapping">HTTP Request Mapping</h5>
-<p><em>Only modified elements in the current request are shown, other headers/body elements remain the same</em></p>
+<h2 id="response">Response</h2>
+<p>Response of an a transaction contains only the saved objects details in an element <code>$.saved</code>, which contains one element with the name of the object ID with all the details about it, including fields filled in with default values. The object ID is either the temporary ID, in case the object is newly created, or the actual numeric ID in case it is just updated.</p>
+<p><code>$.saved</code> element would be empty in cases where no entity object fields are updated. <code>transaction::link</code>, <code>transaction::unlink</code> and <code>transaction:delete</code> actions will always result in a response containing an empty <code>$.saved</code> element.</p>
+<h5 id="http-response">HTTP Response</h5>
 <table>
 <thead>
 <tr>
@@ -1386,9 +1404,152 @@
 </thead>
 <tbody>
 <tr>
+<td><code>Content-Type</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td>string</td>
+<td>content type header, always is <strong>application/json</strong></td>
+</tr>
+<tr>
+<td><code>$.saved[].{savedEntityID}</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td>string</td>
+<td>one element for each of the entity objects that were saved, where <code>{savedEntityID} is the ID of the element that was saved, either a temporary ID or the actual ID.</code></td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="tab-panel">
+    <div class="tab-nav">
+    
+        <button
+          data-tab-item="HTTP"
+          data-tab-group="transaction"
+          class="tab-nav-button btn active"
+          onclick="switchTab('transaction','HTTP')"
+         >HTTP</button>
+    
+        <button
+          data-tab-item="Java"
+          data-tab-group="transaction"
+          class="tab-nav-button btn "
+          onclick="switchTab('transaction','Java')"
+         >Java</button>
+    
+        <button
+          data-tab-item="C#"
+          data-tab-group="transaction"
+          class="tab-nav-button btn "
+          onclick="switchTab('transaction','C#')"
+         >C#</button>
+    
+    </div>
+    <div class="tab-content">
+        
+        <div data-tab-item="HTTP" data-tab-group="transaction" class="tab-item active">
+            <p>      <strong>Save Entites Response</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">OK</span>
+<span style="color:#960050;background-color:#1e0010">...</span>
+Content-Type: application/json
+
+{
+    &#34;saved&#34;: {
+        &#34;journalpost-temp-id-1&#34;: {
+            &#34;type&#34;: &#34;Journalpost&#34;,
+            &#34;id&#34;: &#34;938&#34;,
+            &#34;version&#34;: &#34;8&#34;,
+            &#34;fields&#34;: {
+                &#34;uuid&#34;: &#34;35926f91-96d2-40d7-961e-9ffb368673af&#34;,
+                &#34;opprettetDato&#34;: &#34;2021-11-24T14:14:05.933+0100&#34;,
+                &#34;opprettetAv&#34;: &#34;External Integrator ACME&#34;,
+                &#34;opprettetAvBrukerIdent&#34;: &#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;,
+                &#34;registreringsIdent&#34;: &#34;2021/5&#34;,
+                &#34;tittel&#34;: &#34;API Created Registry Entry&#34;,
+                &#34;beskrivelse&#34;: &#34;Registry Entry Description&#34;,
+                &#34;registreringsDato&#34;: &#34;2021-11-24T14:14:05.950+0100&#34;,
+                &#34;dokumentmedium&#34;: &#34;E&#34;,
+                &#34;journalaar&#34;: 2021,
+                &#34;journalsekvensnummer&#34;: 5,
+                &#34;journalpostnummer&#34;: 5,
+                &#34;journalansvarlig&#34;: &#34;External Integrator ACME&#34;,
+                &#34;journalansvarligBrukerIdent&#34;: &#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;,
+                &#34;journalposttype&#34;: &#34;U&#34;,
+                &#34;journalstatus&#34;: &#34;J&#34;,
+                &#34;skjermKorrespondanseParterEInnsyn&#34;: false
+            },
+            &#34;links&#34;: {
+                &#34;refMappe&#34;: 691
+            }
+        },
+        &#34;korrespondansepart-temp-id-1&#34;: {
+            &#34;type&#34;: &#34;Korrespondansepart&#34;,
+            &#34;id&#34;: &#34;939&#34;,
+            &#34;version&#34;: &#34;3&#34;,
+            &#34;fields&#34;: {
+                &#34;uuid&#34;: &#34;3f7bad64-9560-45d2-82a5-4e5fb06a5c13&#34;,
+                &#34;opprettetDato&#34;: &#34;2021-11-24T14:14:05.953+0100&#34;,
+                &#34;opprettetAv&#34;: &#34;External Integrator ACME&#34;,
+                &#34;opprettetAvBrukerIdent&#34;: &#34;e6e6318e-fdcb-41cb-ae3a-1940f98ea153&#34;,
+                &#34;korrespondanseparttype&#34;: &#34;EA&#34;,
+                &#34;korrespondansepartNavn&#34;: &#34;Correspondence Party Name&#34;
+            },
+            &#34;links&#34;: {
+                &#34;refRegistrering&#34;: 938
+            }
+        }
+    }
+}
+</code></pre></div><p>      <strong>Link/Unlink/Delete Response</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span> <span style="color:#ae81ff">200</span> <span style="color:#a6e22e">OK</span>
+<span style="color:#960050;background-color:#1e0010">...</span>
+Content-Type: application/json
+
+{
+  &#34;saved&#34;: {}
+}
+</code></pre></div>
+        </div>
+        
+        <div data-tab-item="Java" data-tab-group="transaction" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"></code></pre></div>
+        </div>
+        
+        <div data-tab-item="C#" data-tab-group="transaction" class="tab-item ">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"></code></pre></div>
+        </div>
+        
+    </div>
+</div>
+
+<h2 id="actions">Actions</h2>
+<h3 id="actionsave">Action::Save</h3>
+<p><code>save</code> action is used to <strong>create</strong> or <strong>update</strong> an entity object part. As part of the <code>save</code> action, only fields related to the specific entity can be set or modified. Reference fields (fields prefixed with <code>ref</code>) cannot be accessed using the <code>save</code> action. Reference fields are used in <code>link</code> and <code>unlink</code> actions to indicate a connection between two entities.</p>
+<h4 id="usage">Usage</h4>
+<ul>
+<li><strong><em>Creating a new entity object</em></strong> - <code>save</code> should be followed by a <code>link</code> action in the <em>same transaction</em>, connecting the new entity to an entity in the existing structure. Exception of this rule are the Fonds (<code>Arkiv</code>) as being root objects in the structure and Classification Systems (<code>Klassifikasjonssystem</code>), which can be created without reference to any other entity in the structure</li>
+<li><strong><em>Updating an existing entity object</em></strong> - <code>save</code> is used to update the entity object fields, it cannot be used to update references (<code>ref</code>)</li>
+</ul>
+<h5 id="http-request-mapping">HTTP Request Mapping</h5>
+<p><em>Only modified elements in the current request are shown, other headers/body elements remain the same</em></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th style="text-align:center">Mandatory</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td><code>$.actions[].action</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>value of <code>save</code></td>
 </tr>
@@ -1396,6 +1557,8 @@
 <td><code>$.actions[].id</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>Unique identifier of the entity which is being affected by the action. If the entity is a new one, the identifer should be a <strong>non-numeric ID</strong> valid only in the context of the transaction</td>
 </tr>
@@ -1403,6 +1566,8 @@
 <td><code>$.actions[].fields</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>object</td>
 <td>an object containing entity specific fields and their respective values. Entity specific fields can be found in the <a href="/documaster-api-docs/model">Model</a> section of the documentation</td>
 </tr>
@@ -1491,8 +1656,15 @@
     </div>
 </div>
 
-<h2 id="actionlink">Action::Link</h2>
-<p><code>link</code> action is used to connect core entities using their reference fields. When a new entity object is created it should be linked in the same transaction to objects part of the structure. Excluded from this rule are Fonds (<code>Arkiv</code>) and Classification System (<code>Klassifikasjonssystem</code>) which can exist without any relation to an object in the structure. <code>link</code> action is commonly used together with a <code>save</code> action for creation of new entity objects or separately when associating entities to Classes (<code>Klasse</code>). <code>link</code> is also used together witn <code>unlink</code> action to &ldquo;move&rdquo; an entity in the tree, first unliking it and then linking it to another parent object.</p>
+<h3 id="actionlink">Action::Link</h3>
+<p><code>link</code> action is used to connect core entities using their reference fields.</p>
+<h4 id="usage-1">Usage</h4>
+<ul>
+<li><strong><em>Creating a new entity object</em></strong> - usage scenario is described in the <a href="#usage">Action::Save::Usage</a>, where <code>link</code> action follows a <code>save</code> action</li>
+<li><strong><em>Linking Class as secondary to an entity</em></strong> - <code>link</code> can be used to link a Class (<code>Klasse</code>) as secondary to entities in the structure</li>
+<li><strong><em>Linking entity objects through cross references</em></strong> - <code>link</code> can be used to link core entities that don&rsquo;t have parent child relations through cross reference relations, as an example : a Registry Entry (<code>Journalpost</code>) can reference another RegisryEntry through <code>refKryssreferanseTilRegistrering</code> refernece field (cross-reference to record)</li>
+<li><strong><em>Moving an entity object in the structure</em></strong> - <code>link</code> is used right after <code>unlink</code> action to implement &ldquo;move&rdquo; functionality. Kind of entities that can be moved depends on the particular use cases and permissions of the integration account.</li>
+</ul>
 <h5 id="http-request-mapping-1">HTTP Request Mapping</h5>
 <p><em>Only modified elements in the current request are shown, other headers/body elements remain the same</em></p>
 <table>
@@ -1500,6 +1672,7 @@
 <tr>
 <th>Field</th>
 <th>Location</th>
+<th style="text-align:center">Mandatory</th>
 <th>Type</th>
 <th>Description</th>
 </tr>
@@ -1509,6 +1682,8 @@
 <td><code>$.actions[].action</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>value of <code>link</code></td>
 </tr>
@@ -1516,6 +1691,8 @@
 <td><code>$.actions[].id</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>unique identifier of the entity which is being affected by the action. If the entity is a new one, the identifer should be a <strong>non-numeric ID</strong> valid only in the context of the transaction</td>
 </tr>
@@ -1523,6 +1700,8 @@
 <td><code>$.actions[].ref</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>name of the reference field which is updated by the <code>link</code> action. The reference field is part of the entity model identified by <code>$.actons[].type</code> element</td>
 </tr>
@@ -1530,6 +1709,8 @@
 <td><code>$.actions[].linkToId</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>array</td>
 <td>a string array (or a single string value) identifying another core entity which can be referenced using the field in <code>$.actions[].ref</code>. It can contain a temporary ID in case the referenced entity object is also created in the same transaction</td>
 </tr>
@@ -1640,8 +1821,14 @@
     </div>
 </div>
 
-<h2 id="actionunlink">Action::Unlink</h2>
-<p><code>unlink</code> action is used to remove connection between core entity objects. It can be used to remove links between entities which can remain unattached, like Case File (<code>Saksmappe</code>) and a Class (<code>Klasse</code>) as secondary. The action does not allow unlinking an entity which cannot exist without its parent, like unlinking a Registry Entry (<code>Journalpost</code>) from the Case File (<code>Saksmappe</code>) it is part of. In this case the Registr Entry (<code>Journalpost</code>) should be linked to another Case File (<code>Saksmappe</code>) in the same transaction using <code>link</code> action.</p>
+<h3 id="actionunlink">Action::Unlink</h3>
+<p><code>unlink</code> action is used to remove connection between core entity objects. It can be used to remove links between entities which can remain unattached, like Case File (<code>Saksmappe</code>) and a Class (<code>Klasse</code>) as secondary. The action does not allow unlinking an entity which cannot exist without its parent, like unlinking a Registry Entry (<code>Journalpost</code>) from the Case File (<code>Saksmappe</code>) it is part of.</p>
+<h4 id="usage-2">Usage</h4>
+<ul>
+<li><strong><em>Unlinking Class as secondary to an entity</em></strong> - <code>unlink</code> can be used to remove a Class (<code>Klasse</code>) as secondary for entities in the structure</li>
+<li><strong><em>Unlinking entity objects cross references</em></strong> - <code>unlink</code> can be used to remove cross-reference between core entities</li>
+<li><strong><em>Moving an entity object in the structure</em></strong> - <code>link</code> is used right after <code>unlink</code> action to implement &ldquo;move&rdquo; functionality. Kind of entities that can be moved depends on the particular use cases and permissions of the integration account.</li>
+</ul>
 <h5 id="http-request-mapping-2">HTTP Request Mapping</h5>
 <p><em>Only modified elements in the current request are shown, other headers/body elements remain the same</em></p>
 <table>
@@ -1649,6 +1836,7 @@
 <tr>
 <th>Field</th>
 <th>Location</th>
+<th style="text-align:center">Mandatory</th>
 <th>Type</th>
 <th>Description</th>
 </tr>
@@ -1658,6 +1846,8 @@
 <td><code>$.actions[].action</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>value of <code>unlink</code></td>
 </tr>
@@ -1665,6 +1855,8 @@
 <td><code>$.actions[].id</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>unique identifier of the entity which is being affected by the action.</td>
 </tr>
@@ -1672,6 +1864,8 @@
 <td><code>$.actions[].ref</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>name of the reference field which is updated by the <code>unlink</code> action. The reference field is part of the entity model identified by <code>$.actons[].type</code> element</td>
 </tr>
@@ -1679,6 +1873,8 @@
 <td><code>$.actions[].unlinkFromId</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>array</td>
 <td>a string array (or a single string value) identifying another core entity which is linked to the entity</td>
 </tr>
@@ -1764,7 +1960,7 @@
     </div>
 </div>
 
-<h2 id="actiondelete">Action::Delete</h2>
+<h3 id="actiondelete">Action::Delete</h3>
 <p><code>delete</code> action is used to remove core entities objects from the archive structure.</p>
 
 <div class="notices warning" ><p>The <code>delete</code> action is available only for internal use and mentioned here for completenes. It is not available to integrating parties unless a specific uses cases require it.</p>
@@ -1777,6 +1973,7 @@
 <tr>
 <th>Field</th>
 <th>Location</th>
+<th style="text-align:center">Mandatory</th>
 <th>Type</th>
 <th>Description</th>
 </tr>
@@ -1786,6 +1983,8 @@
 <td><code>$.actions[].action</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>value of <code>delete</code></td>
 </tr>
@@ -1793,6 +1992,8 @@
 <td><code>$.actions[].id</code></td>
 <td>
 <button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<i class="fas fa-check"></i></td>
 <td>string</td>
 <td>unique identifier of the entity which is being affected by the action.</td>
 </tr>
@@ -2532,19 +2733,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/documaster-api-docs/js/clipboard.min.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/jquery.sticky.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/featherlight.min.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/highlight.pack.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1638787432"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/learn.js?1638454205"></script>
-    <script src="/documaster-api-docs/js/hugo-learn.js?1638454205"></script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/learn.js?1638787432"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1638787432"></script>
     
         
-            <script src="/documaster-api-docs/mermaid/mermaid.js?1638454205"></script>
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1638787432"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
