@@ -12,22 +12,22 @@
     <title>Query :: Documaster Noark5 API</title>
 
     
-    <link href="/documaster-api-docs/css/nucleus.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hybrid.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/featherlight.min.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/auto-complete.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/theme.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/tabs.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hugo-theme.css?1638787647" rel="stylesheet">
+    <link href="/documaster-api-docs/css/nucleus.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1638885193" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/theme-mine.css?1638787647" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme-mine.css?1638885193" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/syntax.css?1638787647" rel="stylesheet">
+    <link href="/documaster-api-docs/css/syntax.css?1638885193" rel="stylesheet">
 
-    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638787647"></script>
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638885193"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638787647"></script>
-<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638787647"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638885193"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638885193"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
     
 </script>
-<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638787647"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638885193"></script>
 
     
   </div>
@@ -1054,8 +1054,6 @@
         <ul>
           
           
-            
-          
           
 
         
@@ -1069,18 +1067,34 @@
  
   
     
-    <li data-nav-id="/documaster-api-docs/usage/perentity/registryentry/" title="Registry Entry" class="dd-item
+      <li data-nav-id="/documaster-api-docs/usage/perentity/casefile/" title="Case File" class="dd-item ">
+        <a href="/documaster-api-docs/usage/perentity/casefile/">
+        Case File
         
-        
-        
-        ">
-      <a href="/documaster-api-docs/usage/perentity/registryentry/">
-          Registry Entry
-          
-      </a>
-      
-      
+        </a>
     </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/usage/perentity/registryentry/" title="Registry Entry" class="dd-item ">
+        <a href="/documaster-api-docs/usage/perentity/registryentry/">
+        Registry Entry
+        
+        </a>
+    </li>
+     
   
  
 
@@ -1246,7 +1260,11 @@
         <li></li>
       </ul>
     </li>
-    <li><a href="#response">Response</a></li>
+    <li><a href="#response">Response</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
     <li><a href="#query-language">Query Language</a></li>
   </ul>
 </nav>
@@ -1332,7 +1350,7 @@
 <td style="text-align:center">
 <button class="pill yes" style="width:100px">yes</button></td>
 <td>number</td>
-<td>number of entity objects to be returned as a result of the query. Using limit that is too high may result in slow queries, so consider using a sensible value in accordance with the use case the query is used in.</td>
+<td>number of entity objects to be returned as a result of the query. Using limit that is too high may result in slow queries, so consider using a sensible value in accordance with the use case the query is used in. Maximum allowed value for the <code>$.limit</code> parameter is <strong>500</strong>.</td>
 </tr>
 <tr>
 <td><code>$.offset</code></td>
@@ -1562,6 +1580,144 @@ Content-Type: application/json
 </div>
 
 <h2 id="response">Response</h2>
+<p>Response of the operation is an array(<code>$.results</code>), with the entity objects matching the specified <code>$.query</code> in the request. The matched entity objects are returned with their complete representation and no filtering on the entity fields is supported currently.
+Successful execution of the query would result in an <strong>HTTP 200 OK</strong> response as shown in the example above.</p>
+<h5 id="http-response-fields">HTTP Response Fields</h5>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th style="text-align:center">Mandatory</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Content-Type</code></td>
+<td>
+<button class="pill others" style="width:100px">Header</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>string</td>
+<td>content type header, always returned as <strong>application/json</strong></td>
+</tr>
+<tr>
+<td><code>$.hasMore</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>boolean</td>
+<td>indicates whether there are more results which are not returned as part of this response. This field should be used as an indicator that subsequent queries should be made with the required <code>$.offset</code> parameter set to the value of previous query <code>$.offset</code> value + previous query <code>$.limit</code> value.</td>
+</tr>
+<tr>
+<td><code>$.results[]</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>array</td>
+<td>list of entities which match the query parameters. The array can be empty in case no entity matches the criteris. In case it is not empty, the objects below should contain the <code>$.results[].id</code>, <code>$.results[].type</code>, <code>$.results[].version</code> and <code>$.results[].fields</code> elements.</td>
+</tr>
+<tr>
+<td><code>$.results[].type</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>string</td>
+<td>type of the entity being returned. The value matches the request <code>$.type</code> element if concrete types are used for the query. If a basic type is used, one of <code>AbstraktMappe</code>, <code>AbstraktRegistrering</code>  or <code>NasjonalIdentifikator</code>), the response contains the real type of the entity. No basic types are returned in the response.</td>
+</tr>
+<tr>
+<td><code>$.results[].id</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>string</td>
+<td>unique numeric identifier of the entity object in the Documaster Archive</td>
+</tr>
+<tr>
+<td><code>$.results[].version</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>string</td>
+<td>version of the entity object, used for optimistic locking</td>
+</tr>
+<tr>
+<td><code>$.results[].fields.{fieldName}</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill yes" style="width:100px">yes</button></td>
+<td>any</td>
+<td>all the fields of the entity objects, excluding reference fields (prefixed with <code>ref</code>)</td>
+</tr>
+<tr>
+<td><code>$.results[].links.{referenceField}</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill no" style="width:100px">no</button></td>
+<td>string</td>
+<td>important reference fields and their values identifying other entities in the structure. Note that not all reference fields are returned, check the documentation of the respective entity for reference fields that would be returned.</td>
+</tr>
+</tbody>
+</table>
+<p>As part of the resposne, business specific metadata is also returned for those entities that has it under <code>$.results[].fields.virksomhetsspesifikkeMetadata</code>. The table below provides the details about BSM values returned. The full path of the elemetns for BSM is shortened for clarity.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Location</th>
+<th style="text-align:center">Mandatory</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$..&lt;bsm&gt;.{bsmGroupID}</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill no" style="width:100px">no</button></td>
+<td>object</td>
+<td>element under <code>$.results[].fields.virksomhetsspesifikkeMetadata.{bsmGroupID}</code>, business specific metadata definition for the bsm groupID configured for the entity. BSM data is returned only for the following set of entities : Basic Folder(<code>Mappe</code>), Meeting Folder(<code>Moetemappe</code>), Case File (<code>Saksmappe</code>), Case Party (<code>Sakspart</code>), Basic Record (<code>Registrering</code>), Meeting Record (<code>Moeteregistrering</code>), Registry Entry (<code>Journalpost</code>), Correspondence Party (<code>Korrespondansepart</code>), Document (<code>Dokument</code>), and Class (<code>Klasse</code>)</td>
+</tr>
+<tr>
+<td><code>$..&lt;bsm&gt;.{bsmGroupID}.{bsmFieldID}</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill no" style="width:100px">no</button></td>
+<td>object</td>
+<td>element under <code>$.results[].fields.virksomhetsspesifikkeMetadata.{bsmGroupID}.{bsmFieldID}</code>, business specific metadata field part of the BSM group identified by {bsmGroupID}</td>
+</tr>
+<tr>
+<td><code>$..&lt;bsm&gt;.{bsmGroupID}.{bsmFieldID}.type</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill no" style="width:100px">no</button></td>
+<td>object</td>
+<td>element under <code>$.results[].fields.virksomhetsspesifikkeMetadata.{bsmGroupID}.{bsmFieldID}.type</code>, type of the BSM field, supported values are <code>string</code>, <code>long</code>, <code>double</code>, <code>timestamp</code>, and <code>encrypted</code></td>
+</tr>
+<tr>
+<td><code>$..&lt;bsm&gt;.{bsmGroupID}.{bsmFieldID}.value</code></td>
+<td>
+<button class="pill body" style="width:100px">Body</button></td>
+<td style="text-align:center">
+<button class="pill no" style="width:100px">no</button></td>
+<td>object</td>
+<td>element under <code>$.results[].fields.virksomhetsspesifikkeMetadata.{bsmGroupID}.{bsmFieldID}.value</code>, value of the BSM field assigned to the entity object</td>
+</tr>
+</tbody>
+</table>
 <h2 id="query-language">Query Language</h2>
 <p>Query Language Section</p>
 
@@ -2162,10 +2318,24 @@ Content-Type: application/json
 
                     
                     
+                    
+
+                    
                         
+            
+            
+                
+                    
+                
+                
+
+                    
                     
                     
 
+                    
+            
+        
                     
                         
             
@@ -2245,19 +2415,19 @@ Content-Type: application/json
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/documaster-api-docs/js/clipboard.min.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/jquery.sticky.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/featherlight.min.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/highlight.pack.js?1638787647"></script>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1638885193"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/learn.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/hugo-learn.js?1638787647"></script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/learn.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1638885193"></script>
     
         
-            <script src="/documaster-api-docs/mermaid/mermaid.js?1638787647"></script>
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1638885193"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

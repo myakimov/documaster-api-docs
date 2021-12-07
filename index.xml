@@ -80,12 +80,30 @@
     </item>
     
     <item>
+      <title>Case File</title>
+      <link>https://myakimov.github.io/documaster-api-docs/usage/perentity/casefile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://myakimov.github.io/documaster-api-docs/usage/perentity/casefile/</guid>
+      <description>Creating Case File Case Files (Saksmappe) are created using transaction API, where in a single transaction the newly created case file must be linked to a single Series (Arkivdel), through reference Saksmappe::refArkivdel, and to one primary Class (Klasse), through reference Saksmappe::refPrimaerKlasse, part of the Classification System (Klassifikasjonssystem) linked to the series. Case File (Saksmappe) can be linked to more than one Class (Klasse) as secondary class, using the reference SaksMappe::refSekundaerKlasse. Additionally the example below is adding an External ID (EksternId), which is an identifier of the case file in an external system.</description>
+    </item>
+    
+    <item>
       <title>Download</title>
       <link>https://myakimov.github.io/documaster-api-docs/operations/core/download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://myakimov.github.io/documaster-api-docs/operations/core/download/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Registry Entry</title>
+      <link>https://myakimov.github.io/documaster-api-docs/usage/perentity/registryentry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://myakimov.github.io/documaster-api-docs/usage/perentity/registryentry/</guid>
+      <description>Creating Registry Entry Registry entries are created using transaction API, where in a single transaction the newly created registry entry should be linked to a case file (Saksmappe) or a basic folder (Mappe). Bear in mind that the registry entry can be under only one folder. Newly created registry entry requires at least one correspondence party (Korrespondansepart) to be created and associated with the registry entry. The link is done using transaction::link action following the guidelines to use newly created entry reference field to parent entry (Korrespondansepart::refRegistrering), rather than parent entry reference field (Journalpost::refKorrespondansepart).</description>
     </item>
     
     <item>

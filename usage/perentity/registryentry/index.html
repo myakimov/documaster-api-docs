@@ -12,22 +12,22 @@
     <title>Registry Entry :: Documaster Noark5 API</title>
 
     
-    <link href="/documaster-api-docs/css/nucleus.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hybrid.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/featherlight.min.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/auto-complete.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/theme.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/tabs.css?1638787647" rel="stylesheet">
-    <link href="/documaster-api-docs/css/hugo-theme.css?1638787647" rel="stylesheet">
+    <link href="/documaster-api-docs/css/nucleus.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/fontawesome-all.min.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hybrid.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/featherlight.min.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/perfect-scrollbar.min.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/auto-complete.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/atom-one-dark-reasonable.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/tabs.css?1638885193" rel="stylesheet">
+    <link href="/documaster-api-docs/css/hugo-theme.css?1638885193" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/theme-mine.css?1638787647" rel="stylesheet">
+    <link href="/documaster-api-docs/css/theme-mine.css?1638885193" rel="stylesheet">
     
-    <link href="/documaster-api-docs/css/syntax.css?1638787647" rel="stylesheet">
+    <link href="/documaster-api-docs/css/syntax.css?1638885193" rel="stylesheet">
 
-    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638787647"></script>
+    <script src="/documaster-api-docs/js/jquery-3.3.1.min.js?1638885193"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638787647"></script>
-<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638787647"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/lunr.min.js?1638885193"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/auto-complete.js?1638885193"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/myakimov.github.io\/documaster-api-docs\/";
     
 </script>
-<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638787647"></script>
+<script type="text/javascript" src="/documaster-api-docs/js/search.js?1638885193"></script>
 
     
   </div>
@@ -1054,8 +1054,6 @@
         <ul>
           
           
-            
-          
           
 
         
@@ -1069,18 +1067,34 @@
  
   
     
-    <li data-nav-id="/documaster-api-docs/usage/perentity/registryentry/" title="Registry Entry" class="dd-item
-        parent
-        active
+      <li data-nav-id="/documaster-api-docs/usage/perentity/casefile/" title="Case File" class="dd-item ">
+        <a href="/documaster-api-docs/usage/perentity/casefile/">
+        Case File
         
-        ">
-      <a href="/documaster-api-docs/usage/perentity/registryentry/">
-          Registry Entry
-          
-      </a>
-      
-      
+        </a>
     </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/documaster-api-docs/usage/perentity/registryentry/" title="Registry Entry" class="dd-item active">
+        <a href="/documaster-api-docs/usage/perentity/registryentry/">
+        Registry Entry
+        
+        </a>
+    </li>
+     
   
  
 
@@ -1266,8 +1280,7 @@
         
 
 
-
-	<h3 id="creating-registry-entry">Creating Registry Entry</h3>
+<h3 id="creating-registry-entry">Creating Registry Entry</h3>
 <p>Registry entries are created using <code>transaction</code> API, where in a single transaction the newly created registry entry should be linked to a case file (<code>Saksmappe</code>) <strong>or</strong> a basic folder (<code>Mappe</code>). Bear in mind that the registry entry can be under only one folder. Newly created registry entry requires at least one correspondence party (<code>Korrespondansepart</code>) to be created and associated with the registry entry. The link is done using <code>transaction::link</code> action following the guidelines to use newly created entry reference field to parent entry (<code>Korrespondansepart::refRegistrering</code>), rather than parent entry reference field (<code>Journalpost::refKorrespondansepart</code>). Take a look at the <a href="#fields"><strong>Fields</strong></a> section of this document for details about the mandatory/optional fields for registry entries.</p>
 <p>Document (<code>Dokument</code>) entities are associated to Registry entries during documents creation. Examples how a document is created and associated to a registry entry can be found <a href="https://google.com">here</a>.</p>
 <ul>
@@ -1511,10 +1524,7 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
 
 
 
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -2100,10 +2110,27 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
 
                     
                     
+                    
+
+                    
                         
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
                     
                     
 
+                    
+            
+        
                     
                         
             
@@ -2174,7 +2201,7 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
 	 
 	 
 		
-			<a class="nav nav-prev" href="/documaster-api-docs/usage/perentity/" title="Per Entity"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/documaster-api-docs/usage/perentity/casefile/" title="Case File"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/documaster-api-docs/usage/perusecase/" title="Per Usecase" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -2187,19 +2214,19 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/documaster-api-docs/js/clipboard.min.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/jquery.sticky.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/featherlight.min.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/highlight.pack.js?1638787647"></script>
+    <script src="/documaster-api-docs/js/clipboard.min.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.min.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/perfect-scrollbar.jquery.min.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/jquery.sticky.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/featherlight.min.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/highlight.pack.js?1638885193"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/learn.js?1638787647"></script>
-    <script src="/documaster-api-docs/js/hugo-learn.js?1638787647"></script>
+    <script src="/documaster-api-docs/js/modernizr.custom-3.6.0.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/learn.js?1638885193"></script>
+    <script src="/documaster-api-docs/js/hugo-learn.js?1638885193"></script>
     
         
-            <script src="/documaster-api-docs/mermaid/mermaid.js?1638787647"></script>
+            <script src="/documaster-api-docs/mermaid/mermaid.js?1638885193"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
@@ -2209,3 +2236,4 @@ Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">app
 
   </body>
 </html>
+
